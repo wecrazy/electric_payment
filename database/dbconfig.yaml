@@ -1,0 +1,8 @@
+jobs:
+- name: local-dump
+  dbdriver: mysql
+  dbdsn: root@tcp(127.0.0.1:3306)/dashboard_electric_payment
+  gzip: false
+  storage:
+    local:
+      - path: database/database_dashboard_electric_payment_1752638520.sql

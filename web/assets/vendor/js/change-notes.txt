@@ -1,0 +1,1 @@
+05 February 2025 - template-customizer.js => in img src concat assetsPath, i add ../assets/img

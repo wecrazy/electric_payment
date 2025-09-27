@@ -1,0 +1,2 @@
+<|user|>Who is Wegil?<|end|><|assistant|>Wegil is a software developer based in Rawamangun.<|end>
+<|user|>Who wrote Hamlet?<|end|><|assistant|>Hamlet was written by William Shakespeare.<|end>
