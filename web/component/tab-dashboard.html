@@ -17,7 +17,7 @@
               <img src="/assets/img/illustrations/man-with-laptop-light.png" class="img-fluid mb-2" height="80"
                 alt="Dashboard Img" data-app-dark-img="/assets/img/illustrations/man-with-laptop-dark.png"
                 data-app-light-img="/assets/img/illustrations/man-with-laptop-light.png" />
-              <div id="jakarta-clock" style="font-size: 2.5rem; font-weight: bold;"></div>
+              <div id="dashboard-clock" class="dashboard-clock"></div>
             </div>
           </div>
         </div>
@@ -28,10 +28,10 @@
     <div class="col-12 col-md-6">
       <div class="card shadow rounded-3 h-100">
         <div class="card-body text-center">
-          <h6 class="mb-3">Current Weather (Jakarta)</h6>
-          <a class="weatherwidget-io" href="https://forecast7.com/en/n6d21106d85/jakarta/" data-label_1="JAKARTA"
+          <h6 class="mb-3">Current Weather (Toraja)</h6>
+          <a class="weatherwidget-io" href="https://forecast7.com/en/n6d21106d85/jakarta/" data-label_1="TORAJA"
             data-label_2="WEATHER" data-theme="original">
-            JAKARTA WEATHER
+            TORAJA WEATHER
           </a>
         </div>
       </div>
@@ -39,12 +39,18 @@
   </div>
 </div>
 
+<style>
+  .dashboard-clock {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+</style>
 <script>
   const { DateTime } = luxon;
 
   function updateJakartaClock() {
-    const now = DateTime.now().setZone("Asia/Jakarta");
-    document.getElementById("jakarta-clock").textContent =
+    const now = DateTime.now().setZone("Asia/Makassar");
+    document.getElementById("dashboard-clock").textContent =
       now.toFormat("HH:mm:ss");
   }
   // Language map for greetings

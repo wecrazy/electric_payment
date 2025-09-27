@@ -17,6 +17,26 @@ var (
 	configPath  string
 )
 
+var yamlFilePaths = []string{
+	"/config/conf.%s.yaml",
+	"config/conf.%s.yaml",
+	"../config/conf.%s.yaml",
+	"/../config/conf.%s.yaml",
+	"../../config/conf.%s.yaml",
+	"/../../config/conf.%s.yaml",
+	"C:/golang/electric_payment/config/conf.%s.yaml",
+}
+
+var mainConfigPaths = []string{
+	"/config/conf.yaml",
+	"config/conf.yaml",
+	"../config/conf.yaml",
+	"/../config/conf.yaml",
+	"../../config/conf.yaml",
+	"/../../config/conf.yaml",
+	"C:/golang/electric_payment/config/conf.yaml",
+}
+
 // getEnvironment returns the current environment (dev or prod)
 // Priority: 1. CONFIG_MODE from conf.yaml, 2. ENV environment variable, 3. GO_ENV, 4. default to "dev"
 func getEnvironment() string {
@@ -113,24 +133,6 @@ func getConfigPaths() []string {
 	}
 
 	return paths
-}
-
-var yamlFilePaths = []string{
-	"/config/conf.%s.yaml",
-	"config/conf.%s.yaml",
-	"../config/conf.%s.yaml",
-	"/../config/conf.%s.yaml",
-	"../../config/conf.%s.yaml",
-	"/../../config/conf.%s.yaml",
-}
-
-var mainConfigPaths = []string{
-	"/config/conf.yaml",
-	"config/conf.yaml",
-	"../config/conf.yaml",
-	"/../config/conf.yaml",
-	"../../config/conf.yaml",
-	"/../../config/conf.yaml",
 }
 
 // MainConfig represents the main configuration structure for determining mode

@@ -129,6 +129,11 @@ func HtmlRoutes(router *gin.Engine, redisDB *redis.Client) {
 	// Check WhatsApp number registration
 	router.GET(fun.GLOBAL_URL+"check_wa", controllers.CheckWAPhoneNumberIsRegistered())
 
+	landingPage := router.Group(fun.GLOBAL_URL + "welcome")
+	{
+		landingPage.GET("", controllers.GetWebLandingPage()) // LANDING PAGE
+	}
+
 	// Endpoint Web routes group
 	web := router.Group(fun.GLOBAL_URL+"web/:access", middleware.AuthMiddleware(db, redisDB))
 	{

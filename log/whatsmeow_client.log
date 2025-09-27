@@ -56,3 +56,5 @@ time="2025-09-14T21:14:21+07:00" level=error msg="Error reading from websocket: 
 time="2025-09-16T11:27:10+07:00" level=error msg="Error reading from websocket: websocket: close 1006 (abnormal closure): unexpected EOF" module=Client submodule=Socket
 time="2025-09-16T11:27:10+07:00" level=error msg="Error closing websocket: tls: failed to send closeNotify alert (but connection was closed anyway): write tcp 192.101.1.149:58384->157.240.208.60:443: write: connection reset by peer" module=Client submodule=Socket
 time="2025-09-18T17:07:39+07:00" level=error msg="Error reading from websocket: websocket: close 1006 (abnormal closure): unexpected EOF" module=Client submodule=Socket
+time="2025-09-27T19:57:35+07:00" level=error msg="Error reading from websocket: websocket: close 1006 (abnormal closure): unexpected EOF" module=Client submodule=Socket
+time="2025-09-27T20:17:16+07:00" level=error msg="Error reading from websocket: websocket: close 1006 (abnormal closure): unexpected EOF" module=Client submodule=Socket

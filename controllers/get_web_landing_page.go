@@ -3,15 +3,17 @@ package controllers
 import (
 	"electric_payment/config"
 	"electric_payment/fun"
+	"electric_payment/internal/gormdb"
 	"electric_payment/model"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"gorm.io/gorm"
 )
 
-func GetWebLandingPage(db *gorm.DB) gin.HandlerFunc {
+func GetWebLandingPage() gin.HandlerFunc {
 	return func(c *gin.Context) {
+		db := gormdb.Databases.Web
+
 		// Retrieve cookies from the request
 		cookies := c.Request.Cookies()
 
@@ -30,6 +32,8 @@ func GetWebLandingPage(db *gorm.DB) gin.HandlerFunc {
 			"APP_VERSION_NO":   config.GetConfig().App.VersionNo,
 			"APP_VERSION_CODE": config.GetConfig().App.VersionCode,
 			"APP_VERSION_NAME": config.GetConfig().App.VersionName,
+			"APP_TITLE":        config.GetConfig().App.Name,
+			"GLOBAL_URL":       fun.GLOBAL_URL,
 			"LOGIN":            "LOGIN",
 		}
 
