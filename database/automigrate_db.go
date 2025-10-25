@@ -2,6 +2,7 @@ package database
 
 import (
 	"electric_payment/model"
+	pltmhmodel "electric_payment/model/pltmh_model"
 	whatsappmodel "electric_payment/model/whatsapp_model"
 
 	"github.com/sirupsen/logrus"
@@ -68,6 +69,10 @@ func AutoMigrateWeb(db *gorm.DB) {
 	seedAppConfig(db)
 
 	seedIndonesiaRegion(db)
+
+	// PLTMH Lembang Palesan
+	pltmhmodel.MigrateAllTables(db)
+	pltmhmodel.SeedAllTestData(db)
 
 	// Seed Whatsapp Examples
 	// controllers.SeedWhatsappSampleData(db)

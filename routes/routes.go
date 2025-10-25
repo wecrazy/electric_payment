@@ -94,14 +94,6 @@ func HtmlRoutes(router *gin.Engine, redisDB *redis.Client) {
 		c.JSON(http.StatusOK, gin.H{"message": "pong!"})
 	})
 
-	router.GET(fun.GLOBAL_URL+"api/ping", func(c *gin.Context) {
-		i := c.Query("i")
-		if i != "" {
-			c.JSON(http.StatusOK, gin.H{"message": "pong", "i": i})
-		} else {
-			c.JSON(http.StatusOK, gin.H{"message": "pong"})
-		}
-	})
 	router.GET(fun.GLOBAL_URL+"ws", controllers.WebSocketVerify(db))
 
 	// router.GET(fun.GLOBAL_URL+"", controllers.GetWebLandingPage(db)) // LANDING PAGE
@@ -129,9 +121,26 @@ func HtmlRoutes(router *gin.Engine, redisDB *redis.Client) {
 	// Check WhatsApp number registration
 	router.GET(fun.GLOBAL_URL+"check_wa", controllers.CheckWAPhoneNumberIsRegistered())
 
-	landingPage := router.Group(fun.GLOBAL_URL + "welcome")
+	// Landing Page
+	router.GET(fun.GLOBAL_URL+"welcome", controllers.GetWebLandingPage()) // LANDING PAGE
+	pltmhLembangPalesanPayment := router.Group("/payment")
 	{
-		landingPage.GET("", controllers.GetWebLandingPage()) // LANDING PAGE
+		pltmhLembangPalesanPayment.GET("", controllers.GetPaymentPage())
+	}
+
+	// API routes for payment system
+	apiRoutes := router.Group(fun.GLOBAL_URL + "api")
+	{
+		apiRoutes.GET("/ping", func(c *gin.Context) {
+			i := c.Query("i")
+			if i != "" {
+				c.JSON(http.StatusOK, gin.H{"message": "pong", "i": i})
+			} else {
+				c.JSON(http.StatusOK, gin.H{"message": "pong"})
+			}
+		})
+		apiRoutes.POST("/check-customer", controllers.CheckCustomerData())
+		apiRoutes.POST("/process-payment", controllers.ProcessPayment())
 	}
 
 	// Endpoint Web routes group

@@ -115,6 +115,7 @@ func ComponentPage(db *gorm.DB, redisDB *redis.Client) gin.HandlerFunc {
 			"APP_VERSION_NO":   appVersionNo,
 			"APP_VERSION_CODE": appVersionCode,
 			"APP_VERSION_NAME": appVersionName,
+			"APP_WEB_URL":      config.GetConfig().App.WebPublicURL,
 			"fullname":         admin.Fullname,
 			"username":         admin.Username,
 			"userid":           admin.ID,

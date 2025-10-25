@@ -35,6 +35,13 @@ func GetWebLandingPage() gin.HandlerFunc {
 			"APP_TITLE":        config.GetConfig().App.Name,
 			"GLOBAL_URL":       fun.GLOBAL_URL,
 			"LOGIN":            "LOGIN",
+			"PLTMH_EMAIL":      config.GetConfig().PLTMHLembangPalesan.Email,
+			"PLTMH_PHONE":      config.GetConfig().PLTMHLembangPalesan.Phone,
+			"PLTMH_URL":        config.GetConfig().PLTMHLembangPalesan.PublicURL,
+			"PLTMH_FACEBOOK":   config.GetConfig().PLTMHLembangPalesan.Facebook,
+			"PLTMH_INSTAGRAM":  config.GetConfig().PLTMHLembangPalesan.Instagram,
+			"PLTMH_YOUTUBE":    config.GetConfig().PLTMHLembangPalesan.Youtube,
+			"PLTMH_TWITTER":    config.GetConfig().PLTMHLembangPalesan.Twitter,
 		}
 
 		if credentialsCookie != nil {

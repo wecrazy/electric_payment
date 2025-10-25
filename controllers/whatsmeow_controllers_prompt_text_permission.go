@@ -57,7 +57,7 @@ func getCooldownKey(cmd string, userID uint) string {
 // CheckPromptPermission evaluates whether a user has permission to execute a specific command prompt.
 // It checks against a set of predefined permission rules, including user type, phone number, ban status,
 // daily quota limits, and cooldown periods. If the command is not found in the rules, it performs additional
-// checks for bad words, work order numbers, and technician IDs for CSNA users. The function returns a
+// checks for bad words, work order numbers, and technician IDs for company users. The function returns a
 // PromptPermissionResult indicating whether the command is allowed, along with appropriate messages and
 // quota/cooldown information.
 //

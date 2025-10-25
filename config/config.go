@@ -332,6 +332,21 @@ type YamlConfig struct {
 	API struct {
 		IndonesianPublicHoliday string `yaml:"INDONESIAN_PUBLIC_HOLIDAY"`
 	} `yaml:"API"`
+
+	PLTMHLembangPalesan struct {
+		Email             string `yaml:"EMAIL"`
+		Phone             string `yaml:"PHONE"`
+		PublicURL         string `yaml:"PUBLIC_URL"`
+		Facebook          string `yaml:"FACEBOOK"`
+		Instagram         string `yaml:"INSTAGRAM"`
+		Youtube           string `yaml:"YOUTUBE"`
+		Twitter           string `yaml:"TWITTER"`
+		TbElectricityBase string `yaml:"TB_ELECTRICITY_BASE"`
+		TbPrepaid         string `yaml:"TB_PREPAID"`
+		TbPostpaid        string `yaml:"TB_POSTPAID"`
+		TbTopupRecord     string `yaml:"TB_TOPUP_RECORD"`
+		TopupOptions      []int  `yaml:"TOPUP_OPTIONS"`
+	} `yaml:"PLTMH_LEMBANG_PALESAN"`
 }
 
 func YAMLLoad(filePath string) (*YamlConfig, error) {

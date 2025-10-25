@@ -84,7 +84,7 @@ func getDocumentRules() map[string]DocumentRule {
 		// "general_document": {
 		// 	FilenamePrefixes: []string{}, // matches any file
 		// 	AllowedUserTypes: []string{"ODOOMSHead", "WaBotSuperUser"},
-		// 	AllowedUserOf:    []string{"UserOfCSNA"},
+		// 	AllowedUserOf:    []string{"UserOfPLTMH"},
 		// 	RequiredPatterns: []string{},
 		// 	MonthPatterns:    []string{},
 		// 	YearRequired:     false,
@@ -94,7 +94,7 @@ func getDocumentRules() map[string]DocumentRule {
 		// "invoice": {
 		// 	FilenamePrefixes: []string{"invoice", "inv", "tagihan", "bill"},
 		// 	AllowedUserTypes: []string{"ODOOMSHead", "WaBotSuperUser", "SupportStaff"},
-		// 	AllowedUserOf:    []string{"UserOfCSNA", "UserOfHommyPay"},
+		// 	AllowedUserOf:    []string{"UserOfPLTMH", "UserOfGeneral"},
 		// 	RequiredPatterns: []string{},
 		// 	MonthPatterns:    []string{},
 		// 	YearRequired:     false,
@@ -103,7 +103,7 @@ func getDocumentRules() map[string]DocumentRule {
 		// "technical_report": {
 		// 	FilenamePrefixes: []string{"tech report", "technical report", "laporan teknis"},
 		// 	AllowedUserTypes: []string{"WaBotSuperUser", "SupportStaff", "ODOOMSTechnician"},
-		// 	AllowedUserOf:    []string{"UserOfCSNA"},
+		// 	AllowedUserOf:    []string{"UserOfPLTMH"},
 		// 	RequiredPatterns: []string{},
 		// 	MonthPatterns:    []string{},
 		// 	YearRequired:     false,
@@ -112,7 +112,7 @@ func getDocumentRules() map[string]DocumentRule {
 		// "customer_support": {
 		// 	FilenamePrefixes: []string{"cs report", "customer support", "support ticket"},
 		// 	AllowedUserTypes: []string{"SupportStaff", "WaBotSuperUser"},
-		// 	AllowedUserOf:    []string{"UserOfCSNA", "UserOfHommyPay"},
+		// 	AllowedUserOf:    []string{"UserOfPLTMH", "UserOfGeneral"},
 		// 	RequiredPatterns: []string{},
 		// 	MonthPatterns:    []string{},
 		// 	YearRequired:     false,

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-navbar-fixed layout-wide" dir="ltr" data-theme="theme-default"
+    data-assets-path="../assets/" data-template="front-pages">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{{.APP_TITLE}}</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{.APP_LOGO}}" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/pages/front-page.css" />
+    <!-- Vendors CSS -->
+
+    <link rel="stylesheet" href="../assets/vendor/libs/nouislider/nouislider.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/swiper/swiper.css" />
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet" href="../assets/vendor/css/pages/front-page-landing.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/front-config.js"></script>
+    <!-- jQuery -->
+    <script src="{{.GLOBAL_URL}}assets/vendor/libs/jquery/jquery.js"></script>
+</head>
+
+<body>
+    <script src="../assets/vendor/js/dropdown-hover.js"></script>
+    <script src="../assets/vendor/js/mega-dropdown.js"></script>
+
+    <!-- Navbar: Start -->
+    <nav class="layout-navbar shadow-none py-0">
+        <div class="container">
+            <div class="navbar navbar-expand-lg landing-navbar px-3 px-md-4">
+                <!-- Menu logo wrapper: Start -->
+                <div class="navbar-brand app-brand demo d-flex py-0 me-5">
+                    <!-- Mobile menu toggle: Start-->
+                    <button class="navbar-toggler border-0 px-0 me-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="tf-icons bx bx-menu bx-sm align-middle"></i>
+                    </button>
+                    <!-- Mobile menu toggle: End-->
+                    <a href="" class="app-brand-link">
+                        <span class="app-brand-logo demo">
+                            <img src="{{.APP_LOGO}}" width="50px" alt="LOGO">
+                        </span>
+                        <span class="fs-3 demo fw-bold ms-2 ps-1">{{.APP_NAME}}</span>
+                    </a>
+                </div>
+                <!-- Menu logo wrapper: End -->
+                <!-- Menu wrapper: Start -->
+                <div class="collapse navbar-collapse landing-nav-menu" id="navbarSupportedContent">
+                    <button class="navbar-toggler border-0 text-heading position-absolute end-0 top-0 scaleX-n1-rtl"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="tf-icons bx bx-x bx-sm"></i>
+                    </button>
+                    <ul class="navbar-nav me-auto">
+                        <li>
+                            <a class="nav-link fw-medium" href="#landingPayment">Pembayaran Listrik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="#landingContact">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="landing-menu-overlay d-lg-none"></div>
+                <!-- Menu wrapper: End -->
+                <!-- Toolbar: Start -->
+                <ul class="navbar-nav flex-row align-items-center ms-auto">
+                    <!-- Style Switcher -->
+                    <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+                        <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                            data-bs-toggle="dropdown" aria-label="Style Switcher">
+                            <i class="fs-1 bx bx-sm"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                            <li>
+                                <a class="dropdown-item" href="javascript:void(0);" data-theme="light">
+                                    <span class="align-middle"><i class="bx bx-sun me-2"></i>Light</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:void(0);" data-theme="dark">
+                                    <span class="align-middle"><i class="bx bx-moon me-2"></i>Dark</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:void(0);" data-theme="system">
+                                    <span class="align-middle"><i class="bx bx-desktop me-2"></i>System</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- / Style Switcher-->
+                </ul>
+                <!-- Toolbar: End -->
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar: End -->
+
+    <!-- Sections:Start -->
+
+    <div data-bs-spy="scroll" class="scrollspy-example">
+        <!-- Payment: Start -->
+        <section id="landingPayment" class="section-py bg-body">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="text-primary fw-bold mb-3 mt-5">Pembayaran Listrik</h2>
+                    <p class="text-muted">Pilih jenis pembayaran listrik sesuai kebutuhan Anda</p>
+                </div>
+
+                <!-- Payment Type Selection -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-12">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="payment-type-card" data-type="prepaid">
+                                            <div class="card border border-primary h-100 cursor-pointer payment-option">
+                                                <div class="card-body text-center">
+                                                    <i class="bx bx-credit-card-front text-primary mb-3 icon-large"></i>
+                                                    <h5 class="text-primary mb-2">Token Listrik</h5>
+                                                    <p class="text-muted small">Prabayar - Beli token sesuai kebutuhan
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="payment-type-card" data-type="postpaid">
+                                            <div class="card border h-100 cursor-pointer payment-option">
+                                                <div class="card-body text-center">
+                                                    <i class="bx bx-receipt text-warning mb-3 icon-large"></i>
+                                                    <h5 class="text-warning mb-2">Tagihan Listrik</h5>
+                                                    <p class="text-muted small">Pascabayar - Bayar tagihan bulanan</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Form -->
+                <div class="row justify-content-center hidden" id="paymentFormSection">
+                    <div class="col-12">
+                        <div class="card shadow">
+                            <div class="card-header">
+                                <h4 class="mb-0" id="paymentFormTitle">Pembayaran Listrik</h4>
+                            </div>
+                            <div class="card-body">
+                                <form id="paymentForm">
+                                    <!-- Customer Information -->
+                                    <div class="mb-4">
+                                        <label class="form-label fw-semibold">Informasi Pelanggan</label>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="customerInput" class="form-label"
+                                                    id="customerInputLabel">No. Meter / ID Pelanggan</label>
+                                                <input type="text" class="form-control" id="customerInput"
+                                                    placeholder="Masukkan nomor meter atau ID pelanggan" required>
+                                                <div class="invalid-feedback" id="customerInputFeedback"></div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <button type="button" class="btn btn-outline-primary mt-4"
+                                                    id="checkCustomerBtn">
+                                                    <i class="bx bx-search me-2"></i>Cek Data Pelanggan
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Customer Details (Hidden initially) -->
+                                    <div class="mb-4 hidden" id="customerDetails">
+                                        <div class="alert alert-success">
+                                            <h6 class="alert-heading">Data Pelanggan Ditemukan</h6>
+                                            <div id="customerInfo"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Token Amount Selection (Prepaid only) -->
+                                    <div class="mb-4 hidden" id="tokenAmountSection">
+                                        <label class="form-label fw-semibold">Pilih Nominal Token</label>
+                                        <div class="row" id="tokenOptions">
+                                            <!-- Token options will be populated dynamically -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Bill Information (Postpaid only) -->
+                                    <div class="mb-4 hidden" id="billInfoSection">
+                                        <label class="form-label fw-semibold">Informasi Tagihan</label>
+                                        <div class="card border-warning">
+                                            <div class="card-body">
+                                                <div id="billDetails">
+                                                    <!-- Bill details will be populated -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Payment Method Selection -->
+                                    <div class="mb-4 hidden" id="paymentMethodSection">
+                                        <label class="form-label fw-semibold">Metode Pembayaran</label>
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card border cursor-pointer payment-method-card"
+                                                    data-method="qr">
+                                                    <div class="card-body text-center">
+                                                        <i class="bx bx-qr text-primary mb-2 icon-medium"></i>
+                                                        <h6>Scan QR Code</h6>
+                                                        <small class="text-muted">QRIS - Semua Bank & E-wallet</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card border cursor-pointer payment-method-card"
+                                                    data-method="bank">
+                                                    <div class="card-body text-center">
+                                                        <i class="bx bx-building text-success mb-2 icon-medium"></i>
+                                                        <h6>Transfer Bank</h6>
+                                                        <small class="text-muted">BCA, BNI, Mandiri, BRI</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card border cursor-pointer payment-method-card"
+                                                    data-method="ewallet">
+                                                    <div class="card-body text-center">
+                                                        <i class="bx bx-wallet text-warning mb-2 icon-medium"></i>
+                                                        <h6>E-Wallet</h6>
+                                                        <small class="text-muted">OVO, DANA, GoPay, ShopeePay</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Payment Summary -->
+                                    <div class="mb-4 hidden" id="paymentSummarySection">
+                                        <label class="form-label fw-semibold">Ringkasan Pembayaran</label>
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <div id="paymentSummary">
+                                                    <!-- Payment summary will be populated -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg hidden"
+                                            id="processPaymentBtn">
+                                            <i class="bx bx-credit-card me-2"></i>Proses Pembayaran
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Payment: End -->
+
+        <!-- Contact Us: Start -->
+        <section id="landingContact" class="section-py bg-body landing-contact">
+            <div class="container">
+                <div class="text-center mb-3 pb-1">
+                    <span class="badge bg-label-primary">
+                        Hubungi Kami
+                    </span>
+                </div>
+                <h3 class="text-center mb-1">
+                    <span class="section-title">
+                        Kami siap membantu Anda
+                    </span>
+                </h3>
+                <p class="text-center mb-4 mb-lg-5 pb-md-3">
+                    Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami melalui
+                    formulir di bawah ini atau melalui email dan nomor telepon yang tersedia.
+                </p>
+                <div class="row gy-4">
+                    <div class="col-lg-5">
+                        <div class="contact-img-box position-relative border p-2 h-100">
+                            <img src="../assets/img/front-pages/landing-page/cs.jpeg" alt="contact customer service"
+                                class="contact-img w-100 scaleX-n1-rtl img-fluid" />
+                            <div class="pt-3 px-4 pb-1">
+                                <div class="row gy-3 gx-md-4">
+                                    <div class="col-md-6 col-lg-12 col-xl-6">
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge bg-label-primary rounded p-2 me-2"><i
+                                                    class="bx bx-envelope bx-sm"></i></div>
+                                            <div>
+                                                <p class="mb-0">Email</p>
+                                                <h5 class="mb-0">
+                                                    <a href="mailto:{{.PLTMH_EMAIL}}"
+                                                        class="text-heading">{{.PLTMH_EMAIL}}</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-12 col-xl-6">
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge bg-label-success rounded p-2 me-2">
+                                                <i class="bx bx-phone-call bx-sm"></i>
+                                            </div>
+                                            <div>
+                                                <p class="mb-0">No. Telepon</p>
+                                                <h5 class="mb-0">
+                                                    <a href="https://wa.me/{{.PLTMH_PHONE}}"
+                                                        class="text-heading">{{.PLTMH_PHONE}}</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="mb-1">
+                                    Kirim Pesan
+                                </h4>
+                                <p class="mb-4">
+                                    Isi formulir di bawah ini dan kami akan menghubungi Anda sesegera mungkin.
+                                </p>
+                                <form>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="contact-form-fullname">Nama Lengkap</label>
+                                            <input type="text" class="form-control" id="contact-form-fullname"
+                                                placeholder="John Pakombong" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="contact-form-email">Email</label>
+                                            <input type="text" id="contact-form-email" class="form-control"
+                                                placeholder="johndoe@gmail.com" />
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label" for="contact-form-message">Pesan</label>
+                                            <textarea id="contact-form-message" class="form-control" rows="9"
+                                                placeholder="Masukkan pesan Anda . . ."></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">
+                                                Kirim Pesan
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us: End -->
+    </div>
+
+    <!-- / Sections:End -->
+
+    <!-- Footer: Start -->
+    <footer class="landing-footer bg-body footer-text">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gx-0 gy-4 g-md-5">
+                    <div class="col-lg-7">
+                        <a href="" class="app-brand-link mb-4">
+                            <span class="app-brand-logo demo">
+                                <img src="{{.APP_LOGO}}" width="50px" alt="LOGO">
+                            </span>
+                            <span class="fs-3 demo footer-link fw-bold ms-2 ps-1">{{.APP_NAME}}</span>
+                        </a>
+                        <p class="footer-text footer-logo-description mb-4">
+                            Website pembayaran listrik online yang mudah, cepat, dan terpercaya untuk semua kebutuhan
+                            Anda. Hubungi kami jika ada pertanyaan atau kendala pembayaran.
+                        </p>
+                        <form class="footer-form">
+                            <label for="footer-email" class="small">Berlangganan info promo & update</label>
+                            <div class="d-flex mt-1">
+                                <input type="email"
+                                    class="form-control rounded-0 rounded-start-bottom rounded-start-top"
+                                    id="footer-email" placeholder="Masukkan email Anda" />
+                                <button type="submit"
+                                    class="btn btn-primary shadow-none rounded-0 rounded-end-bottom rounded-end-top">
+                                    Langganan
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 col-md-4">
+                        <h6 class="footer-title mb-4">Unduh aplikasi kami</h6>
+                        <a href="https://apps.apple.com/id/app/pltmh-lembang-palesan"
+                            class="d-block footer-link mb-3 pb-2" target="_blank" rel="noopener"><img
+                                src="../assets/img/front-pages/landing-page/apple-icon.png" alt="apple icon" /></a>
+                        <a href="https://play.google.com/store/apps/details?id=id.pltmh.lembangpalesan"
+                            class="d-block footer-link" target="_blank" rel="noopener"><img
+                                src="../assets/img/front-pages/landing-page/google-play-icon.png"
+                                alt="google play icon" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3">
+            <div
+                class="container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start">
+                <div class="mb-2 mb-md-0">
+                    <span class="footer-text">©
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </span>
+                    <a href="{{.PLTMH_URL}}" target="_blank" rel="noopener"
+                        class="fw-medium text-white footer-link">PLTMH - Lembang Palesan</a>
+                    <span class="footer-text"> | Dibuat dengan ❤️ untuk kemudahan pembayaran listrik online.</span>
+                </div>
+                <div>
+                    <a href="{{.PLTMH_FACEBOOK}}" class="footer-link me-3" target="_blank" rel="noopener">
+                        <img src="../assets/img/front-pages/icons/facebook-light.png" alt="Facebook PLTMH"
+                            data-app-light-img="front-pages/icons/facebook-light.png"
+                            data-app-dark-img="front-pages/icons/facebook-dark.png" />
+                    </a>
+                    <a href="{{.PLTMH_TWITTER}}" class="footer-link me-3" target="_blank" rel="noopener">
+                        <img src="../assets/img/front-pages/icons/twitter-light.png" alt="Twitter PLTMH"
+                            data-app-light-img="front-pages/icons/twitter-light.png"
+                            data-app-dark-img="front-pages/icons/twitter-dark.png" />
+                    </a>
+                    <a href="{{.PLTMH_INSTAGRAM}}" class="footer-link" target="_blank" rel="noopener">
+                        <img src="../assets/img/front-pages/icons/instagram-light.png" alt="Instagram PLTMH"
+                            data-app-light-img="front-pages/icons/instagram-light.png"
+                            data-app-dark-img="front-pages/icons/instagram-dark.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer: End -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/nouislider/nouislider.js"></script>
+    <script src="../assets/vendor/libs/swiper/swiper.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/front-main.js"></script>
+
+    <!-- Page JS -->
+    <!-- <script src="../assets/js/front-page-landing.js"></script> -->
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Payment Page JS -->
+    <script>
+        // Pass TokenOptions to the JS file
+        window.TokenOptions = "{{.TOKEN_OPTIONS}}";
+    </script>
+    <script src="../assets/self/pltmh_payment.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .payment-option:hover,
+        .token-option-card:hover,
+        .payment-method-card:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .icon-large {
+            font-size: 3rem;
+        }
+
+        .icon-medium {
+            font-size: 2rem;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</body>
+
+</html>

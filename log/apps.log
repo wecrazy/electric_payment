@@ -1,507 +1,0 @@
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 107cf98510f8350f | GET     | 200 |     34.9533ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/customizer/light-dark.svg
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 3348 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/customizer/light-dark.svg
-RequestHeaders: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1 -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9 -- Connection: keep-alive -- Sec-Ch-Ua-Platform: "Windows" -- Sec-Ch-Ua-Mobile: ?0 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Cookie: [MASKED]
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/svg+xml -- Accept-Ranges: bytes -- Content-Length: 3348 -- Server`: SWS -- Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- Strict-Transport-Security: max-age=16070400; includeSubDomains
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-<svg width="107" height="55" viewBox="0 0 107 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.2">
-<path d="M53.0996 34.2488C56.9829 34.2488 60.1309 31.1008 60.1309 27.2176C60.1309 23.3343 56.9829 20.1863 53.0996 20.1863C49.2164 20.1863 46.0684 23.3343 46.0684 27.2176C46.0684 31.1008 49.2164 34.2488 53.0996 34.2488Z" fill="#8692D0"/>
-<path d="M53.0996 34.2488C56.9829 34.2488 60.1309 31.1008 60.1309 27.2176C60.1309 23.3343 56.9829 20.1863 53.0996 20.1863C49.2164 20.1863 46.0684 2... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: b64f9a06fdc5119c | GET     | 200 |     29.0184ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/customizer/system-dark.svg
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 1860 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/customizer/system-dark.svg
-RequestHeaders: Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- Connection: keep-alive -- Sec-Ch-Ua-Mobile: ?0 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Cache-Control: public, max-age=31536000 -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Content-Type: image/svg+xml -- Accept-Ranges: bytes -- Server`: SWS -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Length: 1860
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-<svg width="107" height="55" viewBox="0 0 107 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.2">
-<path d="M43.1875 32.8426V20.6551C43.1875 20.1578 43.385 19.6809 43.7367 19.3293C44.0883 18.9776 44.5652 18.7801 45.0625 18.7801H61.9375C62.4348 18.7801 62.9117 18.9776 63.2633 19.3293C63.615 19.6809 63.8125 20.1578 63.8125 20.6551V32.8426H43.1875Z" fill="#8692D0"/>
-<path d="M43.1875 32.8426V20.6551C43.1875 20.1578 43.385 19.6809 43.7367 19.3293C44.0883 18.9776 44.5652 18.7801 45.0... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 9c42816e772443f2 | GET     | 200 |     46.4404ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/customizer/rtl-dark.svg
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 1527 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/customizer/rtl-dark.svg
-RequestHeaders: Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1 -- Sec-Ch-Ua-Mobile: ?0 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Mode: no-cors -- Connection: keep-alive -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: X-Xss-Protection: 1; mode=block -- Accept-Ranges: bytes -- Content-Length: 1527 -- Server`: SWS -- Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/svg+xml -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Referrer-Policy: no-referrer
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-<svg width="106" height="68" viewBox="0 0 106 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="6.10352e-05" width="106" height="68" rx="4" fill="#4B465C" fill-opacity="0.02"/>
-<rect x="74.8896" y="4.2464" width="24.561" height="59.3336" rx="2" fill="#8692D0" fill-opacity="0.08"/>
-<rect x="80.1104" y="17.381" width="14.1209" height="2.15549" rx="1.07775" fill="#8692D0" fill-opacity="0.16"/>
-<rect x="84.1611" y="26.3365" width="10.0694" height="2.15549" rx="1.07775" fill="#8692D0" fill... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 739b31ff1ce9f39f | GET     | 200 |     51.7007ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/customizer/dark-dark.svg
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 4369 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/customizer/dark-dark.svg
-RequestHeaders: Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- Connection: keep-alive -- Sec-Ch-Ua-Platform: "Windows" -- Sec-Ch-Ua-Mobile: ?0 -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- Content-Type: image/svg+xml -- Accept-Ranges: bytes -- Content-Length: 4369 -- Server`: SWS -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-<svg width="107" height="55" viewBox="0 0 107 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.2">
-<path d="M53.7454 22.1082C53.1858 20.8551 52.1872 19.8497 50.9379 19.2816C49.6885 18.7135 48.2745 18.6217 46.9622 19.0236C45.6499 19.4255 44.5298 20.2934 43.8129 21.4637C43.0959 22.634 42.8316 24.0261 43.0697 25.3778C43.2492 26.377 43.6899 27.3109 44.347 28.0848C45.1924 27.5173 46.1881 27.2153 47.2064 27.2176C47.777 27.2147 48.3438 27.3098 48.8822 27.4988C49.2105 26.2806 49.8223 25... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 9e50d376bfa0e8f8 | GET     | 200 |      7.6812ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/backgrounds/hero-bg-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 714786 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/backgrounds/hero-bg-dark.png
-RequestHeaders: Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Language: en-US,en;q=0.9 -- Connection: keep-alive -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Accept-Encoding: gzip, deflate, br, zstd -- Cookie: [MASKED] -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Dnt: 1 -- Sec-Ch-Ua-Mobile: ?0
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Server`: SWS -- Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- X-Xss-Protection: 1; mode=block -- Content-Length: 714786 -- X-Frame-Options: DENY -- Referrer-Policy: no-referrer -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/png -- Accept-Ranges: bytes
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR    W   ±ÍÌ   	pHYs     šœ   sRGB ®Îé   gAMA  ±üa 
-ç·IDATxìıÛnÙ–ÎIQ<ˆ%I1)ÊÔKf¦w/Ú…î&ÚÿeCè«v_2z_ø%´ô}á0¼ü¨[&ªËF×…¿Q6WW§hµ´“Å¤H¦xEŠÉèùÃœcÎ‹R–Ë.;wŒÌĞ<ÏVÄøâßğ®±Ækì3­ª*¬Òòs]˜3¨Ï›:öñıë]8IåÓPy:œŸÆåzR¿¶C!{Ğ~ÎûºëD¿î÷ ó¥5{V=}úÔ?{æÜúúªßØøæ:­yÚ·ûÓ§\öz«¾ÕÚª°Æk·äê„y÷ìY'Îóè{‚¶¬	çu^×ëŞ˜‡ş^o#ì¿.ûw\¾ïj¸.œkÕ¯¯;·¿?ï77÷+ôá:0scÿò¾>íÓëµmTÖõ×
-ûõh¿4Úv[ÿÖº7]–ú×'Sşû©“ªo,V÷«v{Ş£os=œocŞÛ3ØeÎëÜ¼¯*'›ßû)÷uµÙŞtk›h^×½®ÖÜƒšß–4ç¬™±îkú>¬­=ğS¡~Æ×dü{ûz-í‹... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 02bead5e931ac798 | GET     | 200 |     14.1503ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/backgrounds/cta-bg-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 798199 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/backgrounds/cta-bg-dark.png
-RequestHeaders: Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1 -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua-Mobile: ?0 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- Connection: keep-alive
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Strict-Transport-Security: max-age=16070400; includeSubDomains -- Content-Type: image/png -- Content-Length: 798199 -- Server`: SWS -- Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Accept-Ranges: bytes -- X-Content-Type-Options: nosniff
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR  @  [   wÆë   	pHYs  %  %IR$ğ   sRGB ®Îé   gAMA  ±üa -ŒIDATxì½Ûµ,¹-6‘}ÿ5ô§?y dšL2AÈ²Nè¬˜@äÚuúô]º]{gFÄ‹x0Hd”ı¯ÿÛÿşÿâxàxàxàxàxàxàxàxàxàxàxà¿8¼ÿ×sàÿÀ<ğÀ<ğÀ<ğÀ<ğÀ<ğÀ<ğÀ<ğÀ<ğÀ<ğÀ<ğÀ<ğÀmğüı¿ÿxàxàxàxàÿò`fp÷_ïı	ŸÏˆ±óç	Î0øÏ§kjwÌûh÷Œn:áağ6î;W.ãìÜ÷ü±Ã¯yq°ñhƒ{î»·u~;İºoØµämlç­¯yÒ*”şìksşc}øİ¬~t6páîó\”<eI§C—ÙÆÅÑÍAş±áo›í]×,‹ryù=B>oã¢ÿ?ZÍ‹gï²t]šd[8ô]´@g„nã=®íÆ9»ÿuz<ŞÛ$…™Xã¥óÅ°û... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 630e98958faf0b54 | GET     | 200 |     26.5176ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/backgrounds/footer-bg-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 806055 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/backgrounds/footer-bg-dark.png
-RequestHeaders: Dnt: 1 -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Fetch-Dest: image -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Accept-Encoding: gzip, deflate, br, zstd -- Connection: keep-alive
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Server`: SWS -- Content-Security-Policy: frame-ancestors 'none' -- Referrer-Policy: no-referrer -- Content-Type: image/png -- Accept-Ranges: bytes -- Content-Length: 806055 -- Cache-Control: public, max-age=31536000 -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR  @  X   ñRgE LnIDATxì½m–ä¶d/ Oÿë_sÎì`–Ø+/Œ3%÷^€ŠÈª²Ÿß3aW†D‚ø"@CáÿÏÿûÿ…8pàÀü$¸»EÄúÔòWí~ÇıT÷	)×Wñ½Ü^¶}GŞŸäiRú}V”¿Cg’kõá:l¿Ë>mëëÓ–D&Ô®º‹âÑ«vZw•]í‘Î“œÚH{woâèü·Ü‹r,Új³ëŞŒm±§É÷ö`µñ;~é›¶Ê?Vm4¹g9™‡Ê÷ˆÇôÒĞ7zÛWş’¼eûO„c=°ï|K¿ÓyÕÇ¤>éÿ*ËlóÇ!m®2•í™îÒô½=.šI;kcˆ&Íıã­Í^­{æ½£‡º¿‡¿ÛÌlüLó7ÕCÑ¤×{ríè³_µ­¾|sÌy¥® |O—ßOŞTş^N^;|W¦§¶bãg%Î:ú\XÚ¾ãM²hxÃŸbe)¾s™mì÷ıUûnü»Øàş«ø×XÛ)ÓšÆŞ¼’©ızüï¸¾GãÛ¼ş˜G×./Ô\_-ƒl_öÕÆL×¸ncÁd<’õË÷aêÿÄ†ßi,vë¶ˆ:Ñè¾... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 316e78c9569019e0 | GET     | 200 |      8.7759ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/branding/logo_4-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 3611 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/branding/logo_4-dark.png
-RequestHeaders: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Connection: keep-alive -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- Sec-Ch-Ua-Platform: "Windows" -- Dnt: 1
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: X-Xss-Protection: 1; mode=block -- Content-Length: 3611 -- Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Referrer-Policy: no-referrer -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/png -- Accept-Ranges: bytes -- Server`: SWS -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR   Õ   M   1u!­   	pHYs  %  %IR$ğ   sRGB ®Îé   gAMA  ±üa  °IDATxí]RGÇ3k!??î†Œ›xt´±aÁÚB'œ@èÂ':Ñ	„lƒ‹fØx|@±û¸£'˜îÚÌî`º³zú‹‰üE AÑS]ß™ÿ* EQEQEQEQEQEQEQEQEQEQEQEQEQEQEQå³A¹¶¼î¼õ’aæ \[š \[¬m¾M†İFØ ÿ~åÚ¢ŠØİ{¿ó÷İcğ¤Ù ŠR7œ½Ã@ûÌZëñZ\¶ÎËÎÛP”ÜøN…ˆ„Pï4¢”àÆw*Ú¹xR(:ÂeÚ© ºR ±r¸¢LB—Ø\£ûçÃ,YØ¾[œ}ŠR‚oı»¿ğ—>ı7·ûæpz˜gÓ]^üë;P”’¨I=fiñë}úo¥"º§R”šÑN¥(5s)Ë¿HÃÖô¢Ÿ†ıûÕ
-ì˜½0Sgœup¦Õ‹Ò œ.:m£÷^Ô{’åÍù:†“~ÄË¨ÓñvÈ:Êaï"... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 9ba8b5ce97c5786c | GET     | 200 |      4.0152ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/branding/logo_2-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 1979 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/branding/logo_2-dark.png
-RequestHeaders: Sec-Ch-Ua-Platform: "Windows" -- Dnt: 1 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Connection: keep-alive
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- Content-Type: image/png -- Accept-Ranges: bytes -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Length: 1979 -- Server`: SWS -- Cache-Control: public, max-age=31536000 -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR   Õ   M   1u!­   	pHYs  %  %IR$ğ   sRGB ®Îé   gAMA  ±üa  PIDATxíİARGà×#Ø…mRÈ'Yg#‘1Eâœ ùvNûÁ'>q¹€•-y‘½sãr–VVÆ ©óŞhÆ¢»g$4ÓôU.	FB–4oºûM¿"                           €)(*Ğ³ÖÉê
-UîÙ¶o5Ö÷)ÃqëmÓ¼Eu¶kmÛó^´NëUÒ5º†3êüÚ¸İÿ}Öûšåk	ûg—ı³:nı[#º¨Oú¼¼ZoïñN¶jÚ6Íç«‰ºwëäpØz·Ñ`Ã¼õúï)K•
-´Â¦ÖêOÛvŞñ;;oĞñüvòÏ¨JjWkjÒ5,-/·øæÊ—õ¾fùZb¯Õ&Ûg5¸¨k5İgœ‡"õ€¿‡ºiÛ2UOøæõøï%Ğ^îò]ãóx¿i¸ö¥é™&U3oTM*XDUHÿB JÙƒÙµßs…¬=İ¹Ûøö)ÌkPñ¸)M=Œ9£ŞÛ6ÙoìÏT»Ö-JíS	¼•ôµ«Tİ €1ÉX«mÚ&ûÍ‹¸... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 8fa472e36a8c89c5 | GET     | 200 |      8.1456ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/branding/logo_3-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 4498 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/branding/logo_3-dark.png
-RequestHeaders: Dnt: 1 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Connection: keep-alive -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Fetch-Site: same-origin -- Accept-Encoding: gzip, deflate, br, zstd -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140"
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Referrer-Policy: no-referrer -- Accept-Ranges: bytes -- Content-Length: 4498 -- Server`: SWS -- Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/png -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR   Ô   M   Ş·J“   	pHYs  %  %IR$ğ   sRGB ®Îé   gAMA  ±üa  'IDATxí]]r×>çj„œ'+I!<Zâ9UÑäÁ†8‚ V`±Ä
-,¯ ¼ 1‚JfHU+`ŒHòhåÉHšé“snw£¾ı3š-ê~U6šÛ·oŸÿŸÛ ­ Bñhğvù7ªs›Z#€|òMeçÏ_í'÷!“RÃÃäøÕ­şêN	Y£IgK)úJÖ”Ú»¾~ñG˜şÛE5Ş –	èÍõş¥Ç0ìŞİd‚Û¿õœ^Íjì¶ uµûâı }o'‚û7®­lÃ9&xêx×ÌohD¨nİè_Üƒ)ñtğ~‰üç²12ÀŞûÌ°0%¾ØßF„{æÑÓÍY`ü€ŸaÏı–F‡8éÏBÈ´
-Zy˜>fÈCÖßŸ|‹ß»Ì$À.RòH¦€ÖfÒ#óõ–`áL	?3é‘»,ÑÓÎ™h... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: cafbf4fb97e163f8 | GET     | 200 |      4.7966ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/branding/logo_1-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 3836 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/branding/logo_1-dark.png
-RequestHeaders: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Connection: keep-alive -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1 -- Sec-Ch-Ua-Mobile: ?0
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Referrer-Policy: no-referrer -- Content-Type: image/png -- Content-Length: 3836 -- Server`: SWS -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Accept-Ranges: bytes
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR   Õ   M   1u!­   	pHYs  %  %IR$ğ   sRGB ®Îé   gAMA  ±üa  ‘IDATxíßRÛÜÀweéÕG.Û	Ä<AÈu/b'Ni?ò!Oò'y‚'_û3!v.z¾'ÀL{ë^5€­í®$I>²u$ÙÈd3bYÿ|öìÙ=»+ EQEQEQEQEQEQEQEQ%
-BIøØ<]üS}áºPGÀUÙF@şÓ÷/Ü«ÏÏ+mP”’sãB%Â4ïV·á\LŞ“ÚDøaıÉÒ(J‰¹Q¡:jş§FÔk²ÀÔÒC '—Øm°Öê€¢”ª,ÕGK)3Ü&aq¶ˆ*µìŞ¥n÷!½dÙo‡÷ã‘`u*Û (%äF4ÕÁñùÛP¡p‘vŸ5–_'Ó<ßF‚ğ¶Bã¯¥(J‰˜ºPùÓ¾îix!ì¬7–ŞŒ;vX°¨}½‡:TÊÄLÿz±iµÓ”ì×ºŞ‚µ;P}ŠR"¦*T¾–¢Íğ6¶£¶ÀòEĞ%Ø·<(JI˜²¦Šk)h­?^ş,l¨Vÿ3Ï_U[)e... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 478fd96d6d12c718 | GET     | 200 |      8.7058ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/landing-page/hero-elements-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 205810 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/landing-page/hero-elements-dark.png
-RequestHeaders: Sec-Ch-Ua-Mobile: ?0 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Connection: keep-alive -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Referrer-Policy: no-referrer -- Accept-Ranges: bytes -- Content-Length: 205810 -- Server`: SWS -- Content-Security-Policy: frame-ancestors 'none' -- X-Content-Type-Options: nosniff -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/png -- Cache-Control: public, max-age=31536000 -- X-Frame-Options: DENY -- Strict-Transport-Security: max-age=16070400; includeSubDomains
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR  ‘  ú   áTe   	pHYs  œ  œ&Í:4   sRGB ®Îé   gAMA  ±üa #‡IDATxìİ€çyßÿgv÷*® ‡ ÀQ›DJV±ªe‰²ŠíÈvlYãKr‰'qlÉ‰ã8‰ã*[n²º‹º%J²D5vIIT€Ã¡ÜáÚÎÿ}Ş{ß¹wŞÙÛ#¬ßO²ÜİÙÙ™ÙÙÛü›gW                                                                                                                                                                                                                                                                                                ... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: d3d422699e0f7a9f | GET     | 200 |      3.0463ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/icons/github-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 557 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/icons/github-dark.png
-RequestHeaders: Cookie: [MASKED] -- Connection: keep-alive -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Sec-Ch-Ua-Platform: "Windows" -- Dnt: 1 -- Sec-Ch-Ua-Mobile: ?0 -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Accept-Ranges: bytes -- Content-Length: 557 -- Server`: SWS -- Cache-Control: public, max-age=31536000 -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Referrer-Policy: no-referrer -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/png -- Content-Security-Policy: frame-ancestors 'none' -- X-Xss-Protection: 1; mode=block
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR         ;mGú   	pHYs     šœ   sRGB ®Îé   gAMA  ±üa  ÂIDATx•SKRÂ@íSêN]ZÅ÷âŒ¬,Ê 'N 9xƒxY(¬0°pŸğÑÒ¥qE“´=Á„„BÀŞôôLÏë~=oVØƒ1<Ü%@€eƒk^©ÙÑª|\¾¼ë)uD¸æğp9™ô¸Ú2XÒ5>2D®T_gyR>İŠü B¬–ÔÄ½\‹ù–{ó`Î“HD5DˆZL­)×ÄŞFçH Ôıê|&éËµ2ïÂ©F«ó)¾ªƒnoòŒÌäğåì4îÄ©	Ü	Ì8
-)Ñ¼+Iç,Ìîİ&K5Ù—´}JÜÍÓË{ZÄ2v÷>ac6VÌì£8oÀF×ƒ,8
-PÊ› äC°ËqQÍš	Û‘
-ÍÇŞ¸¾`®§Ğú~ñ)Îì-"Ô=Â†@qÛy;ƒ·Jôr×x5X
-Ã˜ u„ÿÅÊ©!RuGĞI1š¶÷=r/Ôãïe¢]±ôBT±5å+R¾;
-´P8Ùüi4š	W"±PRcJ¸Ğ$R†{¤œ¬... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 3e81b7ae20837f0c | GET     | 200 |     60.7026ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/landing-page/hero-dashboard-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 519606 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/landing-page/hero-dashboard-dark.png
-RequestHeaders: Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Sec-Ch-Ua-Platform: "Windows" -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1 -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Connection: keep-alive -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Accept-Encoding: gzip, deflate, br, zstd
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: X-Content-Type-Options: nosniff -- Accept-Ranges: bytes -- Content-Length: 519606 -- Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/png -- Server`: SWS
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR  ‘  ú   áTe   	pHYs  œ  œ&Í:4   sRGB ®Îé   gAMA  ±üa íKIDATxìıİVG¶&
-ÇÄ.Ê€³0¦6^N!ìV“½¤µ”ZŸô}ªK}Ô}ˆ/¡nƒ—›èƒºs¸ú¨$JêOZJuK[ÉÖ*[—ÙÆ˜lÀ•å„bîùÄˆ'â‰1c¾™®ß^ExsÎÿcÎOŒ1„NW4c†·ø3ŠÛ aF<'÷1…á®_¿>¬V«Ñû1ª†E’’Ÿ¦;2¿)­áÚµk£dŸËéÜ…†”d˜ÇE¼0åFx¥ç˜×j…k¼ñœÊ0V5`êğ)LX˜®¹ù{	S¹¡!¥™îsû­Ì!è•÷òœÛÚû{¢¿‹Wå…ìW¼AmWAÊÀ´åg%\©S
-=ıÙÛ»2Ü¸qk,iµÊ6×
-Ë~cV—¹ŸwÃïêU¤ÿñXê¦åf,]ÖIóšHú©¸]½zõØöööX‡Ïı6Öã­¤_úİÂ•ü«ôİó*»×é…fß£M··Ñ¦:.µŒußºòËXUhK¤Ë|ËµòØ¿:I×ıÚıåÛSı}™\Ûäv-åbB«0¯3ª?|ù... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: dbbf22c1dcfdca5b | GET     | 200 |     10.5344ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/icons/facebook-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 299 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/icons/facebook-dark.png
-RequestHeaders: Dnt: 1 -- Sec-Fetch-Site: same-origin -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua-Mobile: ?0 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Connection: keep-alive -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140"
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/png -- Content-Length: 299 -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Accept-Ranges: bytes -- Server`: SWS -- Cache-Control: public, max-age=31536000
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR         àÖíØ   	pHYs     šœ   sRGB ®Îé   gAMA  ±üa   ÀIDATxÕQ»‚@İwÜ¨¡±‘%˜H¬	%Ø‰v h’0F-h‚Z „8¸ë¡0änp³÷>wûfA­:F·ñˆ¯AÃ¶áù¾°orPµjC¥Ëã=\™Z!¾"ua*İåÂ@ûËù$ùöaôœ9$ò­À¸=gLHµ"ÙÒm¿ÀÄI9ûŠzJLLmrò»»-Æ`’òW4)(ªù¡3]UCö~ñ7‚j:Š­óWÙşaƒFQ]¥êÄ    IEND®B`‚
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: c22f1e42a787f26c | GET     | 200 |      3.5253ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/icons/instagram-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 477 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/icons/instagram-dark.png
-RequestHeaders: Sec-Ch-Ua-Platform: "Windows" -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Cookie: [MASKED] -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9 -- Connection: keep-alive
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Server`: SWS -- Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Referrer-Policy: no-referrer -- Content-Type: image/png -- Accept-Ranges: bytes -- Content-Length: 477
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR         óÿa   	pHYs     šœ   sRGB ®Îé   gAMA  ±üa  rIDATxSMNÂ@şŞˆnÜÔ=$íè	 ]ˆ‰@=x¹Ş <n€•´7 o@èÂ¥]b}¾W ¡?ñ%“é{oæû¾yCØÆğ=êƒ3ê’Z(˜364h5ª/Z <‰¦òQÇq¶üšGÃ`qGLı?‚b9SÛéé„®ğÃáõ4ß€v)uZ~Õ¡M"·Y‘Ù.A†Ô¹ô«šŒƒO›yÕGÂ×ã`AÌ¼Å°m7Œñ¦Ú˜øB÷GÁ¢·ÄZÇ,ÎÈ%›F“ˆ÷ñß´rÎqj­˜§™}‰Ül0‚ıºÉøÆsæk à!¹½òjaÆ“üÿ‰‚„5ÁÓ9G5iî™H£œ´>)U¢Š#÷ô¬Cô{*¯e¾PlİP@m¯:ÓdDÍ„Ñ+v+Ïu¥ÚDyì;ô6B#íâpX¿€µ3écjÌQIœŸµıš›š(]æJ{Ş+%äî9úOüAWÁZø& •Y¥Âñ’    IEND®B`‚
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: 0af345fdd9165869 | GET     | 200 |      2.6148ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/icons/twitter-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 518 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/icons/twitter-dark.png
-RequestHeaders: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Sec-Fetch-Site: same-origin -- Accept-Encoding: gzip, deflate, br, zstd -- Cookie: [MASKED] -- Connection: keep-alive -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Accept-Language: en-US,en;q=0.9 -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Dnt: 1
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Server`: SWS -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- Content-Type: image/png -- Accept-Ranges: bytes -- Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Length: 518
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR         2†ç€   	pHYs     šœ   sRGB ®Îé   gAMA  ±üa  ›IDATxTANBAmG.Ùš@‚'È×`"œ@9Ü@8p<,Ü pğ|ÀÄ¥,!òç9Bò?ù|„·˜L§íë´ÓÓxébgt”_IìfœDoÓ†eiw¿“š¼XÎ‰£ß:“f®šmÌwÜ#FšS¤è'ç$ê–ô½;}Ô@	¬
-Ûˆ%0°EÄì1SeNKW‰™“^;ãR¸÷DÑHi¢«‚s±"%ñZ£XU[“Q«ÿuôA2’h˜Ô+²µéKñOq2qœ™”† 	*¿ƒ8½NôíÅd9U'wÄºb(MàÒÎ›ú`Iy©yåx8¼üÎ•×”£ÃÑ34Êó‘#J:Ì¿¨Ö›Œsîšg3ÑàÒ^€›uâÏ¡¤­¹/ıJû€Uyó(@z{¯(ş·¾šQÛ¼¥fÜîNÓT5ÊmLÍHÃt¼&±‚¢KhÊÛŞŒ ˜JòqlÓ[#ÈøS^$ÙLFq¡¼ºÌw„]0}ù‰¿—&µ”Ï`fJ1”æö÷bş Ô¥... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:06:59 | RequestID: c5778c810ff88803 | GET     | 200 |      4.8403ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /assets/img/front-pages/branding/logo_5-dark.png
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 5043 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: filepath=/img/front-pages/branding/logo_5-dark.png
-RequestHeaders: Cookie: [MASKED] -- Connection: keep-alive -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: image -- Sec-Ch-Ua-Platform: "Windows" -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Dnt: 1 -- Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Cache-Control: public, max-age=31536000 -- Content-Security-Policy: frame-ancestors 'none' -- X-Content-Type-Options: nosniff -- Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- Last-Modified: Mon, 07 Jul 2025 03:21:35 GMT -- Content-Type: image/png -- X-Frame-Options: DENY -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Accept-Ranges: bytes -- Content-Length: 5043 -- Server`: SWS
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-‰PNG
-
-   IHDR   Õ   M   1u!­   	pHYs  %  %IR$ğ   sRGB ®Îé   gAMA  ±üa  HIDATxí]KrÉÍl@âxenmeè‚Ö^¤&r<C€ä	†:È:©H%‡#8 ^: OØ[ÌÊCètfu7Ğè®¬ş iåzŒ êúeU~^VxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxüBğ_Ä«şÛ@›ÿ¨“¾N cÿ“á£õ»cğğh2ïZ]ì«òYæA0ÚZÿr7€ªçı·«¿
-Ú;a=nIâFÔhH@Ã ğÙ×ëkğğ¨Wı=Ÿ"Ü}Ş	éEÓsíF„*j<¡H–  l>øòxx”À«ş¿: ““ÊsáÅ%L³¦4‚%Ñ¨PIƒ&G¼+mC³^âäQöø|qvş~ ŒFdƒGËª…	ÕòrÃØ]-Ü÷»–‡ñü;É\Ñi€0˜R{&(-œt‰‚mVıv³åÈ<Äõe«¡:;ÿp€O
-n±şàˆ ... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:11:19 | RequestID: 6dfb2b287b32c8b7 | GET     | 200 |      6.2152ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /welcome
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 63902 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: NONE
-RequestHeaders: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 -- Cache-Control: max-age=0 -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Sec-Fetch-Mode: navigate -- Accept-Encoding: gzip, deflate, br, zstd -- Connection: keep-alive -- Sec-Ch-Ua-Platform: "Windows" -- Dnt: 1 -- Sec-Fetch-User: ?1 -- Sec-Fetch-Dest: document -- Sec-Fetch-Site: same-origin -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Sec-Ch-Ua-Mobile: ?0 -- Upgrade-Insecure-Requests: 1 -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: Cache-Control: no-store -- Content-Security-Policy: frame-ancestors 'none' -- X-Xss-Protection: 1; mode=block -- Content-Type: text/html; charset=utf-8 -- Server`: SWS -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Referrer-Policy: no-referrer
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-<!DOCTYPE html>
-
-<html
-  lang="en"
-  class="light-style layout-navbar-fixed layout-wide"
-  dir="ltr"
-  data-theme="theme-default"
-  data-assets-path="../assets/"
-  data-template="front-pages">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-
-    <title>PLTMH - Lembang Palesan</title>
-
-    <meta name="description" content="" />
-
-    
-    <link rel="icon" type="ima... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:11:28 | RequestID: 29df8d18156ebfa7 | GET     | 200 |      2.4506ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /welcome
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 63902 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: NONE
-RequestHeaders: Accept-Encoding: gzip, deflate, br, zstd -- Connection: keep-alive -- Dnt: 1 -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 -- Sec-Fetch-Site: same-origin -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Ch-Ua-Platform: "Windows" -- Upgrade-Insecure-Requests: 1 -- Sec-Fetch-Mode: navigate -- Sec-Fetch-User: ?1 -- Sec-Fetch-Dest: document -- Cache-Control: max-age=0
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: X-Xss-Protection: 1; mode=block -- Server`: SWS -- Cache-Control: no-store -- Referrer-Policy: no-referrer -- Content-Type: text/html; charset=utf-8 -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-<!DOCTYPE html>
-
-<html
-  lang="en"
-  class="light-style layout-navbar-fixed layout-wide"
-  dir="ltr"
-  data-theme="theme-default"
-  data-assets-path="../assets/"
-  data-template="front-pages">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-
-    <title>PLTMH - Lembang Palesan</title>
-
-    <meta name="description" content="" />
-
-    
-    <link rel="icon" type="ima... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:11:32 | RequestID: 4bf3754516c28ecc | GET     | 200 |      3.9004ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /welcome
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 63902 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: NONE
-RequestHeaders: Sec-Ch-Ua-Platform: "Windows" -- Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 -- Connection: keep-alive -- Upgrade-Insecure-Requests: 1 -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Fetch-User: ?1 -- Cache-Control: max-age=0 -- Sec-Ch-Ua-Mobile: ?0 -- Sec-Fetch-Mode: navigate -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED] -- Dnt: 1 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Dest: document -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140"
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED]
-ResponseHeaders: X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Referrer-Policy: no-referrer -- Server`: SWS -- X-Frame-Options: DENY -- X-Xss-Protection: 1; mode=block -- Content-Type: text/html; charset=utf-8 -- Cache-Control: no-store -- Content-Security-Policy: frame-ancestors 'none'
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-<!DOCTYPE html>
-
-<html
-  lang="en"
-  class="light-style layout-navbar-fixed layout-wide"
-  dir="ltr"
-  data-theme="theme-default"
-  data-assets-path="../assets/"
-  data-template="front-pages">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-
-    <title>PLTMH - Lembang Palesan</title>
-
-    <meta name="description" content="" />
-
-    
-    <link rel="icon" type="ima... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:13:46 | RequestID: de07f8c186c6cf6d | GET     | 200 |      3.4253ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /welcome
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 63255 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: NONE
-RequestHeaders: Connection: keep-alive -- Sec-Ch-Ua: "Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140" -- Sec-Ch-Ua-Platform: "Windows" -- Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 -- Cookie: [MASKED] -- Dnt: 1 -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Dest: document -- Sec-Ch-Ua-Mobile: ?0 -- Upgrade-Insecure-Requests: 1 -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9 -- Cache-Control: max-age=0 -- Sec-Fetch-Mode: navigate -- Sec-Fetch-User: ?1
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED] style=light
-ResponseHeaders: Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- X-Xss-Protection: 1; mode=block -- Content-Type: text/html; charset=utf-8 -- Referrer-Policy: no-referrer -- Server`: SWS -- Cache-Control: no-store
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-<!DOCTYPE html>
-
-<html
-  lang="en"
-  class="light-style layout-navbar-fixed layout-wide"
-  dir="ltr"
-  data-theme="theme-default"
-  data-assets-path="../assets/"
-  data-template="front-pages">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-
-    <title>PLTMH - Lembang Palesan</title>
-
-    <meta name="description" content="" />
-
-    
-    <link rel="icon" type="ima... [TRUNCATED]
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[LOG] 2025/09/27 - 20:13:46 | RequestID: 1429e3253fcce324 | GET     | 404 |      2.1449ms |             ::1 | http://localhost:2709 | HTTP/1.1 | Windows 10 | Edge    140.0.0.0 | UNKNOWN | /.well-known/appspecific/com.chrome.devtools.json
-SessionID: xXEdAwk8aKnzG82lof3DzGvrnRjrEQxrBZbx64lw
-Content-Type:  | ReqSize: 0 bytes | RespSize: 0 bytes
-Referrer: NONE
-UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
-Query: NONE
-RouteParams: NONE
-RequestHeaders: Connection: keep-alive -- Sec-Fetch-Site: same-origin -- Sec-Fetch-Mode: no-cors -- Sec-Fetch-Dest: empty -- User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0 -- Accept-Encoding: gzip, deflate, br, zstd -- Accept-Language: en-US,en;q=0.9 -- Cookie: [MASKED]
-Cookies: auth=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4Kb random=MitViZPCGAJ69sBYLBpnK2uRSTKcZvMLwytt9uNMB3SEUwtYTn4KbZl0OfcL token=lSyQrDWhbm9+cptZRM51T0WXkgIrdvZDGkwPJUFo4uh5L5/1HXyF4RuR+ZOHFj3guej7SXLxCktUxi6QXzw7q2FLPIGFmRnWuhaV6nV+U2qYSNGZVOL0wNjQN6Fc7SBYZ33/xcFYWXEpMiVNXZz/GzM+gCv1pz/rszbPCNoBGFRm2jtOvRuyZyxOj5a9d6yz/hVrgoBYBLTnKJCB3UUXxYNMV0NLpwSOqUSnFa0n5U2mNoSm5FP6/ufxD9uBxrn695jqINT8JbLeTGZvFDhcFIFnTSrIRIwrTxSfRRqtBvmnSBH1XgTOcX0DCT5qhf5R4RkLgzkwsizBkqqlNJ9LQI6/j40DxeHvnmFNqd5KQyPa/H4Buo3qImWaPIvXkfWkmxLHoYWkdnhNHvBbD28U6sYFu0KRpyUrcm6bEmCg3VjIKOVqV6Rx++9wIOjaORWOjKvC3JQI+jb0FrNA9SxMXQWgBGByDRqvqIIQ7UkuCzSg8o/808uKmM9/yebb07diTVWrBmYu05/33rS2vSwzOwwYMVVAlczJOExNHmYXgIP5nd57w5HQBb5A46nQz9/Db2nUGQcP39lVn6PczFBeh/e85YudsrikegQ9EC3x3yAMiNHvxsMqk+6prLIT2NuWhvE7M0m4ZFcXlN4lEisvuhumdjlsm3VJ0BDKmV2daiarNDl50LSbt95Y8h9cKP+J9QqoLacWLrS+kZn6KRfUhJLPy2+NFt/VoK0QDsQgGZ5IfT2FVZ3jjc8wJX/mi64ok54Q1qqAM3j1ln1+1sYHu07Dvs66sGIP2Mlgx0E5Oi84VnnTvwN70MYH7qdaZ/PWf9pb8z/K0A0yLjsvUX69XFWpDD4CmTWaOnDEzmmBh+FeXMNhODO79gnelb7Ky9Y8mCTrkm4imcMiH2dheVFQp+v36ZIv4d7l+RSecrpNu6Tb0F1a80OvVJUWjqpLZoHxUK2ZKUDPYr3AW87+bB2fImm3ETp+voEn2Suyafbo0YmDGZ/146LhIGnK3xIu0hFP48FVWgqc7MkQ7yBgV0RGsg+eB57VU4rWUJzyrmRrbrPoGyrnx2lYUIQ5LwOv1NZuEWhb+pWZstOm8F/Mx1wmV7vlCkRrkT+nF01cLdbndwmBK424twYQ8u3GvoMxmG9Uzca7KqGEjMbp76HM08gBNA== credentials=[MASKED] style=light
-ResponseHeaders: Cache-Control: no-store -- Content-Security-Policy: frame-ancestors 'none' -- X-Frame-Options: DENY -- X-Content-Type-Options: nosniff -- Strict-Transport-Security: max-age=16070400; includeSubDomains -- Referrer-Policy: no-referrer -- X-Xss-Protection: 1; mode=block -- Server`: SWS
-Errors: NONE
-RequestBody:
-
-ResponseBody:
-EMPTY
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
