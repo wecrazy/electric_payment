@@ -1,0 +1,42 @@
+FROM golang:1.25.0 AS builder
+LABEL maintainer="Wecrazy <https://github.com/wecrazy>"
+
+WORKDIR /app
+
+COPY go.mod go.sum ./
+
+# Install build dependencies for CGO
+RUN apt-get update && apt-get install -y libsqlite3-dev libasound2-dev pkg-config && rm -rf /var/lib/apt/lists/*
+
+RUN go mod download
+
+COPY . .
+
+RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -o electric_payment
+
+FROM debian:bookworm-slim
+
+RUN apt-get update && apt-get install -y ca-certificates mariadb-server redis-server tzdata && rm -rf /var/lib/apt/lists/*
+
+ENV TZ=Asia/Makassar
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+WORKDIR /app
+
+COPY --from=builder /app/electric_payment .
+
+# Copy MariaDB config for binary logging
+COPY mariadb-binlog.cnf /etc/mysql/mariadb.conf.d/
+
+# Make scripts executable
+RUN chmod +x start.sh ./electric_payment
+
+COPY config ./config
+COPY switch-config.sh ./switch-config.sh
+
+# Make switch-config.sh executable and switch to production mode
+RUN chmod +x ./switch-config.sh && ./switch-config.sh prod
+
+EXPOSE 2709
+
+ENTRYPOINT ["./start.sh"]
