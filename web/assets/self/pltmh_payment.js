@@ -3,14 +3,164 @@ $(document).ready(function () {
     let selectedAmount = 0;
     let selectedPaymentMethod = '';
     let customerData = null;
+    let prepaidBlocked = false;
 
     // Token options from config  
     const tokenOptions = TokenOptions;
     console.log('Token Options:', tokenOptions);
 
+    /**
+     * Initialize payment type selection handlers
+     * Sets up vanilla JS handlers for prepaid blocking and postpaid restrictions
+     * This runs before jQuery handlers to intercept prepaid clicks
+     */
+    initializePaymentTypeHandlers();
+
+    /**
+     * Initialize payment method restrictions observer
+     * Sets up MutationObserver to handle payment method availability based on payment type
+     */
+    initializePaymentMethodRestrictions();
+
+    /**
+     * Handles prepaid blocking and postpaid selection
+     * Prevents prepaid option from proceeding and shows unavailable message
+     * 
+     * @private
+     */
+    function initializePaymentTypeHandlers() {
+        document.querySelectorAll('.payment-type-card').forEach(card => {
+            card.addEventListener('click', function(event) {
+                const type = this.dataset.type;
+                if (type === 'prepaid') {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    event.stopImmediatePropagation();
+                    prepaidBlocked = true;
+                    window.prepaidBlocked = true;
+                    
+                    Swal.fire({
+                        title: 'Fitur Belum Tersedia',
+                        text: 'Pembelian token listrik secara online sedang dalam pengembangan. Fitur ini akan segera hadir untuk memudahkan Anda 😃',
+                        icon: 'info',
+                        confirmButtonText: 'Mengerti'
+                    });
+                    return false;
+                }
+                prepaidBlocked = false;
+                window.prepaidBlocked = false;
+            });
+        });
+    }
+
+    /**
+     * Initializes MutationObserver to restrict payment methods based on payment type
+     * For postpaid: Only QR code is available, bank and e-wallet are disabled
+     * For prepaid: All methods would be available (currently blocked)
+     * 
+     * @private
+     */
+    function initializePaymentMethodRestrictions() {
+        const paymentMethodSection = document.getElementById('paymentMethodSection');
+        if (!paymentMethodSection) return;
+        
+        const methodObserver = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                    if (!paymentMethodSection.classList.contains('hidden') && selectedPaymentType === 'postpaid') {
+                        disablePaymentMethods(['bank', 'ewallet']);
+                        showQROnlyNotice();
+                    } else {
+                        enableAllPaymentMethods();
+                        removeQROnlyNotice();
+                    }
+                }
+            });
+        });
+        methodObserver.observe(paymentMethodSection, { attributes: true });
+    }
+
+    /**
+     * Disables specific payment methods by adding visual indicators and preventing interaction
+     * 
+     * @param {string[]} methods - Array of payment method types to disable (e.g., ['bank', 'ewallet'])
+     * @private
+     */
+    function disablePaymentMethods(methods) {
+        methods.forEach(method => {
+            const selector = `.payment-method-card[data-method="${method}"]`;
+            document.querySelectorAll(selector).forEach(card => {
+                card.style.opacity = '0.5';
+                card.style.cursor = 'not-allowed';
+                card.style.pointerEvents = 'none';
+                
+                // Add disabled overlay with blur effect
+                if (!card.querySelector('.disabled-overlay')) {
+                    const overlay = document.createElement('div');
+                    overlay.className = 'disabled-overlay';
+                    overlay.style.cssText = 'position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.85); backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px); border-radius: 0.375rem; display: flex; align-items: center; justify-content: center;';
+                    overlay.innerHTML = '<small class="text-dark fw-bold" style="font-size: 0.85rem; text-shadow: 0 1px 2px rgba(255,255,255,0.8);">Tidak Tersedia</small>';
+                    card.style.position = 'relative';
+                    card.appendChild(overlay);
+                }
+            });
+        });
+    }
+
+    /**
+     * Enables all payment methods by removing disabled state and overlays
+     * 
+     * @private
+     */
+    function enableAllPaymentMethods() {
+        document.querySelectorAll('.payment-method-card').forEach(card => {
+            card.style.opacity = '';
+            card.style.cursor = '';
+            card.style.pointerEvents = '';
+            const overlay = card.querySelector('.disabled-overlay');
+            if (overlay) overlay.remove();
+        });
+    }
+
+    /**
+     * Shows informational notice that only QR code payment is available
+     * 
+     * @private
+     */
+    function showQROnlyNotice() {
+        const paymentMethodSection = document.getElementById('paymentMethodSection');
+        if (!document.getElementById('qr-only-notice')) {
+            const notice = document.createElement('div');
+            notice.id = 'qr-only-notice';
+            notice.className = 'alert alert-info mt-3';
+            notice.innerHTML = '<i class="bx bx-info-circle me-2"></i>Untuk pembayaran tagihan listrik, saat ini hanya metode <strong>Scan QR Code</strong> yang tersedia.';
+            paymentMethodSection.appendChild(notice);
+        }
+    }
+
+    /**
+     * Removes the QR-only notice from the payment method section
+     * 
+     * @private
+     */
+    function removeQROnlyNotice() {
+        const notice = document.getElementById('qr-only-notice');
+        if (notice) notice.remove();
+    }
+
     // Payment type selection
     $('.payment-type-card').on('click', function () {
+        // Check if prepaid is blocked
+        if (window.prepaidBlocked || prepaidBlocked) {
+            return;
+        }
+
         selectedPaymentType = $(this).data('type');
+
+        // Block prepaid from proceeding
+        if (selectedPaymentType === 'prepaid') {
+            return;
+        }
 
         // Remove active class from all cards
         $('.payment-option').removeClass('border-primary bg-light').addClass('border');
@@ -95,10 +245,45 @@ $(document).ready(function () {
 
                     showPaymentMethods();
                 } else {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Data Tidak Ditemukan',
-                        html: `
+                    // Check if customer is disconnected
+                    if (data.is_disconnected) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Sambungan Terputus',
+                            html: `
+                                <p>${data.message}</p>
+                                <div class="mt-3">
+                                    <strong>Hubungi Customer Service:</strong><br>
+                                    <a href="https://wa.me/${data.support_contact.replace(/\+/g, '')}" 
+                                       class="btn btn-success mt-2" target="_blank">
+                                        <i class='bx bxl-whatsapp'></i> ${data.support_contact}
+                                    </a>
+                                </div>
+                            `,
+                            confirmButtonText: 'OK',
+                            confirmButtonColor: '#d33',
+                            footer: '<small>Layanan akan diaktifkan kembali setelah menghubungi CS</small>'
+                        });
+                    } else if (data.no_bill) {
+                        // Customer has no outstanding bill
+                        Swal.fire({
+                            icon: 'info',
+                            title: 'Tidak Ada Tagihan',
+                            html: `
+                                <p>${data.message}</p>
+                                <div class="mt-3">
+                                    <i class="bx bx-check-circle" style="font-size: 48px; color: #28a745;"></i>
+                                    <p class="mt-2"><strong>Status Pembayaran: Lunas</strong></p>
+                                </div>
+                            `,
+                            confirmButtonText: 'OK',
+                            confirmButtonColor: '#28a745'
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Data Tidak Ditemukan',
+                            html: `
                                 <p>Nomor meter atau ID pelanggan <strong>${customerInput}</strong> tidak terdaftar dalam sistem kami.</p>
                                 <br>
                                 <p>Silakan:</p>
@@ -107,9 +292,10 @@ $(document).ready(function () {
                                     <li>Hubungi customer service jika masih bermasalah</li>
                                 </ul>
                             `,
-                        confirmButtonText: 'OK',
-                        footer: '<a href="#landingContact">Hubungi Customer Service</a>'
-                    });
+                            confirmButtonText: 'OK',
+                            footer: '<a href="#landingContact">Hubungi Customer Service</a>'
+                        });
+                    }
                 }
             },
             error: function (xhr, status, error) {
@@ -227,7 +413,7 @@ $(document).ready(function () {
     function updatePaymentSummary() {
         if (!selectedAmount || !selectedPaymentMethod) return;
 
-        const adminFee = 2500; // Admin fee
+        let adminFee = window.AdminFee; // Admin fee
         const total = selectedAmount + adminFee;
 
         const formatCurrency = new Intl.NumberFormat('id-ID', {
@@ -282,6 +468,13 @@ $(document).ready(function () {
             return;
         }
 
+        console.log('Processing payment with data:', {
+            customer_id: customerData.customer_id,
+            payment_type: selectedPaymentType,
+            amount: selectedAmount,
+            payment_method: selectedPaymentMethod
+        });
+
         Swal.fire({
             icon: 'info',
             title: 'Memproses Pembayaran',
@@ -304,45 +497,107 @@ $(document).ready(function () {
                 payment_method: selectedPaymentMethod
             }),
             success: function (data) {
+                console.log('Payment response:', data);
+                
                 if (data.success) {
-                    let successMessage = `<p>Pembayaran ${selectedPaymentType === 'prepaid' ? 'token' : 'tagihan'} listrik Anda telah berhasil diproses.</p>`;
-                    
-                    if (selectedPaymentType === 'prepaid') {
-                        successMessage += `<p><strong>Token Anda: ${data.data.token || 'Token akan dikirimkan'}</strong></p>`;
-                        successMessage += '<p>Token akan dikirimkan ke WhatsApp Anda dalam 5 menit.</p>';
-                    } else {
-                        successMessage += `<p>Sisa tagihan: ${new Intl.NumberFormat('id-ID', {
-                            style: 'currency',
-                            currency: 'IDR',
-                            minimumFractionDigits: 0
-                        }).format(data.data.remaining_balance || 0)}</p>`;
-                    }
-
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Pembayaran Berhasil',
-                        html: successMessage,
-                        confirmButtonText: 'OK'
-                    }).then(() => {
-                        resetForm();
-                    });
+                    // Show QR code for payment
+                    showQRCodePayment(data.data);
                 } else {
+                    // Show detailed error message from backend
+                    let errorHtml = data.message || 'Terjadi kesalahan saat memproses pembayaran.';
+                    
+                    if (data.error) {
+                        errorHtml += `<br><br><small class="text-muted">Detail: ${data.error}</small>`;
+                    }
+                    
                     Swal.fire({
                         icon: 'error',
                         title: 'Pembayaran Gagal',
-                        text: data.message || 'Terjadi kesalahan saat memproses pembayaran.',
+                        html: errorHtml,
+                        footer: '<small>Silakan periksa data dan coba lagi</small>',
                         confirmButtonText: 'OK'
                     });
                 }
             },
             error: function (xhr, status, error) {
                 console.error('Payment Error:', error);
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Terjadi Kesalahan',
-                    text: 'Tidak dapat memproses pembayaran. Silakan coba lagi.',
-                    confirmButtonText: 'OK'
-                });
+                console.error('Response:', xhr.responseText);
+                console.error('Status:', xhr.status);
+                
+                let errorMessage = 'Tidak dapat memproses pembayaran. Silakan coba lagi.';
+                let errorDetails = '';
+                let isDisconnected = false;
+                let noBill = false;
+                let supportContact = '';
+                
+                // Try to parse error response
+                try {
+                    const response = JSON.parse(xhr.responseText);
+                    if (response.message) {
+                        errorMessage = response.message;
+                    }
+                    if (response.error) {
+                        errorDetails = `<br><small class="text-muted">Detail: ${response.error}</small>`;
+                    }
+                    if (response.is_disconnected) {
+                        isDisconnected = true;
+                        supportContact = response.support_contact || '';
+                    }
+                    if (response.no_bill) {
+                        noBill = true;
+                    }
+                } catch (e) {
+                    // If can't parse JSON, show status code
+                    if (xhr.status) {
+                        errorDetails = `<br><small class="text-muted">Error Code: ${xhr.status}</small>`;
+                    }
+                }
+                
+                // Show special message for no bill
+                if (noBill) {
+                    Swal.fire({
+                        icon: 'info',
+                        title: 'Tidak Ada Tagihan',
+                        html: `
+                            <p>${errorMessage}</p>
+                            <div class="mt-3">
+                                <i class="bx bx-check-circle" style="font-size: 48px; color: #28a745;"></i>
+                                <p class="mt-2"><strong>Status Pembayaran: Lunas</strong></p>
+                                <p class="text-muted">Terima kasih atas pembayaran Anda yang tepat waktu!</p>
+                            </div>
+                        `,
+                        confirmButtonText: 'OK',
+                        confirmButtonColor: '#28a745'
+                    });
+                }
+                // Show special message for disconnected customers
+                else if (isDisconnected && supportContact) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Sambungan Terputus',
+                        html: `
+                            <p>${errorMessage}</p>
+                            <div class="mt-3">
+                                <strong>Hubungi Customer Service:</strong><br>
+                                <a href="https://wa.me/${supportContact.replace(/\+/g, '')}" 
+                                   class="btn btn-success mt-2" target="_blank">
+                                    <i class='bx bxl-whatsapp'></i> ${supportContact}
+                                </a>
+                            </div>
+                        `,
+                        footer: '<small>Layanan akan diaktifkan kembali setelah menghubungi CS</small>',
+                        confirmButtonText: 'OK',
+                        confirmButtonColor: '#d33'
+                    });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Terjadi Kesalahan',
+                        html: errorMessage + errorDetails,
+                        footer: '<small>Jika masalah berlanjut, silakan hubungi customer service</small>',
+                        confirmButtonText: 'OK'
+                    });
+                }
             }
         });
     }
@@ -367,4 +622,135 @@ $(document).ready(function () {
         // Remove active classes
         $('.border-primary').removeClass('border-primary bg-light').addClass('border');
     }
+
+    
+/**
+ * Shows QR code for payment and starts polling for payment status
+ * 
+ * @param {Object} paymentData - Payment data from backend
+ * @private
+ */
+function showQRCodePayment(paymentData) {
+    const expiresAt = new Date(paymentData.expires_at);
+    const formatCurrency = new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        minimumFractionDigits: 0
+    }).format;
+
+    let qrModalHtml = `
+        <div class="text-center">
+            <h5 class="mb-3">Scan QR Code untuk Membayar</h5>
+            <p class="text-muted">ID Transaksi: <strong>${paymentData.transaction_id}</strong></p>
+            <div class="qr-code-container mb-3" style="background: white; padding: 20px; border-radius: 10px; display: inline-block;">
+                <img src="${paymentData.qr_code_url}" alt="QR Code Pembayaran" style="max-width: 300px; width: 100%;">
+            </div>
+            <div class="payment-info mb-3">
+                <p><strong>Total Pembayaran:</strong> ${formatCurrency(paymentData.total_amount)}</p>
+                <p class="text-warning"><i class='bx bx-time'></i> Berlaku hingga: ${expiresAt.toLocaleString('id-ID')}</p>
+            </div>
+            <div class="alert alert-info">
+                <i class='bx bx-info-circle me-2'></i>
+                Halaman ini akan otomatis diperbarui saat pembayaran berhasil.
+            </div>
+            <div id="payment-status-indicator" class="mt-3">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Menunggu pembayaran...</span>
+                </div>
+                <p class="mt-2">Menunggu pembayaran...</p>
+            </div>
+        </div>
+    `;
+
+    Swal.fire({
+        html: qrModalHtml,
+        width: 600,
+        showCancelButton: true,
+        cancelButtonText: 'Batal',
+        showConfirmButton: false,
+        allowOutsideClick: false,
+        didOpen: () => {
+            // Start polling for payment status
+            startPaymentStatusPolling(paymentData.transaction_id);
+        },
+        willClose: () => {
+            // Stop polling when modal closes
+            stopPaymentStatusPolling();
+        }
+    });
+}
+
+let paymentPollingInterval = null;
+
+/**
+ * Starts polling the payment status
+ * 
+ * @param {string} transactionId - Transaction ID to check
+ * @private
+ */
+function startPaymentStatusPolling(transactionId) {
+    // Poll every 3 seconds
+    paymentPollingInterval = setInterval(() => {
+        checkPaymentStatus(transactionId);
+    }, 3000);
+}
+
+/**
+ * Stops the payment status polling
+ * 
+ * @private
+ */
+function stopPaymentStatusPolling() {
+    if (paymentPollingInterval) {
+        clearInterval(paymentPollingInterval);
+        paymentPollingInterval = null;
+    }
+}
+
+/**
+ * Checks the payment status via API
+ * 
+ * @param {string} transactionId - Transaction ID to check
+ * @private
+ */
+function checkPaymentStatus(transactionId) {
+    $.ajax({
+        url: `/api/payment-status/${transactionId}`,
+        method: 'GET',
+        success: function (data) {
+            if (data.success && data.data.status === 'completed') {
+                stopPaymentStatusPolling();
+                Swal.close();
+                
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Pembayaran Berhasil!',
+                    html: `<p>Pembayaran Anda telah berhasil diproses.</p>
+                           <p class="text-muted">ID Transaksi: ${transactionId}</p>`,
+                    confirmButtonText: 'OK'
+                }).then(() => {
+                    resetForm();
+                    // Optionally reload to show updated data
+                    location.reload();
+                });
+            } else if (data.success && data.data.status === 'expired') {
+                stopPaymentStatusPolling();
+                Swal.close();
+                
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Transaksi Kadaluarsa',
+                    text: 'Transaksi telah kadaluarsa. Silakan buat transaksi baru.',
+                    confirmButtonText: 'OK'
+                }).then(() => {
+                    resetForm();
+                });
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error('Status check error:', error);
+        }
+    });
+}
+
 });

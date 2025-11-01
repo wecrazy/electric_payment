@@ -67,6 +67,11 @@ func seedAdmin(db *gorm.DB) {
 			logrus.Fatalf("Error while trying to fetch Super Admin role: %v", err)
 		}
 
+		var adminPLTMHRole model.Role
+		if err := db.Where("role_name = ?", "Admin PLTMH").First(&adminPLTMHRole).Error; err != nil {
+			logrus.Fatalf("Error while trying to fetch Admin PLTMH role: %v", err)
+		}
+
 		var admins = []model.Admin{
 			{
 				Fullname:     "Super Admin 1",
@@ -90,6 +95,19 @@ func seedAdmin(db *gorm.DB) {
 				Password:  fun.GenerateSaltedPassword("Ro224171222#"),
 				Type:      0,
 				Role:      int(superAdminRole.ID),
+				Status:    2,
+				CreateBy:  0,
+				UpdateBy:  0,
+				LastLogin: time.Now(),
+			},
+			{
+				Fullname:  "Admin PLTMH Lembang Palesan",
+				Username:  "admin_pltmh",
+				Phone:     config.GetConfig().PLTMHLembangPalesan.Phone,
+				Email:     "admin_pltmh@website.com",
+				Password:  fun.GenerateSaltedPassword("Ro224171222#"),
+				Type:      0,
+				Role:      int(adminPLTMHRole.ID),
 				Status:    2,
 				CreateBy:  0,
 				UpdateBy:  0,
@@ -140,6 +158,12 @@ func seedRoles(db *gorm.DB) {
 				Icon:      "fal fa-user-crown",
 				ClassName: "bg-label-primary",
 			},
+			{
+				RoleName:  "Admin PLTMH",
+				CreatedBy: 0,
+				Icon:      "fal fa-user-cog",
+				ClassName: "bg-label-info",
+			},
 		}
 
 		// Perform batch insert
@@ -160,6 +184,27 @@ func getRolePermissions(roleName, featurePath string) (RolePermission, bool) {
 	// Super Admin gets full access to everything
 	if strings.Contains(roleNameLower, "super admin") {
 		return RolePermission{Create: 1, Read: 1, Update: 1, Delete: 1}, true
+	}
+
+	// PLTMH Lembang Palesan
+	if strings.Contains(roleNameLower, "pltmh") {
+		// Allow access to general features (dashboard, profile, etc.)
+		if featurePath == "" ||
+			// strings.HasPrefix(featurePathLower, "tab-user-profile") ||
+			strings.HasPrefix(featurePathLower, "tab-dashboard") ||
+			strings.HasPrefix(featurePathLower, "tab-pltmh") {
+
+			// Admin gets full CRUD access
+			if strings.Contains(roleNameLower, "admin") {
+				return RolePermission{Create: 1, Read: 1, Update: 1, Delete: 1}, true
+			}
+
+			// Client gets read-only access
+			if strings.Contains(roleNameLower, "client") {
+				return RolePermission{Create: 0, Read: 1, Update: 0, Delete: 0}, true
+			}
+		}
+		return RolePermission{}, false // No access to other features
 	}
 
 	// Default role gets access to general features only
@@ -226,6 +271,33 @@ func seedFeature(db *gorm.DB) {
 				Status:   1,
 				Level:    0,
 				Icon:     "fad fa-tachometer-alt-fast",
+			},
+			/*
+				PLTMH Lembang Palesan
+			*/
+			{
+				ParentID: 0,
+				Title:    "PLTMH Lembang Palesan",
+				Path:     "",
+				Status:   1,
+				Level:    0,
+				Icon:     "fad fa-bolt",
+			},
+			{
+				ParentID: 0,
+				Title:    "Pelanggan PLTMH",
+				Path:     "tab-pltmh-lembang-palesan-customers",
+				Status:   1,
+				Level:    1,
+				Icon:     "fad fa-users",
+			},
+			{
+				ParentID: 0,
+				Title:    "Transaksi PLTMH",
+				Path:     "tab-pltmh-lembang-palesan-transactions",
+				Status:   1,
+				Level:    1,
+				Icon:     "fad fa-file-invoice-dollar",
 			},
 			/*
 				Whatsapp
@@ -323,6 +395,10 @@ func seedFeature(db *gorm.DB) {
 			{
 				Title:         "Whatsapp",
 				ChildPrefixes: []string{"tab-whatsapp"},
+			},
+			{
+				Title:         "PLTMH Lembang Palesan",
+				ChildPrefixes: []string{"tab-pltmh-lembang-palesan"},
 			},
 		}
 		for _, p := range parents {
@@ -513,6 +589,12 @@ func seedAppConfig(db *gorm.DB) {
 			return
 		}
 
+		var adminPLTMHRole model.Role
+		if err := db.Where("role_name = ?", "Admin PLTMH").First(&adminPLTMHRole).Error; err != nil {
+			logrus.Errorf("Error while trying to fetch Admin PLTMH role: %v", err)
+			return
+		}
+
 		appConfigs := []model.AppConfig{
 			{
 				RoleID:      superAdminRole.ID,
@@ -522,6 +604,17 @@ func seedAppConfig(db *gorm.DB) {
 				VersionNo:   "1",
 				VersionCode: "0.0.0.1.2025.07.31",
 				VersionName: "electric_payment",
+				IsActive:    true,
+				Description: "Web Admin for managing electricity payments and monitoring transactions. Designed for administrators to oversee and manage the payment system efficiently.",
+			},
+			{
+				RoleID:      adminPLTMHRole.ID,
+				AppName:     "PLTMH Lembang Palesan",
+				AppLogo:     "/assets/self/img/logo_web.png",
+				AppVersion:  "Beta",
+				VersionNo:   "1",
+				VersionCode: "0.0.0.1.2025.07.31",
+				VersionName: "electric_payment_pltmh",
 				IsActive:    true,
 				Description: "Web Admin for managing electricity payments and monitoring transactions. Designed for administrators to oversee and manage the payment system efficiently.",
 			},

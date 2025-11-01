@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.title}} - PLTMH Lembang Palesan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .validation-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 90%;
+            padding: 40px;
+            text-align: center;
+        }
+        .icon-container {
+            margin-bottom: 20px;
+        }
+        .success-icon {
+            font-size: 80px;
+            color: #28a745;
+            animation: scaleIn 0.5s ease-out;
+        }
+        .error-icon {
+            font-size: 80px;
+            color: #dc3545;
+            animation: shake 0.5s ease-out;
+        }
+        .warning-icon {
+            font-size: 80px;
+            color: #ffc107;
+            animation: scaleIn 0.5s ease-out;
+        }
+        @keyframes scaleIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .message {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        .details {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #495057;
+        }
+        .detail-value {
+            color: #212529;
+            text-align: right;
+        }
+        .btn-home {
+            margin-top: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            padding: 12px 40px;
+            border-radius: 25px;
+            color: white;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        .btn-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="validation-card">
+        <div class="icon-container">
+            {{if .success}}
+                <i class='bx bx-check-circle success-icon'></i>
+            {{else}}
+                {{if eq .title "Pembayaran Kadaluarsa"}}
+                    <i class='bx bx-time warning-icon'></i>
+                {{else}}
+                    <i class='bx bx-x-circle error-icon'></i>
+                {{end}}
+            {{end}}
+        </div>
+        
+        <h1>{{.title}}</h1>
+        <p class="message">{{.message}}</p>
+
+        {{if .data}}
+        <div class="details">
+            {{if .data.transaction_id}}
+            <div class="detail-row">
+                <span class="detail-label">ID Transaksi:</span>
+                <span class="detail-value">{{.data.transaction_id}}</span>
+            </div>
+            {{end}}
+
+            {{if .data.token}}
+            <div class="detail-row">
+                <span class="detail-label">Token Listrik:</span>
+                <span class="detail-value"><strong>{{.data.token}}</strong></span>
+            </div>
+            {{end}}
+
+            {{if .data.added_kwh}}
+            <div class="detail-row">
+                <span class="detail-label">kWh Ditambahkan:</span>
+                <span class="detail-value">{{.data.added_kwh}} kWh</span>
+            </div>
+            {{end}}
+
+            {{if .data.new_balance}}
+            <div class="detail-row">
+                <span class="detail-label">Saldo Baru:</span>
+                <span class="detail-value">{{.data.new_balance}} kWh</span>
+            </div>
+            {{end}}
+
+            {{if .data.amount}}
+            <div class="detail-row">
+                <span class="detail-label">Total Bayar:</span>
+                <span class="detail-value">Rp {{.data.amount}}</span>
+            </div>
+            {{end}}
+
+            {{if .data.paid_amount}}
+            <div class="detail-row">
+                <span class="detail-label">Jumlah Dibayar:</span>
+                <span class="detail-value">Rp {{.data.paid_amount}}</span>
+            </div>
+            {{end}}
+
+            {{if .data.remaining_balance}}
+            <div class="detail-row">
+                <span class="detail-label">Sisa Tagihan:</span>
+                <span class="detail-value">Rp {{.data.remaining_balance}}</span>
+            </div>
+            {{end}}
+
+            {{if .data.payment_date}}
+            <div class="detail-row">
+                <span class="detail-label">Tanggal Bayar:</span>
+                <span class="detail-value">{{.data.payment_date}}</span>
+            </div>
+            {{end}}
+
+            {{if .data.completed_at}}
+            <div class="detail-row">
+                <span class="detail-label">Selesai Pada:</span>
+                <span class="detail-value">{{.data.completed_at}}</span>
+            </div>
+            {{end}}
+        </div>
+        {{end}}
+
+        <a href="/payment" class="btn btn-home">
+            <i class='bx bx-home me-2'></i>Kembali ke Halaman Pembayaran
+        </a>
+    </div>
+
+    <script>
+        // Declare success flag from template
+        var isSuccess = {{.success}};
+
+        // Format IDR currency with thousand separators
+        function formatIDR(value) {
+            return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        // Format all currency values on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Find all detail-value elements that contain "Rp"
+            const detailValues = document.querySelectorAll('.detail-value');
+            detailValues.forEach(function(element) {
+                const text = element.textContent.trim();
+                if (text.startsWith('Rp ')) {
+                    // Extract the number part
+                    const numberPart = text.replace('Rp ', '').replace(/\./g, '');
+                    if (!isNaN(numberPart) && numberPart !== '') {
+                        // Format and update
+                        element.textContent = 'Rp ' + formatIDR(numberPart);
+                    }
+                }
+            });
+        });
+
+        // Auto close after 20 seconds if successful
+        if (isSuccess) {
+            setTimeout(function() {
+                window.location.href = '/payment';
+            }, 20000);
+        }
+    </script>
+</body>
+</html>

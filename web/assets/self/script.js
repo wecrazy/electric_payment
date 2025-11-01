@@ -372,6 +372,23 @@ function loadAndShowTab(targetTabId) {
     });
   }
 
+  // Global function to load components (used by dashboard links)
+  window.loadComponent = function(componentName) {
+    var targetTabId = '#' + componentName;
+    $(".tab-content").removeClass("d-block").addClass("d-none");
+    $("#error-container").removeClass("d-block").addClass("d-none");
+    loadAndShowTab(targetTabId);
+    
+    // Update active menu item
+    var targetAnchor = $('a[href="' + targetTabId + '"].menu-link:not(.menu-toggle)');
+    $(".menu-inner").find(".menu-item").removeClass("active");
+    targetAnchor.closest(".menu-item").addClass("active");
+    targetAnchor.closest(".menu-item").parents(".menu-item").addClass("active");
+    
+    // Update URL hash
+    window.location.hash = targetTabId;
+  };
+
   // For Avatar badge
   var stateNum = Math.floor(Math.random() * 6);
   var states = [

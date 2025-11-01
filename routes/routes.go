@@ -75,6 +75,7 @@ func StaticFile(router *gin.Engine) {
 	router.Static("./wa", "whatsmeow")
 	router.Static("./wa_reply", "web/file/wa_reply")
 	router.Static("/media", "./web/assets/whatsapp_media") // Serve WhatsApp media files
+	router.Static("/file", "./web/file")                   // Serve transaction files and other files
 }
 
 func HtmlRoutes(router *gin.Engine, redisDB *redis.Client) {
@@ -97,8 +98,8 @@ func HtmlRoutes(router *gin.Engine, redisDB *redis.Client) {
 	router.GET(fun.GLOBAL_URL+"ws", controllers.WebSocketVerify(db))
 
 	// router.GET(fun.GLOBAL_URL+"", controllers.GetWebLandingPage(db)) // LANDING PAGE
-	// TODO: add a proper landing page
-	router.GET(fun.GLOBAL_URL, func(c *gin.Context) { c.Redirect(http.StatusPermanentRedirect, fun.GLOBAL_URL+"login") })
+	// router.GET(fun.GLOBAL_URL, func(c *gin.Context) { c.Redirect(http.StatusPermanentRedirect, fun.GLOBAL_URL+"login") })
+	router.GET(fun.GLOBAL_URL, func(c *gin.Context) { c.Redirect(http.StatusPermanentRedirect, fun.GLOBAL_URL+"welcome") })
 
 	router.GET(fun.GLOBAL_URL+"login", controllers.GetWebLogin(db))            // WEB LOGIN
 	router.POST(fun.GLOBAL_URL+"login", controllers.PostWebLogin(db, redisDB)) // SEND LOGIN CREDENTIALS
@@ -126,6 +127,7 @@ func HtmlRoutes(router *gin.Engine, redisDB *redis.Client) {
 	pltmhLembangPalesanPayment := router.Group("/payment")
 	{
 		pltmhLembangPalesanPayment.GET("", controllers.GetPaymentPage())
+		pltmhLembangPalesanPayment.GET("/validate/:token", controllers.ValidatePayment())
 	}
 
 	// API routes for payment system
@@ -141,6 +143,7 @@ func HtmlRoutes(router *gin.Engine, redisDB *redis.Client) {
 		})
 		apiRoutes.POST("/check-customer", controllers.CheckCustomerData())
 		apiRoutes.POST("/process-payment", controllers.ProcessPayment())
+		apiRoutes.GET("/payment-status/:transaction_id", controllers.CheckPaymentStatus())
 	}
 
 	// Endpoint Web routes group
@@ -188,6 +191,38 @@ func HtmlRoutes(router *gin.Engine, redisDB *redis.Client) {
 		tabAppConfig := web.Group("/tab-app-config")
 		{
 			tabAppConfig.POST("/table", controllers.TableAppConfig())
+		}
+
+		/*
+			Tab PLTMH Lembang Palesan
+		*/
+		tabPLTMHLembangPalesanTransactions := web.Group("/tab-pltmh-lembang-palesan-transactions")
+		{
+
+			// Transactions
+			tabPLTMHLembangPalesanTransactions.POST("/table", controllers.GetTransactionsTable())
+			tabPLTMHLembangPalesanTransactions.POST("/prepaid/topup", controllers.ManualTopUpPrepaid())
+			tabPLTMHLembangPalesanTransactions.POST("/postpaid/payment", controllers.ManualPaymentPostpaid())
+			tabPLTMHLembangPalesanTransactions.POST("/postpaid/usage", controllers.AddUsagePostpaid())
+		}
+
+		tabPLTMHLembangPalesanCustomers := web.Group("/tab-pltmh-lembang-palesan-customers")
+		{
+			// Customers - Prepaid
+			tabPLTMHLembangPalesanCustomers.POST("/prepaid/table", controllers.GetPrepaidCustomersTable())
+			tabPLTMHLembangPalesanCustomers.POST("/prepaid/create", controllers.CreatePrepaidCustomer())
+			tabPLTMHLembangPalesanCustomers.PUT("/prepaid/update", controllers.UpdatePrepaidCustomer())
+			tabPLTMHLembangPalesanCustomers.DELETE("/prepaid/:id", controllers.DeletePrepaidCustomer())
+
+			// Customers - Postpaid
+			tabPLTMHLembangPalesanCustomers.POST("/postpaid/table", controllers.GetPostpaidCustomersTable())
+			tabPLTMHLembangPalesanCustomers.POST("/postpaid/create", controllers.CreatePostpaidCustomer())
+			tabPLTMHLembangPalesanCustomers.PUT("/postpaid/update", controllers.UpdatePostpaidCustomer())
+			tabPLTMHLembangPalesanCustomers.DELETE("/postpaid/:id", controllers.DeletePostpaidCustomer())
+
+			// Customer Details
+			tabPLTMHLembangPalesanCustomers.GET("/:customer_id/detail", controllers.GetCustomerDetail())
+			tabPLTMHLembangPalesanCustomers.GET("/:customer_id/topup-history", controllers.GetTopUpHistory())
 		}
 
 		/*

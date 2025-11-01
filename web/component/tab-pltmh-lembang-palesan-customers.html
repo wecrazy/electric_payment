@@ -1,0 +1,368 @@
+<script>
+    // PLTMH Customer Endpoints (safe re-declaration)
+    window.PLTMH_ENDPOINTS = window.PLTMH_ENDPOINTS || {};
+    window.PLTMH_ENDPOINTS.prepaid = {
+        table: "{{.PLTMH_PREPAID_TABLE}}",
+        create: "{{.PLTMH_PREPAID_CREATE}}",
+        update: "{{.PLTMH_PREPAID_UPDATE}}",
+        delete: "{{.PLTMH_PREPAID_DELETE}}"
+    };
+    window.PLTMH_ENDPOINTS.postpaid = {
+        table: "{{.PLTMH_POSTPAID_TABLE}}",
+        create: "{{.PLTMH_POSTPAID_CREATE}}",
+        update: "{{.PLTMH_POSTPAID_UPDATE}}",
+        delete: "{{.PLTMH_POSTPAID_DELETE}}"
+    };
+    window.PLTMH_ENDPOINTS.customer = {
+        detail: "{{.PLTMH_CUSTOMER_DETAIL}}",
+        topupHistory: "{{.PLTMH_TOPUP_HISTORY}}"
+    };
+    // Alias for convenience
+    var PLTMH_ENDPOINTS = window.PLTMH_ENDPOINTS;
+</script>
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <!-- Header with Icon -->
+    <div class="d-flex align-items-center mb-4">
+        <div>
+            <h4 class="mb-1">
+                <span class="text-success">⚡</span> PLTMH Lembang Palesan
+            </h4>
+            <p class="text-muted mb-0">
+                <i class="fad fa-user me-1"></i> Manajemen Pelanggan Listrik
+            </p>
+        </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="row mb-4">
+        <div class="col-lg-6 col-md-12 mb-3">
+            <div class="card h-100 border-start border-primary border-4">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar bg-label-primary me-3">
+                            <i class="fad fa-bolt"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <small class="text-muted d-block">Pelanggan Prabayar</small>
+                            <h5 class="mb-0">Token Listrik</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-3">
+            <div class="card h-100 border-start border-warning border-4">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar bg-label-warning me-3">
+                            <i class="fad fa-receipt"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <small class="text-muted d-block">Pelanggan Pascabayar</small>
+                            <h5 class="mb-0">Tagihan Bulanan</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-pills nav-fill mb-3" id="customerTypeTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="prepaid-tab" data-bs-toggle="pill" data-bs-target="#prepaid"
+                type="button" role="tab">
+                <i class="fas fa-bolt me-2"></i>
+                <span class="d-none d-sm-inline">Pelanggan </span>Pra-bayar
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="postpaid-tab" data-bs-toggle="pill" data-bs-target="#postpaid" type="button"
+                role="tab">
+                <i class="fas fa-receipt me-2"></i>
+                <span class="d-none d-sm-inline">Pelanggan </span>Pasca bayar
+            </button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="customerTypeTabContent">
+
+        <!-- PREPAID TAB -->
+        <div class="tab-pane fade show active" id="prepaid" role="tabpanel">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="mb-0 text-white">
+                            <i class="fas fa-bolt me-2"></i>Daftar Pelanggan Prabayar
+                        </h5>
+                        <small class="text-white-50">Sistem Token Listrik</small>
+                    </div>
+                    <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#modalAddPrepaid">
+                        <i class="fas fa-plus me-1"></i> Tambah Pelanggan
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="tablePrepaid">
+                            <thead>
+                                <tr>
+                                    <th>ID Pelanggan</th>
+                                    <th>No. Meter</th>
+                                    <th>Kode Tarif</th>
+                                    <th>Daya (VA)</th>
+                                    <th>Saldo kWh</th>
+                                    <th>Token Terakhir</th>
+                                    <th>Top-Up Terakhir</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- POSTPAID TAB -->
+        <div class="tab-pane fade" id="postpaid" role="tabpanel">
+            <div class="card shadow-sm">
+                <div class="card-header bg-warning text-white d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="mb-0">
+                            <i class="fas fa-receipt me-2"></i>Daftar Pelanggan Pascabayar
+                        </h5>
+                        <small class="text-muted">Sistem Tagihan Bulanan</small>
+                    </div>
+                    <button type="button" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#modalAddPostpaid">
+                        <i class="fas fa-plus me-1"></i> Tambah Pelanggan
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="tablePostpaid">
+                            <thead>
+                                <tr>
+                                    <th>ID Pelanggan</th>
+                                    <th>No. Meter</th>
+                                    <th>Kode Tarif</th>
+                                    <th>Daya (VA)</th>
+                                    <th>Pemakaian Bulan Ini (kWh)</th>
+                                    <th>Tagihan</th>
+                                    <th>Status</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Add Prepaid Customer -->
+<div class="modal fade" id="modalAddPrepaid" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <div>
+                    <h5 class="modal-title text-white mb-0">
+                        <i class="fas fa-plus-circle me-2"></i>Tambah Pelanggan Prabayar
+                    </h5>
+                    <small class="text-white-50">Sistem Token Listrik</small>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formAddPrepaid">
+                    <div class="mb-3">
+                        <label class="form-label">ID Pelanggan</label>
+                        <input type="text" class="form-control" name="customer_id" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nomor Meter</label>
+                        <input type="text" class="form-control" name="meter_number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Kode Tarif</label>
+                        <select class="form-select" name="tariff_code" required>
+                            <option value="">-- Pilih Kode Tarif --</option>
+                            <option value="R1/900VA">R1/900VA</option>
+                            <option value="R1/1300VA">R1/1300VA</option>
+                            <option value="R1/2200VA">R1/2200VA</option>
+                            <option value="R1/3500VA">R1/3500VA</option>
+                            <option value="R2/5500VA">R2/5500VA</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Daya (VA)</label>
+                        <input type="number" class="form-control" name="power_va" required min="450" step="50">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary" onclick="submitAddPrepaid()">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Edit Prepaid Customer -->
+<div class="modal fade" id="modalEditPrepaid" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Pelanggan Prabayar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formEditPrepaid">
+                    <input type="hidden" name="id">
+                    <div class="mb-3">
+                        <label class="form-label">ID Pelanggan</label>
+                        <input type="text" class="form-control" name="customer_id" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nomor Meter</label>
+                        <input type="text" class="form-control" name="meter_number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Kode Tarif</label>
+                        <input type="text" class="form-control" name="tariff_code" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Daya (VA)</label>
+                        <input type="number" class="form-control" name="power_va" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Saldo kWh</label>
+                        <input type="number" class="form-control" name="balance_kwh" step="0.01" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary" onclick="submitEditPrepaid()">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Add Postpaid Customer -->
+<div class="modal fade" id="modalAddPostpaid" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <div>
+                    <h5 class="modal-title mb-0">
+                        <i class="fas fa-plus-circle me-2"></i>Tambah Pelanggan Pascabayar
+                    </h5>
+                    <small class="text-muted">Sistem Tagihan Bulanan</small>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formAddPostpaid">
+                    <div class="mb-3">
+                        <label class="form-label">ID Pelanggan</label>
+                        <input type="text" class="form-control" name="customer_id" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nomor Meter</label>
+                        <input type="text" class="form-control" name="meter_number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Kode Tarif</label>
+                        <select class="form-select" name="tariff_code" required>
+                            <option value="">-- Pilih Kode Tarif --</option>
+                            <option value="R1/900VA">R1/900VA</option>
+                            <option value="R1/1300VA">R1/1300VA</option>
+                            <option value="R1/2200VA">R1/2200VA</option>
+                            <option value="R1/3500VA">R1/3500VA</option>
+                            <option value="R2/5500VA">R2/5500VA</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Daya (VA)</label>
+                        <input type="number" class="form-control" name="power_va" required min="450" step="50">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Awal Periode</label>
+                            <input type="date" class="form-control" name="billing_cycle_start" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Akhir Periode</label>
+                            <input type="date" class="form-control" name="billing_cycle_end" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary" onclick="submitAddPostpaid()">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Edit Postpaid Customer -->
+<div class="modal fade" id="modalEditPostpaid" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Pelanggan Pascabayar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formEditPostpaid">
+                    <input type="hidden" name="id">
+                    <div class="mb-3">
+                        <label class="form-label">ID Pelanggan</label>
+                        <input type="text" class="form-control" name="customer_id" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nomor Meter</label>
+                        <input type="text" class="form-control" name="meter_number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Kode Tarif</label>
+                        <input type="text" class="form-control" name="tariff_code" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Daya (VA)</label>
+                        <input type="number" class="form-control" name="power_va" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Pemakaian Bulan Ini (kWh)</label>
+                        <input type="number" class="form-control" name="current_usage_kwh" step="0.01" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tagihan (Rp)</label>
+                        <input type="number" class="form-control" name="outstanding_balance" required>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="is_disconnected" id="isDisconnected">
+                            <label class="form-check-label" for="isDisconnected">
+                                Terputus
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary" onclick="submitEditPostpaid()">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{.GLOBAL_URL}}assets/self/pltmh_customers.js"></script>

@@ -334,18 +334,21 @@ type YamlConfig struct {
 	} `yaml:"API"`
 
 	PLTMHLembangPalesan struct {
-		Email             string `yaml:"EMAIL"`
-		Phone             string `yaml:"PHONE"`
-		PublicURL         string `yaml:"PUBLIC_URL"`
-		Facebook          string `yaml:"FACEBOOK"`
-		Instagram         string `yaml:"INSTAGRAM"`
-		Youtube           string `yaml:"YOUTUBE"`
-		Twitter           string `yaml:"TWITTER"`
-		TbElectricityBase string `yaml:"TB_ELECTRICITY_BASE"`
-		TbPrepaid         string `yaml:"TB_PREPAID"`
-		TbPostpaid        string `yaml:"TB_POSTPAID"`
-		TbTopupRecord     string `yaml:"TB_TOPUP_RECORD"`
-		TopupOptions      []int  `yaml:"TOPUP_OPTIONS"`
+		Email                string   `yaml:"EMAIL"`
+		Phone                string   `yaml:"PHONE"`
+		PublicURL            string   `yaml:"PUBLIC_URL"`
+		Facebook             string   `yaml:"FACEBOOK"`
+		Instagram            string   `yaml:"INSTAGRAM"`
+		Youtube              string   `yaml:"YOUTUBE"`
+		Twitter              string   `yaml:"TWITTER"`
+		TbElectricityBase    string   `yaml:"TB_ELECTRICITY_BASE"`
+		TbPrepaid            string   `yaml:"TB_PREPAID"`
+		TbPostpaid           string   `yaml:"TB_POSTPAID"`
+		TbTopupRecord        string   `yaml:"TB_TOPUP_RECORD"`
+		TbTransactionHistory string   `yaml:"TB_TRANSACTION_HISTORY"`
+		TopupOptions         []int    `yaml:"TOPUP_OPTIONS"`
+		AdminFee             int64    `yaml:"ADMIN_FEE"`
+		TarifCode            []string `yaml:"TARIF_CODE"`
 	} `yaml:"PLTMH_LEMBANG_PALESAN"`
 }
 

@@ -1,23 +1,211 @@
-<div class="my-4">
-  <div class="row g-4">
-    <!-- Welcome + Clock + Image Card -->
-    <div class="col-12 col-md-6">
-      <div class="card shadow rounded-3 h-100">
-        <div class="row g-0 align-items-center">
-          <div class="col-7">
-            <div class="card-body">
-              <h5 class="card-title text-primary" id="greeting" class="mt-2"></h5>
-              <div class="mb-2" data-i18n="DASHBOARD_WELCOME">
-                Selamat datang! Kami senang Anda bergabung 😊. Dasbor ini adalah pusat kendali Anda, menyediakan akses mudah ke semua informasi dan layanan yang relevan. Silakan jelajahi berbagai fitur yang kami sediakan untuk mengoptimalkan pengalaman Anda.
+<div class="container-xxl flex-grow-1 container-p-y">
+  <!-- Hero Header -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="card shadow-lg border-0" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); overflow: hidden;">
+        <div class="card-body text-white position-relative">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-7">
+              <div class="d-flex align-items-center mb-3">
+                <div class="avatar avatar-xl bg-white bg-opacity-25 me-3">
+                  <i class="fad fa-water fa-lg text-white"></i>
+                </div>
+                <div>
+                  <h3 class="text-white mb-1" id="greeting"></h3>
+                  <p class="text-white-50 mb-0">
+                    <i class="fad fa-bolt me-1"></i> Sistem Manajemen Pembayaran Listrik PLTMH
+                  </p>
+                </div>
+              </div>
+              <p class="text-white mb-0" style="line-height: 1.6;">
+                Selamat datang di Pembangkit Listrik Tenaga Mikro Hidro (PLTMH) Lembang Palesan. 
+                Dashboard ini memberikan Anda akses penuh untuk mengelola pelanggan, transaksi, dan 
+                pembayaran listrik dengan mudah dan efisien. ⚡💧
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-5 text-center">
+              <div class="position-relative">
+                <img src="/assets/img/illustrations/man-with-laptop-light.png" 
+                     class="img-fluid" 
+                     style="max-height: 180px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));"
+                     alt="Dashboard"
+                     data-app-dark-img="/assets/img/illustrations/man-with-laptop-dark.png"
+                     data-app-light-img="/assets/img/illustrations/man-with-laptop-light.png" />
               </div>
             </div>
           </div>
-          <div class="col-5 text-center">
-            <div class="p-2 mt-5">
-              <img src="/assets/img/illustrations/man-with-laptop-light.png" class="img-fluid mb-2" height="80"
-                alt="Dashboard Img" data-app-dark-img="/assets/img/illustrations/man-with-laptop-dark.png"
-                data-app-light-img="/assets/img/illustrations/man-with-laptop-light.png" />
-              <div id="dashboard-clock" class="dashboard-clock"></div>
+        </div>
+        <!-- Decorative wave -->
+        <svg style="position: absolute; bottom: 0; left: 0; width: 100%; height: 60px;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C300,80 900,80 1200,0 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info Cards Row -->
+  <div class="row g-4 mb-4">
+    <!-- Clock Card -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card shadow-sm border-0 h-100">
+        <div class="card-body text-center">
+          <div class="avatar bg-label-primary mb-3 mx-auto" style="width: 56px; height: 56px;">
+            <i class="fad fa-clock fa-lg"></i>
+          </div>
+          <h6 class="text-muted mb-2">Waktu Server</h6>
+          <div id="dashboard-clock" class="dashboard-clock text-primary"></div>
+          <small class="text-muted">WITA (Asia/Makassar)</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLTMH Info Card -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card shadow-sm border-0 h-100 border-start border-success border-4">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="avatar bg-label-success me-3">
+              <i class="fad fa-water"></i>
+            </div>
+            <div>
+              <h6 class="mb-0">PLTMH</h6>
+              <small class="text-muted">Energi Hijau</small>
+            </div>
+          </div>
+          <p class="mb-0 small text-muted">
+            <i class="fas fa-check-circle text-success me-1"></i>
+            Pembangkit Listrik Tenaga Mikro Hidro
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prepaid Card -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card shadow-sm border-0 h-100 border-start border-primary border-4">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="avatar bg-label-primary me-3">
+              <i class="fad fa-bolt"></i>
+            </div>
+            <div>
+              <h6 class="mb-0">Prabayar</h6>
+              <small class="text-muted">Token System</small>
+            </div>
+          </div>
+          <p class="mb-0 small text-muted">
+            <i class="fas fa-tag me-1"></i>
+            Token listrik prabayar
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Postpaid Card -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card shadow-sm border-0 h-100 border-start border-warning border-4">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="avatar bg-label-warning me-3">
+              <i class="fad fa-receipt"></i>
+            </div>
+            <div>
+              <h6 class="mb-0">Pascabayar</h6>
+              <small class="text-muted">Monthly Bill</small>
+            </div>
+          </div>
+          <p class="mb-0 small text-muted">
+            <i class="far fa-calendar-alt me-1"></i>
+            Tagihan bulanan
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Row -->
+  <div class="row g-4">
+    <!-- Quick Actions Card -->
+    <div class="col-lg-8">
+      <div class="card shadow-sm h-100">
+        <div class="card-header bg-transparent border-bottom">
+          <h5 class="mb-0">
+            <i class="fad fa-th me-2 text-primary"></i>Akses Cepat
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <a href="#" onclick="loadComponent('tab-pltmh-lembang-palesan-customers'); return false;" class="text-decoration-none">
+                <div class="card border-0 shadow-sm h-100" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="avatar bg-primary me-3">
+                        <i class="fad fa-users text-white"></i>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-0">Kelola Pelanggan</h6>
+                        <small class="text-muted">Manajemen data pelanggan</small>
+                      </div>
+                      <i class="fas fa-chevron-right text-muted"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="#" onclick="loadComponent('tab-pltmh-lembang-palesan-transactions'); return false;" class="text-decoration-none">
+                <div class="card border-0 shadow-sm h-100" style="background: linear-gradient(135deg, rgba(40, 199, 111, 0.1) 0%, rgba(34, 197, 94, 0.1) 100%);">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="avatar bg-success me-3">
+                        <i class="fad fa-dollar-sign text-white"></i>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-0">Lihat Transaksi</h6>
+                        <small class="text-muted">Riwayat pembayaran</small>
+                      </div>
+                      <i class="fas fa-chevron-right text-muted"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="#" onclick="loadComponent('tab-user-profile'); return false;" class="text-decoration-none">
+                <div class="card border-0 shadow-sm h-100" style="background: linear-gradient(135deg, rgba(255, 159, 67, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%);">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="avatar bg-warning me-3">
+                        <i class="fad fa-user-circle text-white"></i>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-0">Profil Saya</h6>
+                        <small class="text-muted">Pengaturan akun</small>
+                      </div>
+                      <i class="fas fa-chevron-right text-muted"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="#" onclick="loadComponent('tab-app-config'); return false;" class="text-decoration-none">
+                <div class="card border-0 shadow-sm h-100" style="background: linear-gradient(135deg, rgba(234, 84, 85, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="avatar bg-danger me-3">
+                        <i class="fad fa-cogs text-white"></i>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-0">Konfigurasi</h6>
+                        <small class="text-muted">Pengaturan sistem</small>
+                      </div>
+                      <i class="fas fa-chevron-right text-muted"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -25,10 +213,14 @@
     </div>
 
     <!-- Weather Card -->
-    <div class="col-12 col-md-6">
-      <div class="card shadow rounded-3 h-100">
+    <div class="col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-header bg-transparent border-bottom">
+          <h6 class="mb-0">
+            <i class="fad fa-cloud-sun me-2 text-info"></i>Cuaca Toraja
+          </h6>
+        </div>
         <div class="card-body text-center">
-          <h6 class="mb-3">Current Weather (Toraja)</h6>
           <a class="weatherwidget-io" href="https://forecast7.com/en/n6d21106d85/jakarta/" data-label_1="TORAJA"
             data-label_2="WEATHER" data-theme="original">
             TORAJA WEATHER
@@ -41,8 +233,50 @@
 
 <style>
   .dashboard-clock {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .card.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  
+  .avatar-xl {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+  }
+  
+  .card:hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card a:hover .card {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .border-4 {
+    border-width: 4px !important;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card {
+    animation: fadeInUp 0.5s ease-out;
   }
 </style>
 <script>
@@ -50,36 +284,34 @@
 
   function updateJakartaClock() {
     const now = DateTime.now().setZone("Asia/Makassar");
-    document.getElementById("dashboard-clock").textContent =
-      now.toFormat("HH:mm:ss");
+    document.getElementById("dashboard-clock").textContent = now.toFormat("HH:mm:ss");
   }
+
   // Language map for greetings
   const greetings = {
     en: {
-      earlyMorning: "🌄 Good Early Morning,",      // e.g., 0–5
-      morning: "🌅 Good Morning,",                 // 5–11
-      afternoon: "☀️ Good Afternoon,",             // 11–15
-      lateAfternoon: "🌇 Good Late Afternoon,",    // 15–18
-      evening: "🌙 Good Evening,",                 // 18–24
+      earlyMorning: "🌄 Good Early Morning,",
+      morning: "🌅 Good Morning,",
+      afternoon: "☀️ Good Afternoon,",
+      lateAfternoon: "🌇 Good Late Afternoon,",
+      evening: "🌙 Good Evening,",
       welcome: "🎉 Welcome,",
     },
     id: {
-      earlyMorning: "🌄 Selamat Dini Hari,",       // 0–5
-      morning: "🌅 Selamat Pagi,",                 // 5–11
-      afternoon: "☀️ Selamat Siang,",              // 11–15
-      lateAfternoon: "🌇 Selamat Sore,",           // 15–18
-      evening: "🌙 Selamat Malam,",                // 18–24
+      earlyMorning: "🌄 Selamat Dini Hari,",
+      morning: "🌅 Selamat Pagi,",
+      afternoon: "☀️ Selamat Siang,",
+      lateAfternoon: "🌇 Selamat Sore,",
+      evening: "🌙 Selamat Malam,",
       welcome: "🎉 Selamat Datang,",
     },
-    // Add more languages as needed
   };
 
-  // Set your language and theme here
-  const userLang = document.documentElement.getAttribute('lang') || "en"; // e.g., 'en', 'id'
+  const userLang = document.documentElement.getAttribute('lang') || "id";
 
   function updateGreeting() {
-    const hour = DateTime.now().setZone("Asia/Jakarta").hour;
-    const lang = greetings[userLang] ? userLang : "en";
+    const hour = DateTime.now().setZone("Asia/Makassar").hour;
+    const lang = greetings[userLang] ? userLang : "id";
 
     let greeting = greetings[lang].welcome;
 
@@ -96,14 +328,12 @@
     }
 
     greeting += " {{.fullname}}";
-
     document.getElementById("greeting").textContent = greeting;
   }
 
   // Set weather widget theme dynamically
   document.addEventListener("DOMContentLoaded", function () {
-    const isDarkStyle =
-      typeof window.isDarkStyle === "boolean" ? window.isDarkStyle : false;
+    const isDarkStyle = typeof window.isDarkStyle === "boolean" ? window.isDarkStyle : false;
     const weatherTheme = isDarkStyle ? "dark" : "original";
 
     const weatherWidget = document.querySelector(".weatherwidget-io");
@@ -117,8 +347,7 @@
   updateGreeting();
 
   !(function (d, s, id) {
-    var js,
-      fjs = d.getElementsByTagName(s)[0];
+    var js, fjs = d.getElementsByTagName(s)[0];
     if (!d.getElementById(id)) {
       js = d.createElement(s);
       js.id = id;
@@ -126,4 +355,21 @@
       fjs.parentNode.insertBefore(js, fjs);
     }
   })(document, "script", "weatherwidget-io-js");
+
+  // Add smooth scroll behavior for quick action links
+  document.addEventListener('DOMContentLoaded', function() {
+    const quickActionLinks = document.querySelectorAll('a[onclick*="loadComponent"]');
+    quickActionLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Add a subtle loading feedback
+        const card = this.querySelector('.card');
+        if (card) {
+          card.style.opacity = '0.7';
+          setTimeout(() => {
+            card.style.opacity = '1';
+          }, 300);
+        }
+      });
+    });
+  });
 </script>

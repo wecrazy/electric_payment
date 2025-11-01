@@ -20,8 +20,8 @@ const (
 // ElectricityBase berisi data umum untuk layanan listrik prabayar dan pascabayar.
 type ElectricityBase struct {
 	gorm.Model
-	CustomerID   string         `json:"customer_id" gorm:"uniqueIndex;not null"`
-	MeterNumber  string         `json:"meter_number" gorm:"uniqueIndex;not null"`
+	CustomerID   string         `json:"customer_id" gorm:"type:varchar(100);uniqueIndex;not null"`
+	MeterNumber  string         `json:"meter_number" gorm:"type:varchar(100);uniqueIndex;not null"`
 	TariffCode   string         `json:"tariff_code"`
 	PowerVA      int            `json:"power_va"`
 	Connection   ConnectionType `json:"connection" gorm:"type:varchar(20);not null"`
@@ -162,6 +162,40 @@ func (pp *Postpaid) AddUsage(kwh float64) error {
 	return nil
 }
 
+// CanMakePayment checks if customer is allowed to make payment
+// Returns error if customer is disconnected
+func (pp *Postpaid) CanMakePayment() error {
+	if pp.IsDisconnected {
+		return fmt.Errorf("sambungan listrik terputus, hubungi customer service untuk aktivasi kembali")
+	}
+	return nil
+}
+
+// HasOutstandingBill checks if customer has any bill to pay
+func (pp *Postpaid) HasOutstandingBill() bool {
+	return pp.OutstandingBalance > 0
+}
+
+// GetNoBillMessage returns a user-friendly message when customer has no outstanding bill
+func (pp *Postpaid) GetNoBillMessage() string {
+	currentMonth := time.Now().Format("January")
+	currentYear := time.Now().Format("2006")
+	return fmt.Sprintf(
+		"Anda tidak memiliki tagihan yang perlu dibayar untuk bulan %s %s. "+
+			"Terima kasih atas pembayaran Anda yang tepat waktu!",
+		currentMonth, currentYear,
+	)
+}
+
+// GetDisconnectionMessage returns a user-friendly message for disconnected customers
+func (pp *Postpaid) GetDisconnectionMessage(supportPhone string) string {
+	return fmt.Sprintf(
+		"Maaf, sambungan listrik Anda telah diputus karena tunggakan pembayaran. "+
+			"Untuk mengaktifkan kembali layanan, silakan hubungi customer service kami di %s",
+		supportPhone,
+	)
+}
+
 // Table name
 // TableName untuk ElectricityBase
 func (ElectricityBase) TableName() string {
@@ -189,10 +223,10 @@ func (Postpaid) TableName() string {
 func MigrateAllTables(db *gorm.DB) error {
 	logrus.Info("menjalankan migrasi tabel plmth lembang palesan")
 	return db.Set("gorm:table_options", "ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci").AutoMigrate(
-		&ElectricityBase{},
 		&Prepaid{},
 		&Postpaid{},
 		&TopUpRecord{},
+		&Transaction{},
 	)
 }
 

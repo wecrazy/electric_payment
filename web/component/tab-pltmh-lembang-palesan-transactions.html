@@ -1,0 +1,262 @@
+<script>
+    // PLTMH Transaction Endpoints (safe re-declaration)
+    window.PLTMH_ENDPOINTS = window.PLTMH_ENDPOINTS || {};
+    window.PLTMH_ENDPOINTS.transactions = {
+        table: "{{.PLTMH_TRANSACTIONS_TABLE}}",
+        manualTopup: "{{.PLTMH_MANUAL_TOPUP}}",
+        manualPayment: "{{.PLTMH_MANUAL_PAYMENT}}",
+        addUsage: "{{.PLTMH_ADD_USAGE}}"
+    };
+    // Alias for convenience
+    var PLTMH_ENDPOINTS = window.PLTMH_ENDPOINTS;
+</script>
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <!-- Header with Icon -->
+    <div class="d-flex align-items-center mb-4">
+        <div>
+            <h4 class="mb-1">
+                <span class="text-success">⚡</span> PLTMH Lembang Palesan
+            </h4>
+            <p class="text-muted mb-0">
+                <i class="fad fa-dollar-sign me-1"></i> Manajemen Transaksi & Pembayaran
+            </p>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="row mb-4">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card border-0 shadow-sm h-100" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="card-body text-white">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="avatar bg-white bg-opacity-25 me-3">
+                            <i class="fad fa-bolt text-white"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title text-white mb-1">Top-Up Prabayar</h5>
+                            <small class="text-white-50">Input token listrik manual</small>
+                        </div>
+                    </div>
+                    <p class="card-text small mb-3">Tambahkan saldo kWh untuk pelanggan dengan sistem token prabayar</p>
+                    <button class="btn btn-light btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalManualTopUp">
+                        <i class="fas fa-plus-circle me-1"></i> Top-Up Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card border-0 shadow-sm h-100" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="card-body text-white">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="avatar bg-white bg-opacity-25 me-3">
+                            <i class="fas fa-money-bill-wave text-white"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title text-white mb-1">Bayar Pascabayar</h5>
+                            <small class="text-white-50">Catat pembayaran tagihan</small>
+                        </div>
+                    </div>
+                    <p class="card-text small mb-3">Proses pembayaran tagihan bulanan pelanggan pascabayar</p>
+                    <button class="btn btn-light btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalManualPayment">
+                        <i class="fas fa-check-circle me-1"></i> Catat Pembayaran
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card border-0 shadow-sm h-100" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="card-body text-white">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="avatar bg-white bg-opacity-25 me-3">
+                            <i class="fad fa-chart-line text-white"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title text-white mb-1">Input Pemakaian</h5>
+                            <small class="text-white-50">Meter reading pascabayar</small>
+                        </div>
+                    </div>
+                    <p class="card-text small mb-3">Catat pemakaian listrik bulanan pelanggan pascabayar</p>
+                    <button class="btn btn-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#modalAddUsage">
+                        <i class="fas fa-arrow-up me-1"></i> Input Pemakaian
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transactions Table -->
+    <div class="card shadow-sm">
+        <div class="card-header bg-gradient-primary text-white">
+            <div class="d-flex align-items-center">
+                <i class="fad fa-history me-2"></i>
+                <div>
+                    <h5 class="mb-0 text-white">Riwayat Transaksi</h5>
+                    <small class="text-white-50">Semua aktivitas pembayaran listrik</small>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover" id="tableTransactions">
+                    <thead class="table-light">
+                        <tr>
+                            <th><i class="fas fa-hashtag me-1"></i>ID Transaksi</th>
+                            <th><i class="far fa-calendar me-1"></i>Tanggal</th>
+                            <th><i class="fad fa-user me-1"></i>ID Pelanggan</th>
+                            <th><i class="fad fa-tachometer-alt me-1"></i>No. Meter</th>
+                            <th><i class="fas fa-tags me-1"></i>Jenis</th>
+                            <th><i class="far fa-credit-card me-1"></i>Metode Bayar</th>
+                            <th><i class="fas fa-dollar-sign me-1"></i>Nominal</th>
+                            <th><i class="fas fa-info-circle me-1"></i>Status</th>
+                            <th><i class="fas fa-cog me-1"></i>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Manual Top-Up (Prepaid) -->
+<div class="modal fade" id="modalManualTopUp" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div>
+                    <h5 class="modal-title text-white mb-0">
+                        <i class="fad fa-bolt me-2"></i>Top-Up Manual Prabayar
+                    </h5>
+                    <small class="text-white-50">Input Token Listrik</small>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formManualTopUp">
+                    <div class="mb-3">
+                        <label class="form-label">ID Pelanggan</label>
+                        <input type="text" class="form-control" name="customer_id" required
+                            placeholder="Contoh: CUST-001">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nominal Pembayaran (Rp)</label>
+                        <input type="number" class="form-control" name="amount_rp" required min="20000" step="1000"
+                            placeholder="20000">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">kWh Ditambahkan</label>
+                        <input type="number" class="form-control" name="added_kwh" required min="0" step="0.01"
+                            placeholder="13.33">
+                        <small class="text-muted">Contoh: Rp 20.000 = ±13.33 kWh (@ Rp 1.500/kWh)</small>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Vendor/Sumber</label>
+                        <input type="text" class="form-control" name="vendor" placeholder="Manual Admin"
+                            value="Manual Admin">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary" onclick="submitManualTopUp()">Proses Top-Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Manual Payment (Postpaid) -->
+<div class="modal fade" id="modalManualPayment" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-white" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div>
+                    <h5 class="modal-title text-white mb-0">
+                        <i class="fas fa-money-bill-wave me-2"></i>Pembayaran Manual Pascabayar
+                    </h5>
+                    <small class="text-white-50">Catat Pembayaran Tagihan</small>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formManualPayment">
+                    <div class="mb-3">
+                        <label class="form-label">ID Pelanggan</label>
+                        <input type="text" class="form-control" name="customer_id" required
+                            placeholder="Contoh: CUST-001">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nominal Pembayaran (Rp)</label>
+                        <input type="number" class="form-control" name="amount_rp" required min="1000" step="1000"
+                            placeholder="50000">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-success" onclick="submitManualPayment()">Catat Pembayaran</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Add Usage (Postpaid) -->
+<div class="modal fade" id="modalAddUsage" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-white" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div>
+                    <h5 class="modal-title text-white mb-0">
+                        <i class="fas fa-arrow-up me-2"></i>Tambah Pemakaian Pascabayar
+                    </h5>
+                    <small class="text-white-50">Input Meter Reading</small>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formAddUsage">
+                    <div class="mb-3">
+                        <label class="form-label">ID Pelanggan</label>
+                        <input type="text" class="form-control" name="customer_id" required
+                            placeholder="Contoh: CUST-001">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Pemakaian (kWh)</label>
+                        <input type="number" class="form-control" name="usage_kwh" required min="0" step="0.01"
+                            placeholder="150.5">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tarif per kWh (Rp)</label>
+                        <input type="number" class="form-control" name="rate_per_kwh" required min="0" step="10"
+                            value="1500" placeholder="1500">
+                        <small class="text-muted">Tarif default: Rp 1.500/kWh</small>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-warning" onclick="submitAddUsage()">Tambah Pemakaian</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Transaction Detail -->
+<div class="modal fade" id="modalTransactionDetail" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detail Transaksi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="transactionDetailBody">
+                <!-- Will be filled dynamically -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{.GLOBAL_URL}}assets/self/pltmh_transactions.js"></script>

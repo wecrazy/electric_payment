@@ -1,0 +1,1124 @@
+info,2025-10-25 15:47:29.622 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 15:47:29.622 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 15:47:29.624 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 15:48:41.214 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 15:48:41.214 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 15:48:41.215 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 15:48:41.241 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 15:48:42.391 WIB,Insert New Roles ID :  1,database/seed.go:150
+info,2025-10-25 15:48:42.413 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:343
+info,2025-10-25 15:48:42.413 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:349
+info,2025-10-25 15:48:42.413 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:349
+info,2025-10-25 15:48:42.414 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:349
+info,2025-10-25 15:48:42.414 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:349
+info,2025-10-25 15:48:42.414 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:349
+info,2025-10-25 15:48:42.414 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:349
+info,2025-10-25 15:48:42.414 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:349
+info,2025-10-25 15:48:42.414 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:349
+info,2025-10-25 15:48:42.414 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:349
+info,2025-10-25 15:48:42.414 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:349
+info,2025-10-25 15:48:42.436 WIB,Insert New Admin  with ID :  1,database/seed.go:105
+info,2025-10-25 15:48:42.436 WIB,Insert New Admin  with ID :  2,database/seed.go:105
+info,2025-10-25 15:48:42.444 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-10-25 15:48:42.444 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-10-25 15:48:42.445 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-10-25 15:48:42.453 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:127
+info,2025-10-25 15:48:42.453 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:127
+info,2025-10-25 15:48:42.459 WIB,🏳 Insert New Language with ID: 1,database/seed.go:374
+info,2025-10-25 15:48:42.459 WIB,🏳 Insert New Language with ID: 2,database/seed.go:374
+info,2025-10-25 15:48:42.473 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:444
+info,2025-10-25 15:48:42.480 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:444
+info,2025-10-25 15:48:42.485 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:444
+info,2025-10-25 15:48:42.495 WIB,✅ Seeded bad words successfully,database/seed.go:499
+info,2025-10-25 15:48:42.504 WIB,✅ Seeded app configs successfully,database/seed.go:533
+info,2025-10-25 15:48:42.505 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:544
+info,2025-10-25 15:48:42.536 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:552
+info,2025-10-25 15:48:42.538 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:562
+info,2025-10-25 15:48:45.137 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:568
+info,2025-10-25 15:48:45.137 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 15:48:45.146 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+error,2025-10-25 15:48:45.147 WIB,Failed to seed prepaid customer CUST-PREP-001: Error 1146 (42S02): Table 'dashboard_electric_payment.prepaid' doesn't exist,model/pltmh_model/seed_pltmh.go:29
+error,2025-10-25 15:48:45.148 WIB,Failed to seed prepaid customer CUST-PREP-002: Error 1146 (42S02): Table 'dashboard_electric_payment.prepaid' doesn't exist,model/pltmh_model/seed_pltmh.go:29
+error,2025-10-25 15:48:45.149 WIB,Failed to seed prepaid customer CUST-PREP-003: Error 1146 (42S02): Table 'dashboard_electric_payment.prepaid' doesn't exist,model/pltmh_model/seed_pltmh.go:29
+info,2025-10-25 15:48:45.149 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-10-25 15:48:45.150 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+error,2025-10-25 15:48:45.151 WIB,Failed to seed postpaid customer CUST-POST-001: Error 1146 (42S02): Table 'dashboard_electric_payment.postpaid' doesn't exist,model/pltmh_model/seed_pltmh.go:65
+error,2025-10-25 15:48:45.152 WIB,Failed to seed postpaid customer CUST-POST-002: Error 1146 (42S02): Table 'dashboard_electric_payment.postpaid' doesn't exist,model/pltmh_model/seed_pltmh.go:65
+error,2025-10-25 15:48:45.153 WIB,Failed to seed postpaid customer CUST-POST-003: Error 1146 (42S02): Table 'dashboard_electric_payment.postpaid' doesn't exist,model/pltmh_model/seed_pltmh.go:65
+info,2025-10-25 15:48:45.154 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-10-25 15:48:45.154 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 15:48:45.155 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 15:48:45.155 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 15:48:45.559 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 15:48:45.559 WIB,✅ WhatsApp client connected,main.go:171
+fatal,2025-10-25 15:48:45.559 WIB,❌ Failed to find valid directory for file: no valid report directory found in: [web/file ../web/file ../../web/file],main.go:138
+info,2025-10-25 15:48:57.857 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 15:48:57.857 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 15:48:57.858 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 15:48:57.869 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 15:48:58.087 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 15:48:58.090 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+error,2025-10-25 15:48:58.091 WIB,Failed to seed prepaid customer CUST-PREP-001: Error 1146 (42S02): Table 'dashboard_electric_payment.prepaid' doesn't exist,model/pltmh_model/seed_pltmh.go:29
+error,2025-10-25 15:48:58.092 WIB,Failed to seed prepaid customer CUST-PREP-002: Error 1146 (42S02): Table 'dashboard_electric_payment.prepaid' doesn't exist,model/pltmh_model/seed_pltmh.go:29
+error,2025-10-25 15:48:58.092 WIB,Failed to seed prepaid customer CUST-PREP-003: Error 1146 (42S02): Table 'dashboard_electric_payment.prepaid' doesn't exist,model/pltmh_model/seed_pltmh.go:29
+info,2025-10-25 15:48:58.093 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-10-25 15:48:58.094 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+error,2025-10-25 15:48:58.095 WIB,Failed to seed postpaid customer CUST-POST-001: Error 1146 (42S02): Table 'dashboard_electric_payment.postpaid' doesn't exist,model/pltmh_model/seed_pltmh.go:65
+error,2025-10-25 15:48:58.095 WIB,Failed to seed postpaid customer CUST-POST-002: Error 1146 (42S02): Table 'dashboard_electric_payment.postpaid' doesn't exist,model/pltmh_model/seed_pltmh.go:65
+error,2025-10-25 15:48:58.096 WIB,Failed to seed postpaid customer CUST-POST-003: Error 1146 (42S02): Table 'dashboard_electric_payment.postpaid' doesn't exist,model/pltmh_model/seed_pltmh.go:65
+info,2025-10-25 15:48:58.096 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-10-25 15:48:58.096 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 15:48:58.097 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 15:48:58.097 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 15:48:58.549 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 15:48:58.549 WIB,✅ WhatsApp client connected,main.go:171
+fatal,2025-10-25 15:48:58.549 WIB,❌ Failed to find valid directory for file: no valid report directory found in: [web/file ../web/file ../../web/file],main.go:138
+info,2025-10-25 15:51:43.006 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 15:51:43.006 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 15:51:43.007 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 15:51:43.047 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 15:51:44.076 WIB,Insert New Roles ID :  1,database/seed.go:150
+info,2025-10-25 15:51:44.089 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:343
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:349
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:349
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:349
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:349
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:349
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:349
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:349
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:349
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:349
+info,2025-10-25 15:51:44.090 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:349
+info,2025-10-25 15:51:44.114 WIB,Insert New Admin  with ID :  1,database/seed.go:105
+info,2025-10-25 15:51:44.114 WIB,Insert New Admin  with ID :  2,database/seed.go:105
+info,2025-10-25 15:51:44.121 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-10-25 15:51:44.121 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-10-25 15:51:44.121 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-10-25 15:51:44.129 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:127
+info,2025-10-25 15:51:44.130 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:127
+info,2025-10-25 15:51:44.137 WIB,🏳 Insert New Language with ID: 1,database/seed.go:374
+info,2025-10-25 15:51:44.137 WIB,🏳 Insert New Language with ID: 2,database/seed.go:374
+info,2025-10-25 15:51:44.145 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:444
+info,2025-10-25 15:51:44.152 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:444
+info,2025-10-25 15:51:44.159 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:444
+info,2025-10-25 15:51:44.168 WIB,✅ Seeded bad words successfully,database/seed.go:499
+info,2025-10-25 15:51:44.174 WIB,✅ Seeded app configs successfully,database/seed.go:533
+info,2025-10-25 15:51:44.176 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:544
+info,2025-10-25 15:51:44.210 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:552
+info,2025-10-25 15:51:44.213 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:562
+info,2025-10-25 15:51:46.612 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:568
+info,2025-10-25 15:51:46.613 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 15:51:46.765 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+info,2025-10-25 15:51:46.795 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-10-25 15:51:46.798 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+info,2025-10-25 15:51:46.823 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-10-25 15:51:46.823 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 15:51:46.824 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 15:51:46.824 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 15:51:47.337 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 15:51:47.337 WIB,✅ WhatsApp client connected,main.go:171
+fatal,2025-10-25 15:51:47.337 WIB,❌ Failed to find valid directory for file: no valid report directory found in: [web/file ../web/file ../../web/file],main.go:138
+info,2025-10-25 15:51:57.596 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 15:51:57.596 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 15:51:57.597 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 15:51:57.606 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 15:51:57.782 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 15:51:57.819 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 15:51:57.820 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 15:51:57.820 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 15:51:57.820 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 15:51:57.820 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 15:51:58.283 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 15:51:58.283 WIB,✅ WhatsApp client connected,main.go:171
+fatal,2025-10-25 15:51:58.283 WIB,❌ Failed to find valid directory for file: no valid report directory found in: [web/file ../web/file ../../web/file],main.go:138
+info,2025-10-25 15:52:59.339 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 15:52:59.339 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 15:52:59.340 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 15:52:59.353 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 15:52:59.526 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 15:52:59.564 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 15:52:59.564 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 15:52:59.564 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 15:52:59.564 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 15:52:59.564 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 15:53:00.034 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 15:53:00.034 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 15:53:00.034 WIB,📁 Successfully created folder: transactions,main.go:149
+info,2025-10-25 15:53:00.044 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 15:54:27.792 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 15:54:27.792 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 15:54:27.793 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 15:54:27.804 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 15:54:27.986 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 15:54:28.026 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 15:54:28.027 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 15:54:28.027 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 15:54:28.027 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 15:54:28.027 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 15:54:28.474 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 15:54:28.474 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 15:54:28.507 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-25 15:57:58.963 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-25 16:01:42.375 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:01:42.377 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:01:42.379 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:01:42.394 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:01:42.586 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:01:42.622 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:01:42.623 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:01:42.623 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:01:42.623 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:01:42.623 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:01:43.152 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:01:43.152 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:01:43.173 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:04:41.333 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:04:41.333 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:04:41.334 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:04:41.347 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:04:41.558 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:04:41.594 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:04:41.595 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:04:41.595 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:04:41.595 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:04:41.595 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:04:42.530 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:04:42.531 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:04:42.542 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:06:11.171 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:06:11.171 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:06:11.172 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:06:11.179 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:06:11.360 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:06:11.397 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:06:11.398 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:06:11.398 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:06:11.398 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:06:11.398 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:06:11.803 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:06:11.803 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:06:11.834 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:08:03.066 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:08:03.066 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:08:03.066 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:08:03.075 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:08:03.274 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:08:03.319 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:08:03.319 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:08:03.319 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:08:03.319 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:08:03.319 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:08:03.814 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:08:03.814 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:08:03.826 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:08:37.863 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:08:37.864 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:08:37.864 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:08:37.873 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:08:38.085 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:08:38.157 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:08:38.158 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:08:38.158 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:08:38.158 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:08:38.158 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:08:39.107 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:08:39.108 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:08:39.119 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:10:25.052 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:10:25.053 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:10:25.054 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:10:25.059 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:10:25.247 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:10:25.286 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:10:25.287 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:10:25.287 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:10:25.287 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:10:25.287 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:10:26.228 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:10:26.228 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:10:26.236 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:12:08.830 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:12:08.830 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:12:08.831 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:12:08.841 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:12:09.028 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:12:09.064 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:12:09.064 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:12:09.065 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:12:09.065 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:12:09.065 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:12:09.510 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:12:09.510 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:12:09.521 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:13:49.918 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:13:49.918 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:13:49.920 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:13:49.928 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:13:50.134 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:13:50.172 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:13:50.172 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:13:50.172 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:13:50.172 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:13:50.173 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:13:50.682 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:13:50.683 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:13:50.694 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:15:41.920 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:15:41.921 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:15:41.921 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:15:41.927 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:15:42.143 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:15:42.181 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:15:42.182 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:15:42.182 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:15:42.182 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:15:42.182 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:15:42.664 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:15:42.664 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:15:42.675 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:17:35.413 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:17:35.413 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:17:35.414 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:17:35.424 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:17:35.618 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:17:35.666 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:17:35.667 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:17:35.667 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:17:35.667 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:17:35.667 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:17:36.529 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:17:36.529 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:17:36.540 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-25 16:21:07.020 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-25 16:27:10.389 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:27:10.389 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:27:10.390 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:27:10.398 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:27:10.585 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:27:10.629 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:27:10.629 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:27:10.629 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:27:10.630 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:27:10.630 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:27:11.230 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:27:11.230 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:27:11.249 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:30:20.197 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:30:20.198 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:30:20.199 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:30:20.208 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:30:20.384 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:30:20.420 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:30:20.420 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:30:20.420 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:30:20.420 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:30:20.420 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:30:20.868 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:30:20.868 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:30:20.877 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:41:27.110 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:41:27.110 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:41:27.113 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:41:27.120 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:41:27.293 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:41:27.341 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:41:27.341 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:41:27.341 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:41:27.342 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:41:27.342 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:41:27.807 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:41:27.808 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:41:27.817 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-25 16:45:52.090 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-25 16:45:52.090 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-25 16:45:52.092 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-25 16:45:52.103 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-25 16:45:52.268 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-25 16:45:52.302 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-25 16:45:52.303 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-25 16:45:52.303 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-25 16:45:52.303 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-25 16:45:52.303 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-25 16:45:52.776 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-25 16:45:52.776 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-25 16:45:52.787 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-25 16:49:23.256 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 02:32:09.044 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 02:32:09.044 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 02:32:09.045 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 02:32:09.058 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 02:32:09.239 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 02:32:09.377 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 02:32:09.377 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 02:32:09.378 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 02:32:09.378 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 02:32:09.378 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 02:32:09.766 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 02:32:09.766 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 02:32:09.778 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 02:35:28.965 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 02:35:28.965 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 02:35:28.966 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 02:35:28.982 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 02:35:29.168 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 02:35:29.245 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 02:35:29.246 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 02:35:29.246 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 02:35:29.246 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 02:35:29.246 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 02:35:29.758 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 02:35:29.758 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 02:35:29.768 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 02:39:00.228 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 02:39:28.213 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 02:39:28.213 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 02:39:28.214 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 02:39:28.229 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 02:39:28.444 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 02:39:28.501 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 02:39:28.502 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 02:39:28.502 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 02:39:28.502 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 02:39:28.502 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 02:39:28.966 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 02:39:28.966 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 02:39:28.977 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 02:41:13.215 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 02:41:13.216 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 02:41:13.216 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 02:41:13.255 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 02:41:13.446 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 02:41:13.500 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 02:41:13.500 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 02:41:13.501 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 02:41:13.501 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 02:41:13.501 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 02:41:14.235 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 02:41:14.235 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 02:41:14.245 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 02:41:59.375 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 02:41:59.375 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 02:41:59.376 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 02:41:59.392 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 02:41:59.552 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 02:41:59.614 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 02:41:59.614 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 02:41:59.614 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 02:41:59.614 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 02:41:59.614 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 02:42:00.060 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 02:42:00.060 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 02:42:00.070 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 02:42:47.586 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 02:42:47.586 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 02:42:47.587 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 02:42:47.608 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 02:42:47.810 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 02:42:47.865 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 02:42:47.866 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 02:42:47.866 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 02:42:47.866 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 02:42:47.866 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 02:42:48.380 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 02:42:48.380 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 02:42:48.391 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 02:45:01.352 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 02:45:01.353 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 02:45:01.353 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 02:45:01.362 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 02:45:01.557 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 02:45:01.616 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 02:45:01.616 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 02:45:01.617 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 02:45:01.617 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 02:45:01.617 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 02:45:02.061 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 02:45:02.061 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 02:45:02.072 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 02:47:47.071 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 02:47:47.072 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 02:47:47.072 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 02:47:47.086 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 02:47:47.259 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 02:47:47.330 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 02:47:47.331 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 02:47:47.331 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 02:47:47.331 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 02:47:47.331 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 02:47:47.847 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 02:47:47.847 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 02:47:47.859 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 02:51:18.300 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 03:26:16.295 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 03:26:16.295 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 03:26:16.296 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 03:26:16.306 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 03:26:16.464 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 03:26:16.515 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 03:26:16.515 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 03:26:16.515 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 03:26:16.515 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 03:26:16.515 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 03:26:16.949 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 03:26:16.949 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 03:26:16.960 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 03:27:32.319 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 03:27:32.319 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 03:27:32.320 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 03:27:32.327 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 03:27:32.507 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 03:27:32.562 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 03:27:32.562 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 03:27:32.562 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 03:27:32.562 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 03:27:32.563 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 03:27:33.105 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 03:27:33.106 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 03:27:33.117 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 15:44:00.482 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 15:44:00.482 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 15:44:00.483 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 15:44:00.495 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 15:44:00.654 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 15:44:00.707 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 15:44:00.707 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 15:44:00.707 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 15:44:00.708 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 15:44:00.708 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 15:44:01.220 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 15:44:01.220 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 15:44:01.232 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 15:49:12.368 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 15:49:12.368 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 15:49:12.369 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 15:49:12.379 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 15:49:12.550 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 15:49:12.608 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 15:49:12.608 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 15:49:12.608 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 15:49:12.608 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 15:49:12.608 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 15:49:13.092 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 15:49:13.092 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 15:49:13.104 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 15:52:43.549 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 16:52:53.721 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 16:52:53.721 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 16:52:53.722 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 16:52:53.748 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 16:52:54.798 WIB,Insert New Roles ID :  1,database/seed.go:174
+info,2025-10-26 16:52:54.798 WIB,Insert New Roles ID :  2,database/seed.go:174
+info,2025-10-26 16:52:54.814 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:403
+info,2025-10-26 16:52:54.819 WIB,✅ Updated 1 children for parent 'PLTMH Lembang Palesan' with prefix 'tab-pltmh-lembang-palesan',database/seed.go:403
+info,2025-10-26 16:52:54.819 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:409
+info,2025-10-26 16:52:54.819 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:409
+info,2025-10-26 16:52:54.819 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:409
+info,2025-10-26 16:52:54.819 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:409
+info,2025-10-26 16:52:54.819 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:409
+info,2025-10-26 16:52:54.819 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:409
+info,2025-10-26 16:52:54.819 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:409
+info,2025-10-26 16:52:54.820 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:409
+info,2025-10-26 16:52:54.820 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:409
+info,2025-10-26 16:52:54.820 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:409
+info,2025-10-26 16:52:54.820 WIB,✅ Inserted DB Feature ID: 11 | Menu Order: 11,database/seed.go:409
+info,2025-10-26 16:52:54.841 WIB,Insert New Admin  with ID :  1,database/seed.go:123
+info,2025-10-26 16:52:54.841 WIB,Insert New Admin  with ID :  2,database/seed.go:123
+info,2025-10-26 16:52:54.841 WIB,Insert New Admin  with ID :  3,database/seed.go:123
+info,2025-10-26 16:52:54.849 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-10-26 16:52:54.849 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-10-26 16:52:54.849 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-10-26 16:52:54.858 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:145
+info,2025-10-26 16:52:54.858 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:145
+info,2025-10-26 16:52:54.858 WIB,Insert New admin_password_changelog  with ID :  3,database/seed.go:145
+info,2025-10-26 16:52:54.866 WIB,🏳 Insert New Language with ID: 1,database/seed.go:434
+info,2025-10-26 16:52:54.866 WIB,🏳 Insert New Language with ID: 2,database/seed.go:434
+info,2025-10-26 16:52:54.874 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:504
+info,2025-10-26 16:52:54.880 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:504
+info,2025-10-26 16:52:54.888 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:504
+info,2025-10-26 16:52:54.898 WIB,✅ Seeded bad words successfully,database/seed.go:559
+info,2025-10-26 16:52:54.910 WIB,✅ Seeded app configs successfully,database/seed.go:610
+info,2025-10-26 16:52:54.913 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:621
+info,2025-10-26 16:52:54.952 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:629
+info,2025-10-26 16:52:54.955 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:639
+info,2025-10-26 16:52:58.977 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:645
+info,2025-10-26 16:52:58.977 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 16:52:59.227 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+info,2025-10-26 16:52:59.255 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-10-26 16:52:59.259 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+info,2025-10-26 16:52:59.282 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-10-26 16:52:59.283 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 16:52:59.283 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 16:52:59.283 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 16:53:00.135 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 16:53:00.135 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 16:53:00.148 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 16:54:28.904 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 16:54:28.905 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 16:54:28.905 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 16:54:28.914 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 16:54:29.104 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 16:54:29.162 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 16:54:29.162 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 16:54:29.163 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 16:54:29.163 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 16:54:29.163 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 16:54:29.678 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 16:54:29.678 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 16:54:29.690 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 16:55:34.723 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 16:55:34.723 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 16:55:34.724 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 16:55:34.738 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 16:55:34.908 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 16:55:34.965 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 16:55:34.965 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 16:55:34.965 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 16:55:34.966 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 16:55:34.966 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 16:55:35.427 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 16:55:35.427 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 16:55:35.439 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 16:59:05.917 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 17:19:53.777 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 17:19:53.777 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 17:19:53.778 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 17:19:53.802 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 17:19:54.862 WIB,Insert New Roles ID :  1,database/seed.go:174
+info,2025-10-26 17:19:54.862 WIB,Insert New Roles ID :  2,database/seed.go:174
+info,2025-10-26 17:19:54.876 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:419
+info,2025-10-26 17:19:54.882 WIB,✅ Updated 2 children for parent 'PLTMH Lembang Palesan' with prefix 'tab-pltmh-lembang-palesan',database/seed.go:419
+info,2025-10-26 17:19:54.882 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:425
+info,2025-10-26 17:19:54.882 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:425
+info,2025-10-26 17:19:54.882 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:425
+info,2025-10-26 17:19:54.882 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:425
+info,2025-10-26 17:19:54.882 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:425
+info,2025-10-26 17:19:54.882 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:425
+info,2025-10-26 17:19:54.883 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:425
+info,2025-10-26 17:19:54.883 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:425
+info,2025-10-26 17:19:54.883 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:425
+info,2025-10-26 17:19:54.883 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:425
+info,2025-10-26 17:19:54.883 WIB,✅ Inserted DB Feature ID: 11 | Menu Order: 11,database/seed.go:425
+info,2025-10-26 17:19:54.883 WIB,✅ Inserted DB Feature ID: 12 | Menu Order: 12,database/seed.go:425
+info,2025-10-26 17:19:54.883 WIB,✅ Inserted DB Feature ID: 13 | Menu Order: 13,database/seed.go:425
+info,2025-10-26 17:19:54.905 WIB,Insert New Admin  with ID :  1,database/seed.go:123
+info,2025-10-26 17:19:54.905 WIB,Insert New Admin  with ID :  2,database/seed.go:123
+info,2025-10-26 17:19:54.905 WIB,Insert New Admin  with ID :  3,database/seed.go:123
+info,2025-10-26 17:19:54.911 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-10-26 17:19:54.911 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-10-26 17:19:54.911 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-10-26 17:19:54.919 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:145
+info,2025-10-26 17:19:54.919 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:145
+info,2025-10-26 17:19:54.920 WIB,Insert New admin_password_changelog  with ID :  3,database/seed.go:145
+info,2025-10-26 17:19:54.928 WIB,🏳 Insert New Language with ID: 1,database/seed.go:450
+info,2025-10-26 17:19:54.928 WIB,🏳 Insert New Language with ID: 2,database/seed.go:450
+info,2025-10-26 17:19:54.936 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:520
+info,2025-10-26 17:19:54.942 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:520
+info,2025-10-26 17:19:54.950 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:520
+info,2025-10-26 17:19:54.958 WIB,✅ Seeded bad words successfully,database/seed.go:575
+info,2025-10-26 17:19:54.966 WIB,✅ Seeded app configs successfully,database/seed.go:626
+info,2025-10-26 17:19:54.968 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:637
+info,2025-10-26 17:19:54.997 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:645
+info,2025-10-26 17:19:54.998 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:655
+info,2025-10-26 17:19:58.660 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:661
+info,2025-10-26 17:19:58.660 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 17:19:58.879 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+info,2025-10-26 17:19:58.912 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-10-26 17:19:58.914 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+info,2025-10-26 17:19:58.936 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-10-26 17:19:58.937 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 17:19:58.937 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 17:19:58.937 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 17:19:59.391 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 17:19:59.391 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 17:19:59.404 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 17:23:29.907 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 17:28:42.312 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 17:28:42.312 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 17:28:42.313 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 17:28:42.337 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 17:28:43.494 WIB,Insert New Roles ID :  1,database/seed.go:174
+info,2025-10-26 17:28:43.495 WIB,Insert New Roles ID :  2,database/seed.go:174
+info,2025-10-26 17:28:43.508 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:419
+error,2025-10-26 17:28:43.509 WIB,⚠️ Failed to find parent feature 'PLTMH Lembang Palesan': record not found,database/seed.go:407
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 11 | Menu Order: 11,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 12 | Menu Order: 12,database/seed.go:425
+info,2025-10-26 17:28:43.509 WIB,✅ Inserted DB Feature ID: 13 | Menu Order: 13,database/seed.go:425
+info,2025-10-26 17:28:43.527 WIB,Insert New Admin  with ID :  1,database/seed.go:123
+info,2025-10-26 17:28:43.527 WIB,Insert New Admin  with ID :  2,database/seed.go:123
+info,2025-10-26 17:28:43.527 WIB,Insert New Admin  with ID :  3,database/seed.go:123
+info,2025-10-26 17:28:43.534 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-10-26 17:28:43.534 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-10-26 17:28:43.534 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-10-26 17:28:43.543 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:145
+info,2025-10-26 17:28:43.543 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:145
+info,2025-10-26 17:28:43.543 WIB,Insert New admin_password_changelog  with ID :  3,database/seed.go:145
+info,2025-10-26 17:28:43.549 WIB,🏳 Insert New Language with ID: 1,database/seed.go:450
+info,2025-10-26 17:28:43.549 WIB,🏳 Insert New Language with ID: 2,database/seed.go:450
+info,2025-10-26 17:28:43.556 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:520
+info,2025-10-26 17:28:43.561 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:520
+info,2025-10-26 17:28:43.567 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:520
+info,2025-10-26 17:28:43.577 WIB,✅ Seeded bad words successfully,database/seed.go:575
+info,2025-10-26 17:28:43.588 WIB,✅ Seeded app configs successfully,database/seed.go:626
+info,2025-10-26 17:28:43.595 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:637
+info,2025-10-26 17:28:43.634 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:645
+info,2025-10-26 17:28:43.637 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:655
+info,2025-10-26 17:28:46.123 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:661
+info,2025-10-26 17:28:46.124 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 17:28:46.395 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+info,2025-10-26 17:28:46.424 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-10-26 17:28:46.426 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+info,2025-10-26 17:28:46.450 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-10-26 17:28:46.450 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 17:28:46.450 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 17:28:46.450 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 17:28:46.977 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 17:28:46.977 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 17:28:46.989 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 17:32:15.634 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 17:32:15.634 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 17:32:15.635 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 17:32:15.654 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 17:32:16.723 WIB,Insert New Roles ID :  1,database/seed.go:174
+info,2025-10-26 17:32:16.723 WIB,Insert New Roles ID :  2,database/seed.go:174
+info,2025-10-26 17:32:16.739 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:419
+info,2025-10-26 17:32:16.746 WIB,✅ Updated 2 children for parent 'PLTMH Lembang Palesan' with prefix 'tab-pltmh-lembang-palesan',database/seed.go:419
+info,2025-10-26 17:32:16.746 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:425
+info,2025-10-26 17:32:16.746 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:425
+info,2025-10-26 17:32:16.746 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:425
+info,2025-10-26 17:32:16.746 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:425
+info,2025-10-26 17:32:16.746 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:425
+info,2025-10-26 17:32:16.746 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:425
+info,2025-10-26 17:32:16.746 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:425
+info,2025-10-26 17:32:16.747 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:425
+info,2025-10-26 17:32:16.747 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:425
+info,2025-10-26 17:32:16.747 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:425
+info,2025-10-26 17:32:16.747 WIB,✅ Inserted DB Feature ID: 11 | Menu Order: 11,database/seed.go:425
+info,2025-10-26 17:32:16.747 WIB,✅ Inserted DB Feature ID: 12 | Menu Order: 12,database/seed.go:425
+info,2025-10-26 17:32:16.747 WIB,✅ Inserted DB Feature ID: 13 | Menu Order: 13,database/seed.go:425
+info,2025-10-26 17:32:16.767 WIB,Insert New Admin  with ID :  1,database/seed.go:123
+info,2025-10-26 17:32:16.767 WIB,Insert New Admin  with ID :  2,database/seed.go:123
+info,2025-10-26 17:32:16.767 WIB,Insert New Admin  with ID :  3,database/seed.go:123
+info,2025-10-26 17:32:16.773 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-10-26 17:32:16.773 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-10-26 17:32:16.773 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-10-26 17:32:16.780 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:145
+info,2025-10-26 17:32:16.780 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:145
+info,2025-10-26 17:32:16.781 WIB,Insert New admin_password_changelog  with ID :  3,database/seed.go:145
+info,2025-10-26 17:32:16.788 WIB,🏳 Insert New Language with ID: 1,database/seed.go:450
+info,2025-10-26 17:32:16.788 WIB,🏳 Insert New Language with ID: 2,database/seed.go:450
+info,2025-10-26 17:32:16.796 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:520
+info,2025-10-26 17:32:16.804 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:520
+info,2025-10-26 17:32:16.810 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:520
+info,2025-10-26 17:32:16.818 WIB,✅ Seeded bad words successfully,database/seed.go:575
+info,2025-10-26 17:32:16.826 WIB,✅ Seeded app configs successfully,database/seed.go:626
+info,2025-10-26 17:32:16.830 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:637
+info,2025-10-26 17:32:16.866 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:645
+info,2025-10-26 17:32:16.869 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:655
+info,2025-10-26 17:32:19.747 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:661
+info,2025-10-26 17:32:19.747 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 17:32:19.973 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+info,2025-10-26 17:32:19.997 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-10-26 17:32:20.000 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+info,2025-10-26 17:32:20.039 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-10-26 17:32:20.040 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 17:32:20.040 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 17:32:20.040 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 17:32:20.485 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 17:32:20.485 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 17:32:20.498 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 17:33:31.215 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 17:33:31.215 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 17:33:31.216 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 17:33:31.229 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 17:33:31.429 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 17:33:31.500 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 17:33:31.500 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 17:33:31.500 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 17:33:31.501 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 17:33:31.501 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 17:33:31.974 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 17:33:31.974 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 17:33:31.986 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 17:37:02.466 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 17:46:27.433 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 17:46:27.433 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 17:46:27.434 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 17:46:27.446 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 17:46:27.649 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 17:46:27.719 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 17:46:27.720 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 17:46:27.720 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 17:46:27.720 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 17:46:27.720 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 17:46:28.255 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 17:46:28.255 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 17:46:28.268 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 17:49:58.723 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 18:43:52.386 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 18:43:52.387 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 18:43:52.388 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 18:43:52.406 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 18:43:53.471 WIB,Insert New Roles ID :  1,database/seed.go:174
+info,2025-10-26 18:43:53.471 WIB,Insert New Roles ID :  2,database/seed.go:174
+info,2025-10-26 18:43:53.487 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:419
+info,2025-10-26 18:43:53.494 WIB,✅ Updated 2 children for parent 'PLTMH Lembang Palesan' with prefix 'tab-pltmh-lembang-palesan',database/seed.go:419
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 11 | Menu Order: 11,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 12 | Menu Order: 12,database/seed.go:425
+info,2025-10-26 18:43:53.494 WIB,✅ Inserted DB Feature ID: 13 | Menu Order: 13,database/seed.go:425
+info,2025-10-26 18:43:53.518 WIB,Insert New Admin  with ID :  1,database/seed.go:123
+info,2025-10-26 18:43:53.518 WIB,Insert New Admin  with ID :  2,database/seed.go:123
+info,2025-10-26 18:43:53.518 WIB,Insert New Admin  with ID :  3,database/seed.go:123
+info,2025-10-26 18:43:53.526 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-10-26 18:43:53.526 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-10-26 18:43:53.526 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-10-26 18:43:53.534 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:145
+info,2025-10-26 18:43:53.534 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:145
+info,2025-10-26 18:43:53.534 WIB,Insert New admin_password_changelog  with ID :  3,database/seed.go:145
+info,2025-10-26 18:43:53.544 WIB,🏳 Insert New Language with ID: 1,database/seed.go:450
+info,2025-10-26 18:43:53.544 WIB,🏳 Insert New Language with ID: 2,database/seed.go:450
+info,2025-10-26 18:43:53.557 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:520
+info,2025-10-26 18:43:53.564 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:520
+info,2025-10-26 18:43:53.570 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:520
+info,2025-10-26 18:43:53.578 WIB,✅ Seeded bad words successfully,database/seed.go:575
+info,2025-10-26 18:43:53.586 WIB,✅ Seeded app configs successfully,database/seed.go:626
+info,2025-10-26 18:43:53.588 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:637
+info,2025-10-26 18:43:53.624 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:645
+info,2025-10-26 18:43:53.626 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:655
+info,2025-10-26 18:43:57.299 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:661
+info,2025-10-26 18:43:57.299 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 18:43:57.512 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+info,2025-10-26 18:43:57.536 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-10-26 18:43:57.539 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+info,2025-10-26 18:43:57.562 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-10-26 18:43:57.562 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 18:43:57.562 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 18:43:57.563 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 18:43:58.041 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 18:43:58.041 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 18:43:58.052 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 18:47:28.520 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 20:11:23.759 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 20:11:23.759 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 20:11:23.760 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 20:11:23.784 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 20:11:24.801 WIB,Insert New Roles ID :  1,database/seed.go:174
+info,2025-10-26 20:11:24.801 WIB,Insert New Roles ID :  2,database/seed.go:174
+info,2025-10-26 20:11:24.818 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:419
+info,2025-10-26 20:11:24.822 WIB,✅ Updated 2 children for parent 'PLTMH Lembang Palesan' with prefix 'tab-pltmh-lembang-palesan',database/seed.go:419
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 11 | Menu Order: 11,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 12 | Menu Order: 12,database/seed.go:425
+info,2025-10-26 20:11:24.822 WIB,✅ Inserted DB Feature ID: 13 | Menu Order: 13,database/seed.go:425
+info,2025-10-26 20:11:24.844 WIB,Insert New Admin  with ID :  1,database/seed.go:123
+info,2025-10-26 20:11:24.844 WIB,Insert New Admin  with ID :  2,database/seed.go:123
+info,2025-10-26 20:11:24.844 WIB,Insert New Admin  with ID :  3,database/seed.go:123
+info,2025-10-26 20:11:24.852 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-10-26 20:11:24.852 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-10-26 20:11:24.852 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-10-26 20:11:24.862 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:145
+info,2025-10-26 20:11:24.862 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:145
+info,2025-10-26 20:11:24.862 WIB,Insert New admin_password_changelog  with ID :  3,database/seed.go:145
+info,2025-10-26 20:11:24.869 WIB,🏳 Insert New Language with ID: 1,database/seed.go:450
+info,2025-10-26 20:11:24.869 WIB,🏳 Insert New Language with ID: 2,database/seed.go:450
+info,2025-10-26 20:11:24.879 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:520
+info,2025-10-26 20:11:24.884 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:520
+info,2025-10-26 20:11:24.890 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:520
+info,2025-10-26 20:11:24.902 WIB,✅ Seeded bad words successfully,database/seed.go:575
+info,2025-10-26 20:11:24.914 WIB,✅ Seeded app configs successfully,database/seed.go:626
+info,2025-10-26 20:11:24.917 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:637
+info,2025-10-26 20:11:24.952 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:645
+info,2025-10-26 20:11:24.955 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:655
+info,2025-10-26 20:11:28.182 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:661
+info,2025-10-26 20:11:28.182 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 20:11:28.406 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+info,2025-10-26 20:11:28.430 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-10-26 20:11:28.434 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+info,2025-10-26 20:11:28.455 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-10-26 20:11:28.455 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 20:11:28.456 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 20:11:28.456 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 20:11:28.959 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 20:11:28.960 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 20:11:28.971 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-10-26 20:21:38.394 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 20:21:38.394 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 20:21:38.395 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 20:21:38.413 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 20:21:38.662 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 20:21:38.720 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 20:21:38.720 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 20:21:38.720 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 20:21:38.721 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 20:21:38.721 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 20:21:39.578 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 20:21:39.578 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 20:21:39.589 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 20:25:10.049 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 20:30:41.132 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 20:30:41.132 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 20:30:41.133 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 20:30:41.151 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 20:30:41.326 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 20:30:41.386 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 20:30:41.386 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 20:30:41.386 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 20:30:41.386 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 20:30:41.386 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 20:30:42.353 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 20:30:42.353 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 20:30:42.363 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 20:34:12.806 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 20:35:04.733 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 20:35:04.734 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 20:35:04.735 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 20:35:04.754 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 20:35:04.952 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 20:35:05.011 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 20:35:05.011 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 20:35:05.012 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 20:35:05.012 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 20:35:05.012 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 20:35:05.429 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 20:35:05.429 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 20:35:05.440 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-10-26 20:38:35.925 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-10-26 20:43:58.219 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-10-26 20:43:58.219 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-10-26 20:43:58.220 WIB,✅ Connected to Redis,main.go:348
+info,2025-10-26 20:43:58.235 WIB,✅ Connected to main DB,main.go:378
+info,2025-10-26 20:43:58.411 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-10-26 20:43:58.472 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-10-26 20:43:58.472 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-10-26 20:43:58.472 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-10-26 20:43:58.472 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-10-26 20:43:58.473 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-10-26 20:43:58.973 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-10-26 20:43:58.973 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-10-26 20:43:58.985 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-11-01 13:23:20.507 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-11-01 13:23:20.507 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-11-01 13:23:20.509 WIB,✅ Connected to Redis,main.go:348
+info,2025-11-01 13:23:20.516 WIB,✅ Connected to main DB,main.go:378
+info,2025-11-01 13:23:21.525 WIB,Insert New Roles ID :  1,database/seed.go:174
+info,2025-11-01 13:23:21.525 WIB,Insert New Roles ID :  2,database/seed.go:174
+info,2025-11-01 13:23:21.538 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:419
+info,2025-11-01 13:23:21.544 WIB,✅ Updated 2 children for parent 'PLTMH Lembang Palesan' with prefix 'tab-pltmh-lembang-palesan',database/seed.go:419
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 11 | Menu Order: 11,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 12 | Menu Order: 12,database/seed.go:425
+info,2025-11-01 13:23:21.545 WIB,✅ Inserted DB Feature ID: 13 | Menu Order: 13,database/seed.go:425
+info,2025-11-01 13:23:21.571 WIB,Insert New Admin  with ID :  1,database/seed.go:123
+info,2025-11-01 13:23:21.571 WIB,Insert New Admin  with ID :  2,database/seed.go:123
+info,2025-11-01 13:23:21.571 WIB,Insert New Admin  with ID :  3,database/seed.go:123
+info,2025-11-01 13:23:21.578 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-11-01 13:23:21.578 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-11-01 13:23:21.578 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-11-01 13:23:21.587 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:145
+info,2025-11-01 13:23:21.587 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:145
+info,2025-11-01 13:23:21.587 WIB,Insert New admin_password_changelog  with ID :  3,database/seed.go:145
+info,2025-11-01 13:23:21.594 WIB,🏳 Insert New Language with ID: 1,database/seed.go:450
+info,2025-11-01 13:23:21.594 WIB,🏳 Insert New Language with ID: 2,database/seed.go:450
+info,2025-11-01 13:23:21.603 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:520
+info,2025-11-01 13:23:21.610 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:520
+info,2025-11-01 13:23:21.616 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:520
+info,2025-11-01 13:23:21.623 WIB,✅ Seeded bad words successfully,database/seed.go:575
+info,2025-11-01 13:23:21.637 WIB,✅ Seeded app configs successfully,database/seed.go:626
+info,2025-11-01 13:23:21.639 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:637
+info,2025-11-01 13:23:21.682 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:645
+info,2025-11-01 13:23:21.683 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:655
+info,2025-11-01 13:23:24.395 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:661
+info,2025-11-01 13:23:24.395 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-11-01 13:23:24.620 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+info,2025-11-01 13:23:24.646 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-11-01 13:23:24.648 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+info,2025-11-01 13:23:24.688 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-11-01 13:23:24.688 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-11-01 13:23:24.689 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-11-01 13:23:24.690 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-11-01 13:23:25.218 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-11-01 13:23:25.218 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-11-01 13:23:25.231 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-11-01 13:26:55.678 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-11-01 13:28:28.997 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-11-01 13:28:28.997 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-11-01 13:28:28.997 WIB,✅ Connected to Redis,main.go:348
+info,2025-11-01 13:28:29.003 WIB,✅ Connected to main DB,main.go:378
+info,2025-11-01 13:28:29.186 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:190
+info,2025-11-01 13:28:29.240 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-11-01 13:28:29.241 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-11-01 13:28:29.241 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-11-01 13:28:29.242 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-11-01 13:28:29.242 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-11-01 13:28:29.719 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-11-01 13:28:29.720 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-11-01 13:28:29.731 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-11-01 13:32:00.170 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-11-01 14:10:08.664 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-11-01 14:10:08.664 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-11-01 14:10:08.665 WIB,✅ Connected to Redis,main.go:348
+info,2025-11-01 14:10:08.674 WIB,✅ Connected to main DB,main.go:378
+info,2025-11-01 14:10:09.737 WIB,Insert New Roles ID :  1,database/seed.go:174
+info,2025-11-01 14:10:09.737 WIB,Insert New Roles ID :  2,database/seed.go:174
+info,2025-11-01 14:10:09.750 WIB,✅ Updated 3 children for parent 'Whatsapp' with prefix 'tab-whatsapp',database/seed.go:419
+info,2025-11-01 14:10:09.757 WIB,✅ Updated 2 children for parent 'PLTMH Lembang Palesan' with prefix 'tab-pltmh-lembang-palesan',database/seed.go:419
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 1 | Menu Order: 1,database/seed.go:425
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 2 | Menu Order: 2,database/seed.go:425
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 3 | Menu Order: 3,database/seed.go:425
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 4 | Menu Order: 4,database/seed.go:425
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 5 | Menu Order: 5,database/seed.go:425
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 6 | Menu Order: 6,database/seed.go:425
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 7 | Menu Order: 7,database/seed.go:425
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 8 | Menu Order: 8,database/seed.go:425
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 9 | Menu Order: 9,database/seed.go:425
+info,2025-11-01 14:10:09.757 WIB,✅ Inserted DB Feature ID: 10 | Menu Order: 10,database/seed.go:425
+info,2025-11-01 14:10:09.758 WIB,✅ Inserted DB Feature ID: 11 | Menu Order: 11,database/seed.go:425
+info,2025-11-01 14:10:09.758 WIB,✅ Inserted DB Feature ID: 12 | Menu Order: 12,database/seed.go:425
+info,2025-11-01 14:10:09.758 WIB,✅ Inserted DB Feature ID: 13 | Menu Order: 13,database/seed.go:425
+info,2025-11-01 14:10:09.780 WIB,Insert New Admin  with ID :  1,database/seed.go:123
+info,2025-11-01 14:10:09.780 WIB,Insert New Admin  with ID :  2,database/seed.go:123
+info,2025-11-01 14:10:09.780 WIB,Insert New Admin  with ID :  3,database/seed.go:123
+info,2025-11-01 14:10:09.787 WIB,Insert New data  with ID :  1,database/seed.go:55
+info,2025-11-01 14:10:09.787 WIB,Insert New data  with ID :  2,database/seed.go:55
+info,2025-11-01 14:10:09.787 WIB,Insert New data  with ID :  3,database/seed.go:55
+info,2025-11-01 14:10:09.794 WIB,Insert New admin_password_changelog  with ID :  1,database/seed.go:145
+info,2025-11-01 14:10:09.795 WIB,Insert New admin_password_changelog  with ID :  2,database/seed.go:145
+info,2025-11-01 14:10:09.795 WIB,Insert New admin_password_changelog  with ID :  3,database/seed.go:145
+info,2025-11-01 14:10:09.803 WIB,🏳 Insert New Language with ID: 1,database/seed.go:450
+info,2025-11-01 14:10:09.803 WIB,🏳 Insert New Language with ID: 2,database/seed.go:450
+info,2025-11-01 14:10:09.812 WIB,✅ Created new WhatsApp user: Super Admin 1 (6285173207755),database/seed.go:520
+info,2025-11-01 14:10:09.818 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Development) (6281802066490),database/seed.go:520
+info,2025-11-01 14:10:09.823 WIB,✅ Created new WhatsApp user: Bot Whatsapp (Production) (6287806974165),database/seed.go:520
+info,2025-11-01 14:10:09.831 WIB,✅ Seeded bad words successfully,database/seed.go:575
+info,2025-11-01 14:10:09.841 WIB,✅ Seeded app configs successfully,database/seed.go:626
+info,2025-11-01 14:10:09.844 WIB,Table 'indonesia_region' does not exist. Creating table structure first...,database/seed.go:637
+info,2025-11-01 14:10:09.879 WIB,✅ Table structure for 'indonesia_region' created successfully,database/seed.go:645
+info,2025-11-01 14:10:09.881 WIB,Importing data from SQL file into table 'indonesia_region'...,database/seed.go:655
+info,2025-11-01 14:10:13.679 WIB,✅ Successfully imported data into table 'indonesia_region',database/seed.go:661
+info,2025-11-01 14:10:13.679 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2025-11-01 14:10:13.922 WIB,Seeding default prepaid customers for testing,model/pltmh_model/seed_pltmh.go:19
+info,2025-11-01 14:10:13.952 WIB,Prepaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:39
+info,2025-11-01 14:10:13.954 WIB,Seeding default postpaid customers for testing,model/pltmh_model/seed_pltmh.go:51
+info,2025-11-01 14:10:13.979 WIB,Postpaid customers seeded successfully,model/pltmh_model/seed_pltmh.go:75
+info,2025-11-01 14:10:13.979 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-11-01 14:10:13.980 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-11-01 14:10:13.980 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-11-01 14:10:14.493 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-11-01 14:10:14.493 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-11-01 14:10:14.506 WIB,🌐 Starting server on :2709 ...,main.go:219
+info,2025-11-01 14:11:46.325 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-11-01 14:11:46.325 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-11-01 14:11:46.326 WIB,✅ Connected to Redis,main.go:348
+info,2025-11-01 14:11:46.335 WIB,✅ Connected to main DB,main.go:378
+info,2025-11-01 14:11:46.520 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2025-11-01 14:11:46.580 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-11-01 14:11:46.580 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-11-01 14:11:46.580 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-11-01 14:11:46.580 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-11-01 14:11:46.581 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-11-01 14:11:47.091 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-11-01 14:11:47.091 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-11-01 14:11:47.104 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-11-01 14:15:17.547 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-11-01 14:19:56.966 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-11-01 14:19:56.966 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-11-01 14:19:56.967 WIB,✅ Connected to Redis,main.go:348
+info,2025-11-01 14:19:56.975 WIB,✅ Connected to main DB,main.go:378
+info,2025-11-01 14:19:57.156 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2025-11-01 14:19:57.208 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-11-01 14:19:57.208 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-11-01 14:19:57.208 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:65
+info,2025-11-01 14:19:57.208 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:172
+info,2025-11-01 14:19:57.208 WIB,📲 Initializing WhatsApp client...,main.go:161
+error,2025-11-01 14:19:57.610 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-11-01 14:19:57.611 WIB,✅ WhatsApp client connected,main.go:171
+info,2025-11-01 14:19:57.622 WIB,🌐 Starting server on :2709 ...,main.go:219
+warning,2025-11-01 14:23:28.130 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54

@@ -160,6 +160,24 @@ func ComponentPage(db *gorm.DB, redisDB *redis.Client) gin.HandlerFunc {
 			"GetUserWAQREndpoint":             fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-whatsapp-conversation/" + strconv.Itoa(int(admin.ID)) + "/qr",
 			"RefreshUserWAQREndpoint":         fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-whatsapp-conversation/" + strconv.Itoa(int(admin.ID)) + "/qr/refresh",
 			"CommonWAEndpoint":                fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-whatsapp-conversation/" + strconv.Itoa(int(admin.ID)) + "/",
+
+		/* PLTMH Lembang Palesan - Customers */
+		"PLTMH_PREPAID_TABLE":   fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/prepaid/table",
+		"PLTMH_PREPAID_CREATE":  fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/prepaid/create",
+		"PLTMH_PREPAID_UPDATE":  fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/prepaid/update",
+		"PLTMH_PREPAID_DELETE":  fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/prepaid/",
+		"PLTMH_POSTPAID_TABLE":  fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/postpaid/table",
+		"PLTMH_POSTPAID_CREATE": fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/postpaid/create",
+		"PLTMH_POSTPAID_UPDATE": fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/postpaid/update",
+		"PLTMH_POSTPAID_DELETE": fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/postpaid/",
+		"PLTMH_CUSTOMER_DETAIL": fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/",
+		"PLTMH_TOPUP_HISTORY":   fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-customers/",
+
+		/* PLTMH Lembang Palesan - Transactions */
+		"PLTMH_TRANSACTIONS_TABLE": fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-transactions/table",
+		"PLTMH_MANUAL_TOPUP":       fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-transactions/prepaid/topup",
+		"PLTMH_MANUAL_PAYMENT":     fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-transactions/postpaid/payment",
+		"PLTMH_ADD_USAGE":          fun.GLOBAL_URL + "web/" + fun.GetRedis("web:"+admin.Session, redisDB) + "/tab-pltmh-lembang-palesan-transactions/postpaid/usage",
 		}
 		c.HTML(200, componentID+".html", replacements)
 	}
