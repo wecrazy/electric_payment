@@ -35,3 +35,7 @@ Prototype of Electric Payment via Website for PLTMH Lembang Palesan
                                                                               
 ```                                                                                                                                
 Build with ❤ using Golang v1.25.0
+
+***PODMAN***
+1) podman build -t electric-payment:prod -f ContainerFile .
+2) podman save -o electric-payment-prod.tar localhost/electric-payment:prod

@@ -28,6 +28,9 @@ COPY --from=builder /app/electric_payment .
 # Copy MariaDB config for binary logging
 COPY mariadb-binlog.cnf /etc/mysql/mariadb.conf.d/
 
+# Copy start script
+COPY start.sh .
+
 # Make scripts executable
 RUN chmod +x start.sh ./electric_payment
 
