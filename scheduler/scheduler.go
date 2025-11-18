@@ -2,6 +2,7 @@ package scheduler
 
 import (
 	"electric_payment/config"
+	"electric_payment/fun"
 	"fmt"
 	"strconv"
 	"strings"
@@ -23,7 +24,32 @@ func init() {
 }
 
 var jobMap = map[string]func(){
-	// TODO: Add your job functions here
+	"RemoveOldFilesDirectory": func() {
+		folderNeeds := config.GetConfig().FolderFileNeeds
+		if len(folderNeeds) == 0 {
+			logrus.Warn("No folders configured to clean old files")
+			return
+		}
+
+		for _, folder := range folderNeeds {
+			selectedDir, err := fun.FindValidDirectory([]string{
+				"web/file/" + folder,
+				"../web/file/" + folder,
+				"../../web/file/" + folder,
+			})
+			if err != nil {
+				logrus.Errorf("Failed to find valid directory for folder %s: %v", folder, err)
+				continue
+			}
+			dateDirFormat := "2006-01-02"
+			thresholdRange := "-1Week" // can be "-1Month", "-3Days", etc. -> means 7 days ago and older will be removed
+			if err := fun.RemoveExistingDirectory(selectedDir, thresholdRange, dateDirFormat); err != nil {
+				logrus.Errorf("Failed to remove old directories in %s: %v", selectedDir, err)
+			} else {
+				logrus.Infof("Old directories in %s older than or equal to %s have been removed", selectedDir, thresholdRange)
+			}
+		}
+	},
 }
 
 func StartSchedulers(db *gorm.DB, cfg *config.YamlConfig) *gocron.Scheduler {

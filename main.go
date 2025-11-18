@@ -125,6 +125,7 @@ func main() {
 	sched := scheduler.StartSchedulers(GlobalDB, &yamlCfg)
 
 	// Whatsapp
+	fmt.Println("starting init WhatsApp Client")
 	waClient := initWhatsapp(getRedisClient(), GlobalDB)
 	_ = waClient // keep in scope if needed
 
@@ -153,6 +154,7 @@ func main() {
 		}
 	}
 
+	fmt.Println("about to start web server")
 	// Start web server
 	startWebServer(&yamlCfg, sched, context.Background())
 }
@@ -161,7 +163,9 @@ func initWhatsapp(RedisDB *redis.Client, db *gorm.DB) *whatsmeow.Client {
 	logrus.Info("📲 Initializing WhatsApp client...")
 	waClient, err := controllers.StartWhatsappClient(RedisDB, db)
 	if err != nil {
-		logrus.Fatalf("❌ Failed to init WhatsApp client: %v", err)
+		fmt.Println("Failed to init WA Client")
+		logrus.Errorf("❌ Failed to init WhatsApp client: %v", err)
+		return nil
 	}
 	waClient.Connect()
 	jidStr := config.GetConfig().Whatsmeow.WaSuperUser + "@s.whatsapp.net"
@@ -230,7 +234,7 @@ func startWebServer(yamlCfg *config.YamlConfig, sched *gocron.Scheduler, ctx con
 	}
 
 	// Perform graceful shutdown with timeout
-	shutdownCtx, cancelShutdown := context.WithTimeout(context.Background(), 5*time.Second)
+	shutdownCtx, cancelShutdown := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancelShutdown()
 
 	if err := srv.Shutdown(shutdownCtx); err != nil {
