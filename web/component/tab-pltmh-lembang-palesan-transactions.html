@@ -88,11 +88,21 @@
     <!-- Transactions Table -->
     <div class="card shadow-sm">
         <div class="card-header bg-gradient-primary text-white">
-            <div class="d-flex align-items-center">
-                <i class="fad fa-history me-2"></i>
-                <div>
-                    <h5 class="mb-0 text-white">Riwayat Transaksi</h5>
-                    <small class="text-white-50">Semua aktivitas pembayaran listrik</small>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <i class="fad fa-history me-2"></i>
+                    <div>
+                        <h5 class="mb-0 text-white">Riwayat Transaksi</h5>
+                        <small class="text-white-50">Semua aktivitas pembayaran listrik</small>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-light btn-sm" onclick="exportAllTransactions('excel')">
+                        <i class="fas fa-file-excel me-1"></i> Export Excel
+                    </button>
+                    <button class="btn btn-light btn-sm" onclick="exportAllTransactions('pdf')">
+                        <i class="fas fa-file-pdf me-1"></i> Export PDF
+                    </button>
                 </div>
             </div>
         </div>
@@ -259,4 +269,9 @@
     </div>
 </div>
 
-<script src="{{.GLOBAL_URL}}assets/self/pltmh_transactions.js"></script>
+<!-- Include required libraries for export -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+
+<script src="{{.GLOBAL_URL}}assets/self/pltmh_transactions.js?_=LastUpdate16012026"></script>

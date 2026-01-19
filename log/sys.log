@@ -12,3 +12,123 @@ error,2025-11-02 13:18:00.784 WIB,Failed to send message to 6285173207755@s.what
 ,controllers/whatsmeow_utils.go:213
 info,2025-11-02 13:18:00.784 WIB,✅ WhatsApp client connected,main.go:175
 info,2025-11-02 13:18:00.796 WIB,🌐 Starting server on :2709 ...,main.go:223
+info,2025-12-07 17:03:05.623 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-12-07 17:03:05.624 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-12-07 17:03:05.624 WIB,✅ Connected to Redis,main.go:352
+info,2025-12-07 17:03:05.634 WIB,✅ Connected to main DB,main.go:382
+info,2025-12-07 17:03:05.895 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2025-12-07 17:03:05.964 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-12-07 17:03:05.965 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-12-07 17:03:05.965 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:91
+info,2025-12-07 17:03:05.965 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:198
+info,2025-12-07 17:03:05.965 WIB,📲 Initializing WhatsApp client...,main.go:163
+error,2025-12-07 17:03:06.394 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-12-07 17:03:06.394 WIB,✅ WhatsApp client connected,main.go:175
+info,2025-12-07 17:03:06.406 WIB,🌐 Starting server on :2709 ...,main.go:223
+warning,2025-12-07 17:06:36.911 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-12-07 17:57:58.262 WIB,websocket: close 1006 (abnormal closure): unexpected EOF,ws/websocket.go:58
+info,2025-12-20 17:49:12.040 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2025-12-20 17:49:12.041 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2025-12-20 17:49:12.041 WIB,✅ Connected to Redis,main.go:352
+info,2025-12-20 17:49:12.051 WIB,✅ Connected to main DB,main.go:382
+info,2025-12-20 17:49:12.263 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2025-12-20 17:49:12.327 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2025-12-20 17:49:12.328 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2025-12-20 17:49:12.328 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:91
+info,2025-12-20 17:49:12.328 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:198
+info,2025-12-20 17:49:12.328 WIB,📲 Initializing WhatsApp client...,main.go:163
+error,2025-12-20 17:49:12.809 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2025-12-20 17:49:12.810 WIB,✅ WhatsApp client connected,main.go:175
+info,2025-12-20 17:49:12.821 WIB,🌐 Starting server on :2709 ...,main.go:223
+warning,2025-12-20 17:52:43.265 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2025-12-20 21:48:49.784 WIB,websocket: close 1006 (abnormal closure): unexpected EOF,ws/websocket.go:58
+info,2025-12-20 21:48:49.785 WIB,websocket: close 1006 (abnormal closure): unexpected EOF,ws/websocket.go:58
+info,2025-12-20 21:48:49.785 WIB,websocket: close 1006 (abnormal closure): unexpected EOF,ws/websocket.go:58
+info,2026-01-16 15:02:58.502 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2026-01-16 15:02:58.505 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2026-01-16 15:02:58.511 WIB,✅ Connected to Redis,main.go:352
+info,2026-01-16 15:02:58.524 WIB,✅ Connected to main DB,main.go:382
+info,2026-01-16 15:02:58.788 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2026-01-16 15:02:58.864 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2026-01-16 15:02:58.865 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2026-01-16 15:02:58.865 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:91
+info,2026-01-16 15:02:58.865 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:198
+info,2026-01-16 15:02:58.866 WIB,📲 Initializing WhatsApp client...,main.go:163
+error,2026-01-16 15:02:59.362 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2026-01-16 15:02:59.362 WIB,✅ WhatsApp client connected,main.go:175
+info,2026-01-16 15:02:59.376 WIB,🌐 Starting server on :2709 ...,main.go:223
+warning,2026-01-16 15:06:29.866 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54
+info,2026-01-16 15:07:46.600 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2026-01-16 15:07:46.601 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2026-01-16 15:07:46.601 WIB,✅ Connected to Redis,main.go:352
+info,2026-01-16 15:07:46.609 WIB,✅ Connected to main DB,main.go:382
+info,2026-01-16 15:07:46.770 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2026-01-16 15:07:46.824 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2026-01-16 15:07:46.824 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2026-01-16 15:07:46.824 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:91
+info,2026-01-16 15:07:46.825 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:198
+info,2026-01-16 15:07:46.825 WIB,📲 Initializing WhatsApp client...,main.go:163
+error,2026-01-16 15:07:47.390 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2026-01-16 15:07:47.390 WIB,✅ WhatsApp client connected,main.go:175
+info,2026-01-16 15:07:47.402 WIB,🌐 Starting server on :2709 ...,main.go:223
+info,2026-01-16 15:11:21.281 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2026-01-16 15:11:21.281 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2026-01-16 15:11:21.282 WIB,✅ Connected to Redis,main.go:379
+info,2026-01-16 15:11:21.290 WIB,✅ Connected to main DB,main.go:409
+info,2026-01-16 15:11:21.466 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2026-01-16 15:11:21.525 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2026-01-16 15:11:21.525 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2026-01-16 15:11:21.525 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:91
+info,2026-01-16 15:11:21.525 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:198
+info,2026-01-16 15:11:21.525 WIB,📲 Initializing WhatsApp client...,main.go:163
+error,2026-01-16 15:11:22.008 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2026-01-16 15:11:22.009 WIB,✅ WhatsApp client connected,main.go:175
+info,2026-01-16 15:11:22.020 WIB,🌐 Starting server on :2709 ...,main.go:247
+info,2026-01-16 16:50:25.814 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2026-01-16 16:50:25.814 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2026-01-16 16:50:25.815 WIB,✅ Connected to Redis,main.go:379
+info,2026-01-16 16:50:25.823 WIB,✅ Connected to main DB,main.go:409
+info,2026-01-16 16:50:25.985 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2026-01-16 16:50:26.039 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2026-01-16 16:50:26.039 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2026-01-16 16:50:26.039 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:91
+info,2026-01-16 16:50:26.039 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:198
+info,2026-01-16 16:50:26.040 WIB,📲 Initializing WhatsApp client...,main.go:163
+error,2026-01-16 16:50:26.633 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2026-01-16 16:50:26.633 WIB,✅ WhatsApp client connected,main.go:175
+info,2026-01-16 16:50:26.647 WIB,🌐 Starting server on :2709 ...,main.go:247
+info,2026-01-16 16:55:43.502 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2026-01-16 16:55:43.502 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2026-01-16 16:55:43.503 WIB,✅ Connected to Redis,main.go:379
+info,2026-01-16 16:55:43.511 WIB,✅ Connected to main DB,main.go:409
+info,2026-01-16 16:55:43.673 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2026-01-16 16:55:43.725 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2026-01-16 16:55:43.725 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2026-01-16 16:55:43.725 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:91
+info,2026-01-16 16:55:43.726 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:198
+info,2026-01-16 16:55:43.726 WIB,📲 Initializing WhatsApp client...,main.go:163
+error,2026-01-16 16:55:44.205 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2026-01-16 16:55:44.205 WIB,✅ WhatsApp client connected,main.go:175
+info,2026-01-16 16:55:44.216 WIB,🌐 Starting server on :2709 ...,main.go:247
+info,2026-01-16 16:58:24.038 WIB,🟢 Logger initialized successfully,logger/logrus.go:121
+info,2026-01-16 16:58:24.039 WIB,📁 Executable directory: /home/user/server/electric_payment,main.go:81
+info,2026-01-16 16:58:24.040 WIB,✅ Connected to Redis,main.go:379
+info,2026-01-16 16:58:24.047 WIB,✅ Connected to main DB,main.go:409
+info,2026-01-16 16:58:24.212 WIB,menjalankan migrasi tabel plmth lembang palesan,model/pltmh_model/pltmh.go:224
+info,2026-01-16 16:58:24.265 WIB,Prepaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:15
+info,2026-01-16 16:58:24.265 WIB,Postpaid customers already exist; skipping seeding,model/pltmh_model/seed_pltmh.go:47
+info,2026-01-16 16:58:24.265 WIB,Scheduled job RemoveOldFilesDirectory to run daily at 01:00,scheduler/scheduler.go:91
+info,2026-01-16 16:58:24.265 WIB,✅ All schedulers started (Asia/Jakarta timezone).,scheduler/scheduler.go:198
+info,2026-01-16 16:58:24.266 WIB,📲 Initializing WhatsApp client...,main.go:163
+error,2026-01-16 16:58:24.745 WIB,Failed to send message to 6285173207755@s.whatsapp.net: the store doesn't contain a device JID
+,controllers/whatsmeow_utils.go:213
+info,2026-01-16 16:58:24.745 WIB,✅ WhatsApp client connected,main.go:175
+info,2026-01-16 16:58:24.757 WIB,🌐 Starting server on :2709 ...,main.go:247
+warning,2026-01-16 17:01:55.984 WIB,❌ Whatsapp (unknown) disconnected,controllers/whatsmeow_handle_events.go:54

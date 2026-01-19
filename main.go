@@ -218,12 +218,39 @@ func startWebServer(yamlCfg *config.YamlConfig, sched *gocron.Scheduler, ctx con
 		Handler: r,
 	}
 
+	keyFile, err := fun.FindValidDirectory([]string{
+		"ssl/pltmhpalesan.key",
+		"../ssl/pltmhpalesan.key",
+		"../../ssl/pltmhpalesan.key",
+		"../../../ssl/pltmhpalesan.key",
+	})
+	if err != nil {
+		logrus.Fatalf("❌ Failed to find SSL key file: %v", err)
+	}
+
+	certFile, err := fun.FindValidDirectory([]string{
+		"ssl/pltmhpalesan.crt",
+		"../ssl/pltmhpalesan.crt",
+		"../../ssl/pltmhpalesan.crt",
+		"../../../ssl/pltmhpalesan.crt",
+	})
+	if err != nil {
+		logrus.Fatalf("❌ Failed to find SSL cert file: %v", err)
+	}
+
+	// REMOVE: soon if its productions
+	_ = certFile
+	_ = keyFile
+
 	serverErr := make(chan error, 1)
 	go func() {
 		logrus.Printf("🌐 Starting server on %s ...", listenAddr)
 		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			serverErr <- fmt.Errorf("server listen error: %w", err)
 		}
+		// if err := srv.ListenAndServeTLS(certFile, keyFile); err != nil && err != http.ErrServerClosed {
+		// 	serverErr <- fmt.Errorf("server listen error: %w", err)
+		// }
 	}()
 
 	select {

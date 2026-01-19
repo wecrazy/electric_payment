@@ -30,3 +30,5 @@ log/
 *.tar
 *.db
 electric_payment
+
+web/file/transactions/**/*.png
