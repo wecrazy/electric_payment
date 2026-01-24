@@ -21,8 +21,14 @@ COPY . .
 # Download dependencies
 RUN go mod download
 
+# Build the application
+RUN go build -o electric_payment .
+
 # Copy MariaDB config for binary logging
 COPY mariadb-binlog.cnf /etc/mysql/mariadb.conf.d/
+
+# Set proper permissions on MariaDB config file
+RUN chmod 644 /etc/mysql/mariadb.conf.d/mariadb-binlog.cnf
 
 # Copy start script
 COPY start.sh .
