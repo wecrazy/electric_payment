@@ -21,7 +21,8 @@ COPY . .
 # Download dependencies
 RUN go mod download
 
-# Build the application
+# Build the application with CGO enabled for SQLite
+ENV CGO_ENABLED=1
 RUN go build -o electric_payment .
 
 # Copy MariaDB config for binary logging
