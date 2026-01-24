@@ -1,7 +1,7 @@
 FROM ubuntu:24.04
 
 # Install dependencies
-RUN apt-get update && apt-get install -y ca-certificates mariadb-server redis-server tzdata libsqlite3-dev pkg-config wget && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y ca-certificates mariadb-server redis-server tzdata libsqlite3-dev pkg-config wget build-essential && rm -rf /var/lib/apt/lists/*
 
 # Install Go 1.25.5
 RUN wget https://dl.google.com/go/go1.25.5.linux-amd64.tar.gz && \
