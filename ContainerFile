@@ -39,7 +39,7 @@ RUN chmod +x start.sh
 
 COPY config ./config
 COPY switch-config.sh ./switch-config.sh
-RUN mkdir -p ./log ./whatsmeow
+RUN mkdir -p ./log ./whatsmeow ./web/file
 
 # # Make switch-config.sh executable and switch to production mode
 # RUN chmod +x ./switch-config.sh && ./switch-config.sh prod
