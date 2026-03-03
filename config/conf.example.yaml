@@ -1,0 +1,205 @@
+APP:
+  HOST: "127.0.0.1"
+  GIN_MODE: "debug"
+  NAME: "Example Service Application"
+  LOGO: "/assets/example/img/logo.png"
+  PORT: "8080"
+  LOG_LEVEL: "INFO"
+  LOG_FORMAT: "TEXT"
+  WEB_PUBLIC_URL: "http://localhost:8080"
+  VERSION: "Development"
+  VERSION_NO: 1
+  VERSION_CODE: "0.0.0.0.0000.00.00"
+  VERSION_NAME: "example_service"
+  STATIC_DIR: "./web"
+  PUBLISHED_DIR: "assets"
+  LOG_DIR: "./log"
+  UPLOAD_DIR: "./uploads"
+  LOGIN_TIME_M: "120"
+  COOKIE_LOGIN_DOMAIN: ""
+  COOKIE_LOGIN_SECURE: false
+  MAX_DISCONNECTION_TIME: "10"
+  AES_KEY: "exampleaeskey1234567890123456"
+  AES_KEY_IV: "exampleaesiv1234"
+  MAX_RETRY_LOGIN: 3
+  LOGIN_LOCK_UNTIL: 5
+  APP_LOG_FILENAME: "app.log"
+  SYSTEM_LOG_FILENAME: "system.log"
+
+DEFAULT:
+  TIMEZONE: "Asia/Jakarta"
+  MIN_LENGTH_PHONE_NUMBER: 9
+  MAX_MESSAGE_CHAR: 1000
+  MAX_IMAGE_SIZE: 2
+  XAMPP_MYSQL_PATH: "C:/xampp/mysql_start.bat"
+  NSSM_FULLPATH: "bin/nssm/win64/nssm.exe"
+  MAGICK_FULLPATH: "/usr/bin/convert"
+  API_KEY_API_ANALYTICS_DEV: "example-api-key-0000"
+  CONCURRENCY_LIMIT: 2
+  WELCOME_ID: |
+    Halo! Ini adalah pesan sambutan contoh.
+    Sistem sedang berjalan dalam mode pengembangan.
+
+  WELCOME_EN: |
+    Hello! This is an example welcome message.
+    The system is currently running in development mode.
+
+EMAIL:
+  HOST: "imap.example.com"
+  PORT: 993
+  USERNAME: "example@example.com"
+  PASSWORD: "example_password"
+  SENDER: "Example Service"
+  MAX_RETRY: 3
+  RETRY_DELAY: 10
+  MAX_ATTACHMENT_SIZE: 10
+
+REDIS:
+  HOST: "127.0.0.1"
+  PORT: 6379
+  PASSWORD: ""
+  DB: 0
+  MAX_RETRY: 3
+  RETRY_DELAY: 3
+
+DATABASE:
+  TYPE: "MySQL"
+  HOST: "127.0.0.1"
+  PORT: "3306"
+  USERNAME: "example_user"
+  PASSWORD: "example_password"
+  NAME: "example_database"
+  MAX_RETRY_CONNECT: 3
+  RETRY_DELAY: 3
+  MAX_IDLE_CONNECTION: 5
+  MAX_OPEN_CONNECTION: 5
+  MAX_LIFETIME_CONNECTION: 1
+  DB_CONFIG_PATH: "database/dbconfig.yaml"
+  DB_BACKUP_DESTINATION_DIR: "database"
+
+  TB_ADMIN: "admins"
+  TB_ADMIN_PWD_CHANGELOG: "admin_password_changelog"
+  TB_ADMIN_STATUS: "admin_statuses"
+  TB_FEATURE: "features"
+  TB_LOG_ACTIVITY: "log_activities"
+  TB_ROLE: "roles"
+  TB_ROLE_PRIVILEGE: "role_privileges"
+  TB_LANGUAGE: "languages"
+  TB_BAD_WORD: "bad_words"
+  TB_WEB_APP_CONFIG: "web_app_config"
+  TB_INDONESIA_REGION: "indonesia_region"
+  DUMPED_INDONESIA_REGION_SQL: "database/db_region_indonesia.sql"
+
+  TB_WA_MSG: "wa_message"
+  TB_WA_MSG_REPLY: "wa_message_reply"
+  TB_WA_PHONE_USER: "wa_phone_users"
+
+WHATSMEOW:
+  SQL_DRIVER: "sqlite3"
+  QR_CODE: "log/qrcode.txt"
+  QR_EXPIRED: 30
+  SQL_SOURCE: "whatsmeow/whatsmeow.db"
+  WA_GROUP_SOURCE: "whatsmeow/wa_group.json"
+
+  WA_SU: "620000000000"
+  WA_SUPPORT: "620000000001"
+  WA_TECHNICAL_SUPPORT: "620000000002"
+
+  WA_BOT_USED:
+    - "620000000001"
+    - "620000000002"
+
+  WAG_ALLOWED_PROMPT:
+    - "120000000000000001"
+    - "120000000000000002"
+
+  WAG_TEST_JID: "120000000000000002"
+  WAG_TA_JID: "120000000000000002"
+
+  WAG_REGION_TECHNICIAN:
+    1: "120000000000000001"
+    2: "120000000000000002"
+    3: "120000000000000003"
+    4: "120000000000000004"
+    5: "120000000000000005"
+
+  INITIAL_LANGUAGE_PROMPT: |
+    Please choose your language:
+    - English (en)
+    - Bahasa Indonesia (id)
+
+  WA_REPLY_PUBLIC_URL: "http://localhost:8080/wa_reply"
+
+  OLLAMA_URL: "http://127.0.0.1:11434/api/generate"
+  OLLAMA_MODEL: "example-model"
+
+  KEYWORD_SEPARATOR: "|||"
+
+  MESSAGE_RECEIVED_LOG_FILE: "log/wa_received.log"
+  WHATSMEOW_CLIENT_LOG: "log/whatsmeow_client.log"
+  WHATSMEOW_CLIENT_LOG_LEVEL: "INFO"
+
+  WHATSMEOW_DB_LOG: "log/whatsmeow_db.log"
+  WHATSMEOW_DB_LOG_LEVEL: "INFO"
+
+  OPEN_WEATHER_MAP_API: "example-weather-api-key"
+
+  WHATSAPP_MAX_DAILY_QUOTA: 100
+  WHATSAPP_MAX_BAD_WORD_STRIKE: 3
+  REDIS_EXPIRY: 24
+
+  MAX_UPLOADED_DOCUMENT_SIZE: 10
+  MAX_UPLOADED_IMAGE_SIZE: 3
+  MAX_UPLOADED_AUDIO_SIZE: 5
+  MAX_UPLOADED_VIDEO_SIZE: 10
+
+  DOCUMENT_ALLOWED_EXTENSIONS: [".pdf", ".docx", ".xlsx"]
+  DOCUMENT_ALLOWED_MIME_TYPES: ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"]
+
+  IMAGE_ALLOWED_EXTENSIONS: [".jpg", ".png"]
+  IMAGE_ALLOWED_MIME_TYPES: ["image/jpeg", "image/png"]
+
+  AUDIO_ALLOWED_EXTENSIONS: [".mp3"]
+  AUDIO_ALLOWED_MIME_TYPES: ["audio/mpeg"]
+
+  VIDEO_ALLOWED_EXTENSIONS: [".mp4"]
+  VIDEO_ALLOWED_MIME_TYPES: ["video/mp4"]
+
+SCHEDULES:
+  - NAME: "RemoveOldFilesDirectory"
+    AT:
+      - "01:00"
+
+FOLDER_FILE_NEEDS:
+  - "transactions"
+
+API:
+  INDONESIAN_PUBLIC_HOLIDAY: "https://example.com/public-holiday"
+
+PLTMH_LEMBANG_PALESAN:
+  EMAIL: "example@example.com"
+  PHONE: "620000000000"
+  PUBLIC_URL: "http://localhost:8080"
+  FACEBOOK: "https://facebook.com/example"
+  INSTAGRAM: "https://instagram.com/example"
+  YOUTUBE: "https://youtube.com/example"
+  TWITTER: "https://twitter.com/example"
+
+  TB_ELECTRICITY_BASE: "electricity_base"
+  TB_PREPAID: "prepaid"
+  TB_POSTPAID: "postpaid"
+  TB_TOPUP_RECORD: "topup_record"
+  TB_TRANSACTION_HISTORY: "transaction_history"
+
+  TOPUP_OPTIONS:
+    - 10000
+    - 20000
+    - 50000
+    - 100000
+
+  ADMIN_FEE: 1000
+
+  TARIF_CODE:
+    - "R1/900VA"
+    - "R1/1300VA"
+    - "R1/2200VA"
