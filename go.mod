@@ -1,6 +1,6 @@
 module electric_payment
 
-go 1.25.5
+go 1.26.0
 
 require (
 	github.com/Boostport/mjml-go v0.16.0

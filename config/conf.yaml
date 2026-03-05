@@ -1,1 +1,1 @@
-CONFIG_MODE: "dev" # dev | prod
+CONFIG_MODE: "prod" # dev | prod
