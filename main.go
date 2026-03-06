@@ -219,20 +219,20 @@ func startWebServer(yamlCfg *config.YamlConfig, sched *gocron.Scheduler, ctx con
 	}
 
 	keyFile, err := fun.FindValidDirectory([]string{
-		"ssl/pltmhpalesan.key",
-		"../ssl/pltmhpalesan.key",
-		"../../ssl/pltmhpalesan.key",
-		"../../../ssl/pltmhpalesan.key",
+		"cert/demo.wecrazy.my.id.key",
+		"../cert/demo.wecrazy.my.id.key",
+		"../../cert/demo.wecrazy.my.id.key",
+		"../../../cert/demo.wecrazy.my.id.key",
 	})
 	if err != nil {
 		logrus.Fatalf("❌ Failed to find SSL key file: %v", err)
 	}
 
 	certFile, err := fun.FindValidDirectory([]string{
-		"ssl/pltmhpalesan.crt",
-		"../ssl/pltmhpalesan.crt",
-		"../../ssl/pltmhpalesan.crt",
-		"../../../ssl/pltmhpalesan.crt",
+		"cert/demo.wecrazy.my.id.crt",
+		"../cert/demo.wecrazy.my.id.crt",
+		"../../cert/demo.wecrazy.my.id.crt",
+		"../../../cert/demo.wecrazy.my.id.crt",
 	})
 	if err != nil {
 		logrus.Fatalf("❌ Failed to find SSL cert file: %v", err)
@@ -260,8 +260,8 @@ func startWebServer(yamlCfg *config.YamlConfig, sched *gocron.Scheduler, ctx con
 		logrus.Fatalf("❌ Server error: %v", err)
 	}
 
-	// Perform graceful shutdown with timeout
-	shutdownCtx, cancelShutdown := context.WithTimeout(context.Background(), 15*time.Second)
+	// Perform graceful shutdown with 3s timeout
+	shutdownCtx, cancelShutdown := context.WithTimeout(context.Background(), 3*time.Second)
 	defer cancelShutdown()
 
 	if err := srv.Shutdown(shutdownCtx); err != nil {
