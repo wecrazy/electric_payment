@@ -238,24 +238,22 @@ func startWebServer(yamlCfg *config.YamlConfig, sched *gocron.Scheduler, ctx con
 		logrus.Fatalf("❌ Failed to find SSL cert file: %v", err)
 	}
 
-	// REMOVE: soon if its productions
-	_ = certFile
-	_ = keyFile
-
 	serverErr := make(chan error, 1)
 	go func() {
 		logrus.Printf("🌐 Starting server on %s ...", listenAddr)
-		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-			serverErr <- fmt.Errorf("server listen error: %w", err)
-		}
-		// if err := srv.ListenAndServeTLS(certFile, keyFile); err != nil && err != http.ErrServerClosed {
+		// if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 		// 	serverErr <- fmt.Errorf("server listen error: %w", err)
 		// }
+		if err := srv.ListenAndServeTLS(certFile, keyFile); err != nil && err != http.ErrServerClosed {
+			serverErr <- fmt.Errorf("server listen error: %w", err)
+		}
 	}()
 
 	select {
 	case <-ctx.Done():
 		logrus.Println("🔻 Context cancelled, shutting down server...")
+	case sig := <-sigs:
+		logrus.Printf("🔻 Received signal %v, shutting down server...", sig)
 	case err := <-serverErr:
 		logrus.Fatalf("❌ Server error: %v", err)
 	}
